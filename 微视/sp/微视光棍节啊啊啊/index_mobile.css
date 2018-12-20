@@ -1,0 +1,64 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+	
+	table{border-collapse:collapse;border-spacing:0}
+	img{border:0}
+	address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+	ol,ul{list-style:none}
+	caption,th{text-align:left}
+	h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+	body{height:100%;font:12px/1.75 Tahoma,Arial,sans-serif;}
+	select{font-size:12px}
+	button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
+	input,textarea,select,button{outline:none;resize:none}
+	a{text-decoration: none;}
+	a:focus{outline:none}
+	p{color:#DADADA}
+	.fs14{font-size:14px}.fs13{font-size:13px}.fs12{font-size:12px}
+	.fc3{color:#333;}
+
+	body{ font: 12px/1.5; color: #dadada}
+
+	.clear:after,.title_panel:after{content:'.';clear:both;display:block;height:0;visibility:hidden;font-size:0;line-height:0}
+	.clear,.title_panel{ *zoom:1;}
+	img{ max-width: 100%}
+	.index{width: auto;margin: 0 auto;background: #3d3d3d;}
+	.content_wrap{margin: 0 auto; font-size: 14px}
+	.top_wrap{width:100%;background:#CB054A;}
+	.top_wrap .bd{width:320px;height:261px;margin:0 auto;background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/mobile/top_ios.jpg) no-repeat top center;background-size:320px 261px;}
+	.top_wrap .hd{display:none;}
+	.top_wrap_mobile{ font-size: 0}
+	.top_wrap_mobile img{ display: block;}
+	.title_panel{ position: relative; padding: 17px 10px 10px 100px; background: #333333; margin-bottom: 10px}
+	.title_panel h2{ color: #54f3ff; font-size: 18px; font-style: italic;}
+	.first_title,.second_title,.third_title,.download_type .QR .bg,.download_type .direct .iphone,.download_type .direct .android,.icon_rule,.icon_list{background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/mobile/sprite_131107.png) no-repeat; background-size: 275px 200px}
+	.first_title,.second_title,.third_title{ position: absolute; top: 15px; left: 0; display: block; width: 96px; height: 29px; overflow: hidden;}
+	.second_title{ background-position: 0 -29px}
+	.third_title{ background-position: 0 -58px}
+	.content_wrap p{ padding: 0 10px 5px}
+	.second_step_panel p{color:#DADADA;}
+	.second_step_panel p a,.second_step_panel p a:hover{color:#DADADA;text-decoration:underline;}
+	.bold_word{ color: #4CCED8; font-weight: bold;}
+	.forth_line{ color: #AFA06C;}
+	.fcy{ color: #f4df97}
+
+	.download_type{ padding: 5px 10px 10px}
+	.download_type .QR{ width:120px; text-align: center; float: left;}
+	.download_type .QR .bg{ width: 104px; height: 104px; background-position: 0 -87px;background-size:52px 52px; margin: 0 auto 5px}
+	.download_type .direct{ float: left; width: 180px; text-align: center;}
+	.download_type .direct .iphone,.download_type .direct .android{ display: block; width: 168px; height: 46px; background-position: -104px -87px; margin-bottom: 5px}
+	.download_type .direct .iphone{ background-position: -104px -133px; margin-bottom: 12px}
+
+	.activrule_wrap{ background: #b2003e; padding: 10px; margin-bottom: 10px}
+	.icon_rule,.icon_list{height: 26px; line-height: 26px; display: inline-block;}
+	.icon_rule{position:absolute;top:0;left:0;width:81px;height:22px;background-position:-105px 0 ;}
+	.icon_list{position:absolute;top:0;left:0;width:81px;height:22px;background-position: -105px -25px;}
+	.activrule_wrap h3{position:relative; border-bottom:2px solid #87002F; height: 20px; }
+	.activrule_wrap ul{ padding-bottom: 10px}
+	.activrule_wrap li{ list-style-type: disc; margin-left: 20px; padding: 5px 0}
+	.activrule_wrap .empty_prize_txt{ padding: 10px 0 10px 20px}
+
+.vedio_pic_list,.right_col{ display:none;}
+	.bottom_wrap{ background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/mobile/foot.png) #242424 no-repeat;height: 55px; background-size: 320px 55px}
+
+
+

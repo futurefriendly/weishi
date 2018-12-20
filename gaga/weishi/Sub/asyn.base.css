@@ -1,0 +1,36 @@
+/* CSS GUIDE Sub内异步基础样式
+================================================================
+ *
+ * PROJECT: 微视;
+ * URL:   http://www.weishi.com;
+ * AUTHOR:  bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 基础;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 基础
+================================================================*/
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+/* ico36 */
+.ico_wb36,
+.ico_qq36,
+.ico_qz36,
+.ico_sina36,
+.ico_rr36,
+.ico_db36{ background-repeat:no-repeat;}
+.ico_wb36{ background-image:url(../img/slice/ico_wb36.png);}
+.ico_qq36{ background-image:url(../img/slice/ico_qq36.png);}
+.ico_qz36{ background-image:url(../img/slice/ico_qz36.png);}
+.ico_sina36{ background-image:url(../img/slice/ico_sina36.png);}
+.ico_rr36{ background-image:url(../img/slice/ico_rr36.png);}
+.ico_db36{ background-image:url(../img/slice/ico_db36.png);}

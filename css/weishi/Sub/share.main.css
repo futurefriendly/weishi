@@ -1,0 +1,52 @@
+/* CSS GUIDE 分享页业务结构样式
+================================================================
+ *
+ * PROJECT: 微视分享页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* 背景预留
+----------------------------------------------------------------*/
+
+.pageBg{ display:none; position:fixed; _position:absolute; top:0; left:0; width:100%; height:521px; border-bottom:1px solid #DFDFDF; box-shadow:#fff 0 -1px 1px inset;
+	background-color:#F1F1F1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#E4E4E4)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #F0F0F0, #E4E4E4); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #F0F0F0, #E4E4E4); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #F0F0F0, #E4E4E4); /* IE10 */
+	background-image: -o-linear-gradient(top, #F0F0F0, #E4E4E4); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #F0F0F0, #E4E4E4); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr='#F0F0F0',endColorstr='#E4E4E4');
+}
+
+
+
+
+
+/* 2 结构
+================================================================*/
+
+.mv_conBox{}
+.a_bd{ width:902px; min-width:0}
+
+
+
+
+
+/* 3 media queries
+================================================================*/

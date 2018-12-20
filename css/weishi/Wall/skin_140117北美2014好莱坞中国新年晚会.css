@@ -1,0 +1,64 @@
+/* CSS GUIDE - 上墙页皮肤样式
+================================================================
+ *
+ * PROJECT:	微视;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET
+ * 2. 模块;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+body{ background-color:#e00c5a;}
+
+
+
+
+
+/* 2 模块
+================================================================*/
+
+/* hdTitle
+----------------------------------------------------------------*/
+
+.mv_summary{ display:none}
+
+/* mv_appPc */
+.mv_2Code{
+	/* 在线 */
+	/* background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/skin/wall_qrcode_default.png); */
+	/* 离线 */
+	background-image:url(./skin/images/wall_qrcode_default.png);
+}
+
+/* 上墙信息
+----------------------------------------------------------------*/
+
+.mv_floatInfo{ display:none; color:#fff}
+
+/* 上墙控制
+----------------------------------------------------------------*/
+
+.wall_control .txt{ color:#fff}
+
+
+
+/* 3 结构
+================================================================*/
+
+article{
+	/* 在线 */
+	/*	background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/skin/140115americanSpring_bg_b.jpg); */
+	/* 离线 */
+	background-image:url(./skin/images/140115americanSpring_bg_b.jpg);
+}

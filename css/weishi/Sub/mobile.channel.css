@@ -1,0 +1,17 @@
+/* CSS GUIDE mobile频道列表页主样式
+================================================================
+ *
+ * PROJECT: 微视频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ * 
+================================================================*/
+
+
+
+
+
+@import url("mobile.base.css"); /* 全局基础样式 */
+@import url("mobile.channel.base.css"); /* 频道页业务基础样式 */
+@import url("mobile.main.css"); /* 全局结构样式 */
+@import url("mobile.channel.main.css"); /* 频道页业务结构样式 */

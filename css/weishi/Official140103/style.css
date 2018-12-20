@@ -1,0 +1,20 @@
+/* CSS GUIDE 官网主样式
+================================================================
+ *
+ * PROJECT: 微视官网;
+ * URL:   http://www.weishi.com;
+ * AUTHOR:  bennyzhai;
+ * 
+================================================================*/
+
+
+
+
+
+@import url("../Global/base.css");/* 全局公用_基础元素 */
+@import url("../Global/main.css");/* 全局公用_模块 */
+@import url("../Global/animate.css");/* 全局公用_动画库 */
+
+@import url("base.css");/* 基础元素 */
+@import url("main.css");/* 区域模块 */
+@import url("frame.css");/* 结构 */

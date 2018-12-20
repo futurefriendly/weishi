@@ -1,0 +1,89 @@
+/* CSS GUIDE 频道列表页瀑布流模式业务结构样式
+================================================================
+ *
+ * PROJECT: 微视频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* 标签导航
+----------------------------------------------------------------*/
+
+.tagnav{
+	background-color:#e8e8e8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dedddd)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #dedddd); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #f7f7f7, #dedddd); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #f7f7f7, #dedddd); /* IE10 */
+	background-image: -o-linear-gradient(top, #f7f7f7, #dedddd); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #f7f7f7, #dedddd); /* W3C */
+}
+.e_tagnav_fix{ position:fixed; _position:absolute; z-index:990; top:0; left:0; margin-top:0}
+
+/* 瀑布流
+----------------------------------------------------------------*/
+
+.ws_ls .videoBox .playbtn{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_mod_131031.png)}
+.ws_ls .videoBox .playbtn{ display:block; width:40px; height:30px; background-position:0 -129px;}
+.ws_ls .videoBox a:hover .playbtn{ background-position:-41px -129px}
+
+.ws_ls{ max-width:986px; min-width:960px; *width:960px; margin:25px auto 0;}
+.ws_ls .col{ width:25%; float:left;}
+.ws_ls .last{ margin-right:0}
+.ws_ls .item{ width:235px; vertical-align:top; background:#fff; margin:0 auto 30px; border-bottom:#e4e4e4 1px solid; color:#333; font-family:Microsoft Yahei}
+
+.ws_ls .userBox{ height:50px; padding:5px 0 0 10px; background-color:#fff; overflow:hidden;}
+.ws_ls .userBox .userPic{ padding-top:5px; margin-right:5px; float:left}
+.ws_ls .userBox .userPic img{ width:35px; height:35px; border-radius:5px; vertical-align:top;}
+.ws_ls .userBox .userName{ overflow:hidden; white-space:nowrap; max-width:100%; text-overflow:ellipsis; font-size:14px;}
+.ws_ls .userBox .userName strong{ font-weight:normal;}
+
+.ws_ls .videoBox{ position:relative;}
+.ws_ls .videoBox img{ width:235px; height:235px; vertical-align:top}
+.ws_ls .videoBox .playbtn{ position: absolute; top:190px; left:15px;;}
+.ws_ls .videoBox .mask{ position:absolute; width:235px; height:235px; left:0; top:0;
+}
+.ws_ls .videoBox a{ cursor:pointer;}
+.ws_ls .videoBox a .mask{ background:#000; opacity:0; filter:alpha(opacity=0);
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	-ms-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+.ws_ls .videoBox a:hover .mask{ opacity:.3; filter:alpha(opacity=30);}
+
+.ws_ls .comtBox{ position:relative; padding:10px; *zoom:1; _font-family:Tahoma,sans-serif}
+.ws_ls .comtBox .msgBox{ clear:both; *zoom:1;}
+.ws_ls .comtBox .msgCnt{ height:48px; overflow:hidden; word-wrap:break-word; word-break:break-all; font-size:14px; line-height:24px}
+.ws_ls .comtBox .msgCnt img{ vertical-align:top}
+.ws_ls .comtBox .pubInfo{ color:#888; padding-top:10px; border-top:#d8d8d8 1px dotted; margin-top:10px; font-size:14px}
+
+
+
+
+/* 2 结构
+================================================================*/
+
+.a_bd{ *width:960px}
+
+
+
+
+
+/* 3 media queries
+================================================================*/

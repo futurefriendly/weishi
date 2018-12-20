@@ -1,0 +1,45 @@
+/* CSS GUIDE - 节日换肤
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 导航
+================================================================*/
+
+.topnav .logo .c1{
+	width:182px;
+	background-position:0 0;
+	background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Festival/navlogo_2014springfestival_140124.8a.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/weishi/Festival/navlogo_2014springfestival_140124.32.png');
+}
+.topnav .logo .c2{ display:none}
+
+
+
+/* 2 官网首页下载按钮
+================================================================*/
+
+/*.topic .btn_download_lk{ background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Festival/btn_download_Festival_2013Chrismas.8a.png);}
+.topic .e_btn_download_iphone .btn_download_lk{ background-position:0 -76px}
+.topic .e_btn_download_iphone .btn_download_lk:hover{ background-position:-234px -76px}
+.topic .e_btn_download_android .btn_download_lk{ background-position:0 0}
+.topic .e_btn_download_android .btn_download_lk:hover{ background-position:-234px 0}
+
+.mod_hd .c2 .action{ margin-top:19px}
+.mod_hd .c2 .action .ac1{ margin-bottom:18px}
+.topic .btn_download_in{ _filter:none; height:75px}
+.topic .btn_download_lk{ height:57px; padding-top:18px}
+.topic .btn_download_lk .ico_down{ visibility:hidden}
+.topic .btn_download .txt{ text-shadow:#4b0c0d 0 1px 0;}
+
+.mod_hd .c2 .action_c2{ padding-top:7px}
+.mod_hd .c2 .action .ac2 .txt{ margin-top:12px}*/

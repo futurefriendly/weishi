@@ -1,0 +1,158 @@
+/* CSS GUIDE - 上墙类页面结构样式
+================================================================
+ *
+ * PROJECT:	微视;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* hdTitle
+----------------------------------------------------------------*/
+
+.hdTitle{ *zoom:1;}
+
+/* mv_tit */
+.mv_tit{}
+
+.mv_logo{}
+.mv_logo .logo{ width:190px; height:70px; background:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/wall_logo140110.8a.png) no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/weishi/Wall/wall_logo140110.32.png')
+}
+
+.mv_summary{ width:190px; height:30px; background:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/wall_slogan.8a.png) no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/weishi/Wall/wall_slogan.32.png')
+}
+
+/* mv_appPc */
+.mv_appPc{ margin-top:55px; width:180px}
+
+.mv_2Code{ width:150px; height:200px; margin:0 auto; background:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/wall_qrcode_default.png)}
+
+/* 视频
+----------------------------------------------------------------*/
+
+.mv_video{ background:#000}
+
+.mv_video video,
+.mv_video embed{ width:520px;}
+.mv_video video{ height:520px}
+.mv_video embed{ height:520px}
+
+.vPlay .vBox{ height:520px;}
+
+.vWrap img{ height:520px}
+
+/* 单页面多视频处理 author: jelly
+----------------------------------------------------------------*/
+
+.mv_video .vWrap{ height:520px;}
+
+/* 消息
+----------------------------------------------------------------*/
+
+.userPic{ margin-right:10px; float: left;}
+.userPic .avatar{ display:inline-block; *display:inline; *zoom:1; width:66px; height:66px; overflow:hidden; vertical-align:top}
+.userPic img{ width:66px; height:66px;}
+
+.msgBox{ overflow:hidden}
+.userName{ overflow: hidden; display:inline}
+.userName .name{ display:inline}
+.msgCnt{ word-wrap:break-word; word-break:break-all; _zoom:1; display:inline}
+
+/* 原消息
+----------------------------------------------------------------*/
+
+.mv_msg{ position:relative; overflow:hidden; max-height:115px; padding-top:12px; padding-bottom:15px; *font-family:Simsun; background-color:#fff}
+.mv_msg .mFun{}
+.mv_msg .msgBox{ padding-right:15px; font-size:14px; font-family:Microsoft Yahei,Mingliu,Helvetica,Arial,sans-serif}
+.mv_msg .userPic{ padding-left:15px}
+.mv_msg .userPic .avatar{ margin-top:3px}
+.mv_msg .userPic img{}
+.mv_msg .userName{}
+.mv_msg .userName .name{}
+.mv_msg .msgCnt{}
+
+/* TL列表项
+----------------------------------------------------------------*/
+
+.mvitem{ position: relative; vertical-align:top; width:520px; padding-top:72px; height:696px; zoom:1; float:right}
+
+/* 上墙信息
+----------------------------------------------------------------*/
+
+.mv_floatInfo{ position:absolute; top:0; padding-top:170px; margin-left:-241px; color:#fff}
+.mv_floatInfo .avatar img{ width:66px; height:66px}
+.mv_floatInfo .item{ vertical-align:top}
+
+/* 上墙控制
+----------------------------------------------------------------*/
+
+.wall_control{ position:fixed; bottom:80px; right:0; width:86px; overflow:hidden; color:#fff}
+.wall_control .bd{ width:76px; height:230px; padding-top:20px; padding-left:10px; overflow:hidden; background:rgba(255,255,255,.08); border-radius:5px 0 0 5px;
+	-webkit-transform:translateX(76px);
+	-moz-transform:translateX(76px);
+	-o-transform:translateX(76px);
+	-ms-transform:translateX(76px);
+	transform:translateX(76px);
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	-ms-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+.wall_control:hover .bd{
+	-webkit-transform:translateX(0);
+	-moz-transform:translateX(0);
+	-o-transform:translateX(0);
+	-ms-transform:translateX(0);
+	transform:translateX(0);
+}
+.wall_control .item{ display:block; vertical-align:top; padding-right:10px; text-align:center;}
+.wall_control .item .lk{ opacity:.4}
+.wall_control .item .lk:hover{ opacity:.6}
+.wall_control .txt{ opacity:.5}
+.wall_control .a{ position:absolute; top:50%; left:0; margin-top:-5px; opacity:.5}
+
+
+
+
+
+/* 2 结构
+================================================================*/
+
+header,
+article,
+section,
+.mv_conBox{ margin:0 auto;}
+
+article{ position:relative; display:none\9; min-width:1024px; height:100%;
+	background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/bg_140107b.jpg);
+	background-repeat:no-repeat;
+	background-position:center 0;
+}
+:root article{ display:block\9}
+section{ width:772px; height:768px; float:left; overflow:hidden;}
+aside{ position:fixed; _position:absolute; display:block; width:221px; float:left;}
+aside .taside{ padding-top:170px}
+
+.a_bd{ width:1024px; margin:0 auto;}
+.mv_aside{ position: relative; float:right; width:221px;}
+.mv_conBox{}
+
+/* 右栏滚动fix处理 */
+.mv_conBox .fixbox{ top:100px; width:221px}

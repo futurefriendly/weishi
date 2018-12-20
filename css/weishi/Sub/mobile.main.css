@@ -1,0 +1,342 @@
+/* CSS GUIDE mobile全局结构样式
+================================================================
+ *
+ * PROJECT: 微视分享页、个人页、频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* 右上操作
+----------------------------------------------------------------*/
+
+.mFun{ position: absolute;right: 0; margin-right:10px;}
+.mFun .time{ font-size:.75em; vertical-align:top}
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.mv_app2{ height:42px; padding:10px 0 0 0; float: right; min-width:105px}
+.mv_app2 .mv_appBg{width:100%; text-align:center;}
+
+.mv_app2 a{ display:block; margin:0; width:auto;height:37px; line-height:37px; color:#444; border:#bbb 1px solid; border-radius:5px; font-size:.875em;
+	background-color:#d7d7d7;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#ccc)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #dfdfdf, #ccc); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #dfdfdf, #ccc); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #dfdfdf, #ccc); /* IE10 */
+	background-image: -o-linear-gradient(top, #dfdfdf, #ccc); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #dfdfdf, #ccc); /* W3C */
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px;
+}
+.mv_app2 a:active{
+	border-color:#bfbfbf;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#9BD359), to(#64B239)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #9BD359, #64B239); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #9BD359, #64B239); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #9BD359, #64B239); /* IE10 */
+	background-image: -o-linear-gradient(top, #9BD359, #64B239); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #9BD359, #64B239); /* W3C */
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px,#dfdfdf 0 1px 0 inset;
+}
+.mv_app2 a:hover{ text-decoration:none}
+.mv_app2 .mv_download{color:#fff; text-shadow:#41781D 0 2px 1px;
+	border-color:#4A8924;
+	background-color:#69A83C;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#80BB49), to(#559830)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #80BB49, #559830); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #80BB49, #559830); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #80BB49, #559830); /* IE10 */
+	background-image: -o-linear-gradient(top, #80BB49, #559830); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #80BB49, #559830); /* W3C */
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px,#8DC751 0 1px 0 inset;
+}
+.mv_app2 .mv_download:active{
+	border-color:#58A02C;
+	background-color:#64B239;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#84c747), to(#58a82b)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #84c747, #58a82b); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #84c747, #58a82b); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #84c747, #58a82b); /* IE10 */
+	background-image: -o-linear-gradient(top, #84c747, #58a82b); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #84c747, #58a82b); /* W3C */
+	box-shadow:#9BD359 0 1px 0 inset;
+}
+
+/* 顶部导航
+----------------------------------------------------------------*/
+
+.topnav{ position:relative; z-index:990; height:37px; width:100%; top:0;
+	background-color:#2f2f2f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#363636), to(#262626)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #363636, #262626); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #363636, #262626); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #363636, #262626); /* IE10 */
+	background-image: -o-linear-gradient(top, #363636, #262626); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #363636, #262626); /* W3C */
+}
+.topnav .bd{ margin:0 10px 0 0}
+.topnav .logo{ float:left}
+.topnav .logo .c1{ width:37px; height:37px; float:left;}
+.topnav .logo .c2{ float:left; width:50px; height:37px; margin-left:6px}
+.topnav .logo .c1 a,
+.topnav .logo .c2 a{ display:block; height:37px;}
+.topnav .logo .c1 a{}
+.topnav .nav{ float:right; padding-top:6px}
+.topnav .nav .item,
+.topnav .nav .dot{ display:inline-block}
+.topnav .nav .item{ position:relative; height:31px}
+.topnav .nav .item .txt{ color:#fff}
+.topnav .nav .item .txt:hover{ color:#fff; text-decoration:none}
+.topnav .nav .item .ar{ display:none; width:0; height:0; font-size:0; position:absolute; left:50%; bottom:0; margin-left:-5px; border-width:0 5px 5px 5px; border-style:dashed dashed solid dashed; border-color:transparent transparent #fff transparent}
+.topnav .nav .select .ar{ display:block}
+.topnav .nav .dot{ margin:0 8px; color:#666}
+
+/* 标签导航
+----------------------------------------------------------------*/
+
+.tagnav{ width:100%; height:38px; padding:12px 0 0; margin:0 auto; text-align:center; border-bottom:#cfcfcf 1px solid; overflow:hidden;
+	background-color:#e8e8e8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dedddd)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #dedddd); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #f7f7f7, #dedddd); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #f7f7f7, #dedddd); /* IE10 */
+	background-image: -o-linear-gradient(top, #f7f7f7, #dedddd); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #f7f7f7, #dedddd); /* W3C */
+}
+.tagnav .item,
+.tagnav .item a,
+.tagnav .item .txt,
+.tagnav .item .ar{ display:inline-block; vertical-align:middle; font-family:Simsun}
+.tagnav .item{ height:38px; text-align:center; vertical-align:middle}
+.tagnav .item a{ position:relative; cursor:pointer; vertical-align:middle}
+.tagnav .item a:hover{ text-decoration:none}
+.tagnav .item .txt{ position:relative; white-space:nowrap; height:26px; padding:0 6px; color:#333; font-size:1em; vertical-align:top}
+.tagnav .item .ar{ position:absolute; width:30px; left:50%; margin-left:-15px; bottom:-11px; display:none; color:#01adba;}
+.tagnav .select a,
+.tagnav .item a:hover{ background:#01adba; border-radius:3px}
+.tagnav .select a .txt,
+.tagnav .item a:hover .txt{ color:#fff}
+.tagnav .select .ar,
+.tagnav .item a:hover .ar{ text-align:center; display:inline-block}
+.tagnav .dot{}
+.tagnav .item .txt em{ width:0; height:0; font-size:0; position:relative; top:1px; vertical-align:middle; border-width:4px 4px 0 4px; border-color:#999 transparent transparent transparent; border-style:solid dashed dashed dashed;}
+.tagnav .item a:hover .txt em{ border-top-color:#fff}
+
+.tagnav .bd{ overflow:hidden}
+
+/* title区
+----------------------------------------------------------------*/
+
+.mv_tit{ padding:7px 0 0 0; margin-bottom:10px; position:relative; overflow:hidden; float: left;}
+.mv_tit .lk{ display:block; position: absolute; width:100%; height:400px; top:0; background:url(about:blank)}
+
+.mv_logo{ width:40px; height:40px; padding-top:3px; float:left; margin-right:6px}
+.mv_logo .logo{ width:40px; height:40px;}
+.mv_logoTit{ display: none;}
+
+.mv_summary{overflow: hidden; float: left;}
+.mv_summary h1{ color:#000; font-size:1.0625em}
+.mv_summary p{ font-size:.625em; color:#3b3b3b;}
+
+/* mobile顶部banner
+----------------------------------------------------------------*/
+
+.BannerArea{ margin:10px 5%; overflow: hidden; clear: both; text-align:center;}
+.BannerArea a{ display:inline-block;}
+.BannerArea img{ max-width:100%;}
+
+/* 视频
+----------------------------------------------------------------*/
+
+.mv_video{text-align:center; background:#f0f0f0; overflow: hidden;}
+.mv_video video{max-width:460px;}
+.vPlay .vWrap,
+.vBox{ display:none;}
+.vPlay .vBox{ display:block;}
+
+/* 单页面多视频处理 author: jelly
+----------------------------------------------------------------*/
+
+.mv_video .vWrap{ position:relative;background:#fff;}
+.vWrap a.btnPlay{ width:80px; height:80px; display:block; position:absolute;left:50%; top:50%; margin:-40px 0 0 -40px; 
+	border-radius:80px;box-shadow:0 2px 3px rgba(0,0,0,.3);cursor:pointer;border:3px solid #fff;
+	
+/*background-image:-webkit-gradient(linear, left top, left bottom, from(#06B8C6), to(#06B8C6)); */
+/*background: -moz-linear-gradient(top,#06B8C6,#06B8C6);*/
+
+ background:rgba(6,184,198,.9);
+
+}
+.vWrap a.btnPlay:hover{
+	
+/*background-image:-webkit-gradient(linear, left top, left bottom, from(#06B8C6), to(#06B8C6));*/
+/*background: -moz-linear-gradient(top,#06B8C6,#06B8C6);*/
+background:rgba(6,184,198,.8);
+}
+.btnPlay em{
+	display:block; position:absolute;
+	
+}
+.vWrap img{ max-width:100%; height:auto}
+
+.btnPlay .canPlay {
+	width:0; height:0;
+	font-size:0; 
+	border-width:20px 20px 20px 32px;
+	border-style:dashed dashed  dashed solid;
+	border-color:transparent transparent transparent #fff;
+	left:30px;
+	top:20px;
+}
+.btnPlay .verror{
+  width: 10px;
+  height: 60px;
+  display: block;
+  background-color:#fff;
+  left:35px;
+  top: 10px;
+  
+}
+
+.btnPlay .vloading{
+	width:15px;
+  height:15px;
+  border-radius:22px;
+  background-color:#fff;
+  left:16px;
+  top: 12px;
+  
+}
+
+/* 消息
+----------------------------------------------------------------*/
+
+.userPic{ margin-right:10px; float:left;}
+.userPic img{ width:35px; height:35px; border-radius: 5px;}
+.msgBox{ font-size:.875em}
+.userName{overflow: hidden; height:20px}
+.userName .name{max-width:80px;height:26px; white-space: nowrap; text-overflow:ellipsis; overflow: hidden; display:inline; float: left; margin-right:5px}
+.msgCnt{ padding-top:2px; word-wrap:break-word; word-break:break-all;}
+
+/* 原消息
+----------------------------------------------------------------*/
+
+.mv_msg{ position:relative; padding:8px 10px 10px; color:#333}
+.mv_msg .mFun{}
+.mv_msg .userName{ padding-top:8px; font-size:1em;}
+.mv_msg .msgCnt{ clear:both; padding-top: 7px;}
+.mv_msg .pubInfo{ margin-top: 5px; font-size:.75em}
+.mv_msg .num_com,
+.mv_msg .num_like{ margin-left:10px}
+
+/* 转评列表
+----------------------------------------------------------------*/
+
+.mv_msgList{ border-top:#d8d8d8 1px solid; box-shadow:#f4f4f4 0 1px 0 inset; color:#333}
+.mv_msgList li{ position:relative; padding:4px 0; margin:0 10px; border-bottom: 1px solid #E2E2E1;}
+.mv_msgList li.last,
+.mv_msgList li:last-child{border-bottom:0}
+.mv_msgList .msgBox{ overflow:hidden}
+.mv_msgList .msgBox .name{}
+.mv_msgList .userPic{ padding-top:4px}
+.mv_msgList .mFun{ margin-right:0}
+
+/* TL列表项
+----------------------------------------------------------------*/
+
+.mvitem{ position: relative; vertical-align:top; margin-bottom:15px; background:#fff; border:#e1e1e1 1px solid; border-top:0; box-shadow:rgba(0,0,0,.2) 0 3px 5px; _zoom:1;}
+
+/* TL loading
+----------------------------------------------------------------*/
+
+.mv_load{ margin-bottom:15px; text-align:center; color:#a3a3a3; font-size:.875em}
+.mv_load a,
+.mv_load span{ display:block; color:#a3a3a3}
+.mv_load a:hover{ text-decoration:none; background:#eee; color:#a3a3a3}
+
+/* 视频占位提示
+----------------------------------------------------------------*/
+
+.delete,
+.mvnoitem{ position:relative; height:130px; background-color:#f9f9f9; background-position:center 110px; background-repeat:no-repeat; text-align:center; padding-top:190px; color:#888; font-size:.875em}
+.delete{ background-image:url(http://mat1.gtimg.com/www/mb/mobile/mv/face.jpg);}
+.mvnoitem{ background-image:url(http://mat1.gtimg.com/www/mb/mobile/mv/mvnoitem.png);}
+
+/* 微信按钮出来的动画效果，实际不要考虑-moz- -o-了
+因为微信webview里面不会有别的浏览器 author: jelly;
+----------------------------------------------------------------*/
+
+.wechat { opacity: 0; -webkit-transition:.4s; transition:.4s}
+
+/* 定位
+----------------------------------------------------------------*/
+
+.hasLction .userName{padding-top: 0;height:25px;line-height:24px; max-width:250px}
+.location{ font-size:.875em; color:#888}
+
+/* 标签
+----------------------------------------------------------------*/
+
+.tagBox{ padding-top:5px}
+.tagBox .tagName{ padding:0 5px}
+.tagBox a:link,.tagBox a:visited{ color:#888;}
+
+/* 分享
+----------------------------------------------------------------*/
+
+.funBox{ float: right; position:relative;}
+.shareBtn{ width:49px; height:24px; line-height:26px; text-align:center; background:#F7F7F8; border:1px solid #BCBCBC; border-radius:5px; color:#888; cursor:pointer;}
+.shareList{ position:absolute; top:-270px;right:0;background:#F1F1F1; border:1px solid #D2D2D2; border-radius:8px; width:120px; box-shadow:0 -1px 3px rgba(0,0,0,.5); display:none}
+
+.shareList li{ height:40px; line-height:40px; padding-left:16px; border-bottom:1px solid #D2D2D2; border-top:1px solid #FFFFFF}
+.shareList li:last-child,.shareList li:first-child{ border-top:0}
+.shareList li a{color:#515151; display:block; height:40px; width:100%; font-size:.875em}
+.shareList .a_t{position:absolute; bottom:-29px; right:15px;border-width:14px;border-top-color:#D2D2D2}
+.shareList .a_t u{border-width:12px; margin:-15px 0 0 -12px; border-top-color:#f1f1f1}
+
+/* 视频集title
+----------------------------------------------------------------*/
+
+.groupTitle{ margin-bottom:10px}
+.groupTitle h2{ float:left}
+.groupTitle h2 .tit{ font-size:1.0625em}
+.groupTitle .des{ float:right;}
+.groupTitle .des .tag{ padding:0 3px; border:#d5d5d5 1px solid; border-radius:3px; background:#e0e0e0; color:#999; font-size:.875em; display:inline-block}
+.groupTitle .des .tag:hover{ text-decoration:none}
+
+
+
+
+
+/* 2 结构
+================================================================*/
+
+article,
+.mv_abottom{ margin:0 5%; min-width:288px;}
+
+header{ width:90%; padding:0 5%; border-top:4px solid #01B0BC; background-color:#F0F0F0; zoom:1;}
+.mv_aside,
+.mv_abottom,
+article{}
+article{ padding-top:10px}
+
+
+
+
+
+/* 3 media queries
+================================================================*/

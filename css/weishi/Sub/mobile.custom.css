@@ -1,0 +1,17 @@
+/* CSS GUIDE mobile个人页主样式
+================================================================
+ *
+ * PROJECT: 微视个人页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ * 
+================================================================*/
+
+
+
+
+
+@import url("mobile.base.css"); /* 全局基础样式 */
+@import url("mobile.custom.base.css"); /* 个人页业务基础样式 */
+@import url("mobile.main.css"); /* 全局结构样式 */
+@import url("mobile.custom.main.css"); /* 个人页业务结构样式 */

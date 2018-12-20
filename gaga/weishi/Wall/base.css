@@ -1,0 +1,61 @@
+/* CSS GUIDE - 上墙类页面基础样式
+================================================================
+ *
+ * PROJECT:	微视;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET
+ * 2. 全局公用CSS;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+html,body{ overflow-x:hidden; overflow-y:auto;}
+body{ background-color:#07489c;}
+
+
+
+
+
+/* 2 全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after,
+.a_bd:after{content:'';display:table;clear:both}
+.clear,
+.a_bd{zoom:1}
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+/* ico16 */
+.ico_wallChecked{ background-image:url(../img/slice/ico_wallChecked.png)}
+.ico_wallUnchecked{ background-image:url(../img/slice/ico_wallUnchecked.png)}
+
+/* ico50 */
+.ico_wallPlay{ background-image:url(../img/slice/ico_wallPlay.png)}
+.ico_wallPause{ background-image:url(../img/slice/ico_wallPause.png)}
+.ico_wallPrev{ background-image:url(../img/slice/ico_wallPrev.png)}
+.ico_wallNext{ background-image:url(../img/slice/ico_wallNext.png)}
+
+/* 模拟checkbox
+----------------------------------------------------------------*/
+
+.v_checkbox{ display:inline-block; cursor:pointer;}
+.v_checkbox .checkbox{ position:absolute; visibility:hidden; z-index:-1;}
+.v_checkbox .checked{ display:none}
+.v_checkbox .checkbox:checked ~ .checked{ display:inline-block;}
+.v_checkbox .checkbox:checked ~ .unchecked{ display:none}

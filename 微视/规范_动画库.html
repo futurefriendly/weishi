@@ -1,0 +1,175 @@
+<!--#include file="inc/Sub/w_hd.html"-->
+<!--#include file="inc/guideline_hd.html"-->
+
+<style>
+.gtable th{ height:70px}
+.gtable thead th{ height:auto}
+.demo_animate{ width:60px; height:60px; background:url(http://mat1.gtimg.com/www/mb/images/weishi/Sub/sprite/style.base-131226c.png); overflow:hidden;
+	-webkit-animation-duration:.2s;
+	-moz-animation-duration:.2s;
+	-o-animation-duration:.2s;
+	-ms-animation-duration:.2s;
+	animation-duration:.2s;
+
+	-webkit-animation-timing-function:ease-in-out;
+	-moz-animation-timing-function:ease-in-out;
+	-o-animation-timing-function:ease-in-out;
+	-ms-animation-timing-function:ease-in-out;
+	animation-timing-function:ease-in-out;
+
+	-webkit-animation-iteration-count:1;
+	-moz-animation-iteration-count:1;
+	-o-animation-iteration-count:1;
+	-ms-animation-iteration-count:1;
+	animation-iteration-count:1;
+}
+</style>
+
+<script type="text/javascript">
+$(function(){
+	$('.demo_btn').click(function(){
+		var $o = $(this).parent().siblings().children('.demo_animate');
+		function show_o(){
+			$o.css({'display':'block'});
+		}
+		$o.css({'display':'none'});
+		setTimeout(show_o,100);
+	});
+});
+</script>
+
+<title>规范_动画库</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<!--#include file="inc/guideline_topNav.html"-->
+<!-- /规范顶部导航 -->
+
+<article class="clear">
+	<div class="a_bd">
+		<h1 class="tx_26 tx_yh pt15">动画库</h1>
+		<h3 class="tx_16 tx_yh">
+			<p>* CSS动画样式表： <span class="c_tx4">Global/animate.css</span></p>
+			<p>* 标准CSS动画速度 (animation-duration) ：0.2s</p>
+			<p>* 标准CSS动画缓动 (animation-timing-function) ：ease-in-out</p>
+			<p>* PC端浏览器对 CSS transform / transition 动画的支持范围：IE10.0+, Firefox25.0+, Chrome31.0+, Safari7.0+, Opera17.0+</p>
+			<p>* 本规范使用制作稿真实环境样式，实时维护更新</p>
+			<p>* 规范维护：bennyzhai</p>
+		</h3>
+
+		<a name="enter"></a>
+		<h2 class="demo_subtitle tx_yh">#淡入</h2>
+		
+		<div class="gmod">
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>动画类型 (点击按钮查看示例)</th>
+						<th>示例</th>
+						<th>动画名称 (animation-name)</th>
+						<th>使用方法</th>
+					</tr>
+					</thead>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">淡入</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_0;
+							-moz-animation-name:enter_0;
+							-o-animation-name:enter_0;
+							-ms-animation-name:enter_0;
+							animation-name:enter_0;
+							"></div>
+						</td>
+						<td>enter_0</td>
+						<td>E{animation:enter_0 .2s ease-in-out}</td>
+					</tr>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">放大淡入</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_zoomin;
+							-moz-animation-name:enter_zoomin;
+							-o-animation-name:enter_zoomin;
+							-ms-animation-name:enter_zoomin;
+							animation-name:enter_zoomin;
+							"></div>
+						</td>
+						<td>enter_zoomin</td>
+						<td>E{animation:enter_zoomin .2s ease-in-out}</td>
+					</tr>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">上方淡入10px</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_t_10;
+							-moz-animation-name:enter_t_10;
+							-o-animation-name:enter_t_10;
+							-ms-animation-name:enter_t_10;
+							animation-name:enter_t_10;
+							"></div>
+						</td>
+						<td>enter_t_10</td>
+						<td>E{animation:enter_t_10 .2s ease-in-out}</td>
+					</tr>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">右侧淡入10px</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_r_10;
+							-moz-animation-name:enter_r_10;
+							-o-animation-name:enter_r_10;
+							-ms-animation-name:enter_r_10;
+							animation-name:enter_r_10;
+							"></div>
+						</td>
+						<td>enter_r_10</td>
+						<td>E{animation:enter_r_10 .2s ease-in-out}</td>
+					</tr>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">下方淡入10px</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_b_10;
+							-moz-animation-name:enter_b_10;
+							-o-animation-name:enter_b_10;
+							-ms-animation-name:enter_b_10;
+							animation-name:enter_b_10;
+							"></div>
+						</td>
+						<td>enter_b_10</td>
+						<td>E{animation:enter_b_10 .2s ease-in-out}</td>
+					</tr>
+					<tr>
+						<th><a href="###" class="demo_btn btn btn2"><span class="t">左侧淡入10px</span></a></th>
+						<td>
+							<div class="demo_animate" style="
+							-webkit-animation-name:enter_l_10;
+							-moz-animation-name:enter_l_10;
+							-o-animation-name:enter_l_10;
+							-ms-animation-name:enter_l_10;
+							animation-name:enter_l_10;
+							"></div>
+						</td>
+						<td>enter_l_10</td>
+						<td>E{animation:enter_l_10 .2s ease-in-out}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<!--#include file="inc/Global/m_copyright.html"-->
+<!-- /版权 -->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<!--#include file="inc/Sub/m_floatOpt_returnOnly.html"-->
+<!-- /浮动操作 -->
+
+<!--#include file="inc/Sub/w_ft.html"-->

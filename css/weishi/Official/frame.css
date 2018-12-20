@@ -1,0 +1,139 @@
+/* CSS GUIDE - 官网结构
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 结构;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 结构
+================================================================*/
+
+/* 顶部导航
+----------------------------------------------------------------*/
+
+.topnav{ position:absolute;}
+
+/* 导航fix占位 */
+.topnav_ph{ display:none}
+
+/* 背景图
+----------------------------------------------------------------*/
+
+.bgGroup{ opacity:0; visibility:hidden\9; position:absolute; width:100%; height:100%; right:0; top:0; background-position:50% 50%; background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	background-size:cover;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	-o-transition:opacity .5s ease-in-out;
+	-ms-transition:opacity .5s ease-in-out;
+	transition:opacity .5s ease-in-out;
+}
+.bgSelect{ opacity:1; visibility:visible\9;
+}
+.bgIE{ position: absolute; left:0; top:0; width:100%; height:100%; overflow:hidden}
+
+/* 中部结构
+----------------------------------------------------------------*/
+
+.mod_bd{}
+.mod_bd .m_b{*zoom:1;}
+.mod_bd .m_b_hd,
+.mod_bd .m_b_bd{ min-width:960px; max-width:986px; _width:960px; margin:0 auto;}
+.mod_bd .m_b_bd{ padding-bottom:30px}
+
+/* 底部结构
+----------------------------------------------------------------*/
+
+.mod_ft{ position:relative;}
+
+/* 底部固定模块 */
+.mod_flft{ position:fixed; _position:relative; z-index:901; bottom:0; width:100%; height:114px; -webkit-backface-visibility:hidden;
+	-webkit-animation:flft .5s ease;
+	-moz-animation:flft .5s ease;
+	-o-animation:flft .5s ease;
+}
+@-webkit-keyframes flft{
+	0%{ -webkit-transform:translate3d(0,90px,0)}
+	100%{ -webkit-transform:translate3d(0,0,0)}
+}
+@-moz-keyframes flft{
+	0%{ -moz-transform:translate3d(0,90px,0)}
+	100%{ -moz-transform:translate3d(0,0,0)}
+}
+@-o-keyframes flft{
+	0%{ -o-transform:translate3d(0,90px,0)}
+	100%{ -o-transform:translate3d(0,0,0)}
+}
+.mod_flft .darkbg{ position: absolute; width:100%; height:100%; left:0; top:0; background:#000; opacity:.7; filter:alpha(opacity=70); _filter:none; _background:#808080}
+.mod_flft_in{ padding-top:6px; position:relative; width:960px; margin:0 auto;}
+.mod_flft .logo{ float:left; width:60px; height:60px; overflow:hidden; margin-right:12px; margin-top:21px}
+.mod_flft .logo_in{ width:90px; height:151px; margin:-91px 0 0 0;}
+.mod_flft_in .tit{ float:left; padding-top:31px; font-size:22px; color:#fff; font-family:Microsoft Yahei,Mingliu}
+.mod_flft_in .action{ position:relative; float:left; margin-top:27px; margin-left:12px}
+.mod_flft_in .qrcode_down{ float:left; padding-left:20px}
+.mod_flft_in .qrcode_down img{ width:101px; height:101px}
+.mod_flft_in .qrcode_con{position: absolute; right:-4px; bottom:101px; width:204px; height:218px; padding:4px 0 0 4px;
+	background:url(http://mat1.gtimg.com/www/mb/images/mv/qrcode_con.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/qrcode_con.png');
+	-webkit-animation:enter_b_10 .5s ease 1;
+	-moz-animation:enter_b_10 .5s ease 1;
+	-o-animation:enter_b_10 .5s ease 1;
+	-ms-animation:enter_b_10 .5s ease 1;
+	animation:enter_b_10 .5s ease 1;
+}
+.mod_flft_in .qrcode_con img{ vertical-align:top}
+
+/* 版权 */
+.copyright{ padding-bottom:114px; _padding-bottom:0; margin-top:0}
+
+/* 浮层
+----------------------------------------------------------------*/
+
+/* 关闭按钮 */
+.D_lay .close{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_lay_130906b.png);}
+.D_lay .close{ position:absolute; right:3px; display:block; width:31px; height:31px; background-position: -57px 0;}
+.D_lay .close:hover{ background-color:#ebebeb; border-radius:3px}
+
+/* 模态背景 */
+.D_bg{ position:absolute; left:0; top:0; width:100%; height:100%;
+	background:#000;
+	opacity:.5;
+	filter:alpha(opacity=50);
+}
+
+/* 浮层结构 */
+.D_lay{ position:fixed; _position:absolute; width:100%; height:100%; left:0; top:0; z-index:999; background:url(about:blank);}
+.D_wrap{ position:absolute; left:50%; top:45%; background:#fff; background-clip:padding-box; border:#333 4px solid; border-color:rgba(0,0,0,.5); box-shadow:rgba(0,0,0,.75) 0 2px 8px;
+	-webkit-animation:enter_zoomin .5s ease-in-out 1;
+	-moz-animation:enter_zoomin .5s ease-in-out 1;
+	-o-animation:enter_zoomin .5s ease-in-out 1;
+	-ms-animation:enter_zoomin .5s ease-in-out 1;
+	animation:enter_zoomin .5s ease-in-out 1;
+}
+
+/* 浮层左右结构 */
+.D_cont .preBox,
+.D_cont .conBox{ float:left; border-color:#dedede; border-style:solid}
+.D_cont .preBox{ padding-right:30px; border-width:0 1px 0 0; margin-right:-1px}
+.D_cont .conBox{ padding-left:30px; border-width:0 0 0 1px;}
+
+/* 浮层标题 */
+.D_title{ height:34px; padding:3px 3px 0;}
+
+/* 浮层内容区域 */
+.D_cont{ padding:0 40px 37px;}
+.D_cont .toptxt{ font-size:18px; line-height:30px; font-family:Microsoft Yahei}

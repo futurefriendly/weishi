@@ -1,0 +1,16 @@
+html,body{overflow-x:hidden;overflow-y:auto}
+body{background-color:#07489c}
+.clear:after,.a_bd:after{content:'';display:table;clear:both}
+.clear,.a_bd{zoom:1}
+.ico_wallChecked{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:-204px 0}
+.ico_wallUnchecked{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:-204px -17px}
+.ico_wallPlay{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:0 0}
+.ico_wallPause{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:-51px 0}
+.ico_wallPrev{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:-102px 0}
+.ico_wallNext{background-image:url(//mat1.gtimg.com/www/mb/images/weishi/Wall/sprite/base-140115.png);background-position:-153px 0}
+.v_checkbox{display:inline-block;cursor:pointer}
+.v_checkbox .checkbox{position:absolute;visibility:hidden;z-index:-1}
+.v_checkbox .checked{display:none}
+.v_checkbox .checkbox:checked ~ .checked{display:inline-block}
+.v_checkbox .checkbox:checked ~ .unchecked{display:none}
+#CssGaga{content:"140116132009,bei,290"}

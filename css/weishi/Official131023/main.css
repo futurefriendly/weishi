@@ -1,0 +1,314 @@
+/* CSS GUIDE - 模块和结构
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 基础模块;
+ * 2. 区域模块;
+ * 3. 结构;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 基础模块
+================================================================*/
+
+/* sprite图片
+----------------------------------------------------------------*/
+
+.mod_hd .c1 .logo,
+.btn_download_in,
+.btn_download_lk,
+.ico_down_iphone .ico_down_in,
+.ico_down_android .ico_down_in,
+.ico_wechat_in,
+.ico_weibo_in,
+.mod_bd .dots .num,
+.ico_scrollFoot_in{
+	background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_official_131018.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_official_131018.png')
+}
+
+.ico_wechat,
+.ico_wechat_in,
+.ico_weibo,
+.ico_weibo_in,
+.ico_wechat .lk,
+.ico_weibo .lk{ display:inline-block; *display:inline; *zoom:1;}
+.ico_wechat,
+.ico_weibo{ width:36px; height:36px; overflow:hidden; margin-right:5px}
+.ico_weibo{ margin-right:0}
+.ico_wechat_in{ width:318px; height:36px; margin:0 0 0 -282px; padding-left:282px}
+.ico_weibo_in{ width:355px; height:36px; margin:0 0 0 -319px; padding-left:319px}
+.ico_wechat .lk,
+.ico_weibo .lk{ position:relative; width:36px; height:36px;}
+
+.mod_bd .dots .num{ margin:-76px 0 0 -307px; padding:76px 0 0 307px;}
+.mod_bd .dots .select{ margin:-76px 0 0 -282px; padding:76px 0 0 282px;}
+
+.mod_bd .phone_in{ background:url(http://mat1.gtimg.com/www/mb/images/mv/iphone5opa.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/iphone5opa.png')
+}
+.mod_bd .wording .txt_in{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_wording_130910.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_wording_130910.png')
+}
+.mod_bd .wording .item1 .txt_in{ margin-top:0;}
+.mod_bd .wording .item2 .txt_in{ margin-top:-104px;}
+.mod_bd .wording .item3 .txt_in{ margin-top:-208px;}
+
+.ico_scrollFoot,
+.ico_scrollFoot_in{ display:inline-block; *display:inline; *zoom:1;}
+.ico_scrollFoot{ width:16px; height:16px; overflow:hidden}
+.ico_scrollFoot_in{ width:359px; height:78px; margin:-62px 0 0 -343px;}
+
+.D_title .close,
+.ico_lay_wechat,
+.ico_lay_weibo{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_lay_130906b.png);}
+.D_title .close{ float:right; display:block; width:31px; height:31px; background-position: -57px 0}
+.D_title .close:hover{ background-color:#ebebeb; border-radius:3px}
+.ico_lay_wechat,
+.ico_lay_weibo{ width:56px; height:56px}
+.ico_lay_weibo{ background-position:0 -57px}
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.btn_download{ width:190px; height:62px; overflow:hidden;}
+.btn_download_in{ background:none; margin:0 0 0 -91px; height:57px; padding-left:91px}
+.btn_download_lk{ background-position:-91px 0; _filter:none; background-repeat:no-repeat; position: relative; cursor:pointer; width:175px; height:48px; padding-left:15px; padding-top:9px; display:block;}
+.btn_download_lk:hover{ background-position:-91px -58px; text-decoration:none}
+.btn_download .ico_down,
+.btn_download .ico_down_in{ display:inline-block; *display:inline; *zoom:1;}
+.btn_download .ico_down{ overflow:hidden; vertical-align:top; margin-right:7px}
+.ico_down_iphone,
+.ico_down_android{ width:26px; height:38px}
+.ico_down_iphone .ico_down_in{ width:308px; height:75px; margin:-37px 0 0 -282px;}
+.ico_down_android .ico_down_in{ width:335px; height:75px; margin:-37px 0 0 -309px;}
+
+.btn_download .txt{ vertical-align:top; font-size:20px; color:#fff; text-shadow:#336812 0 1px 0; line-height:35px; _line-height:40px; *zoom:1}
+
+
+
+/* 2 区域模块
+================================================================*/
+
+.mod_hd{ height:230px}
+
+.mod_bd{ position:absolute; width:100%; top:46%; height:270px;}
+.mod_bd .darkbg{ position: absolute; top:0; left:0; width:100%; height:270px;
+	background:url(http://mat1.gtimg.com/www/mb/images/opa_000_12.png);
+	background:rgba(0,0,0,.12);
+	_background:#000;
+	_filter:alpha(opacity=12);
+}
+.mod_bd_con{ position: relative; height:186px; padding:84px 10px 0; min-width:940px; max-width:1060px; _width:940px; margin:0 auto;}
+
+.phone{ _display:inline; position: relative; width:350px; height:650px; margin-right:32px; margin-top:-344px; float:right; overflow:hidden}
+.phone_in{ width:350px; height:538px; padding-top:112px}
+.screen_ls{ width:237px; height:428px; padding:0 57px 0 56px; overflow:hidden;}
+.screen_ls .screen_ls_in{
+	-webkit-transition:-webkit-transform .5s ease-in-out;
+	-moz-transition:-moz-transform .5s ease-in-out;
+	-o-transition:-o-transform .5s ease-in-out;
+	-ms-transition:-ms-transform .5s ease-in-out;
+	transition:transform .5s ease-in-out;
+}
+.screen_ls .item{ opacity:.5; visibility:hidden\9; width:237px; height:428px; background-position:0 0; background-repeat:no-repeat;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	-o-transition:opacity .5s ease-in-out;
+	-ms-transition:opacity .5s ease-in-out;
+	transition:opacity .5s ease-in-out;
+}
+.screen_ls .item_1 .screen{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/screen1_130918.png)}
+.screen_ls .item_2 .screen{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/screen2_130911b.jpg)}
+.screen_ls .item_3 .screen{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/screen3_130912.png)}
+
+.mod_bd .phone_in .item .screen{ width:230px; height:332px; padding:96px 0 0 7px}
+.mod_bd .phone_in .item .video,
+.mod_bd .phone_in .item .video video{ width:223px; height:223px}
+
+.f_showScreen1 .item_1{ opacity:1; visibility:visible\9;}
+.f_showScreen2 .item_2{ opacity:1; visibility:visible\9;}
+.f_showScreen3 .item_3{ opacity:1; visibility:visible\9;}
+
+.f_showScreen1 .screen_ls_in{
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:0\9;
+}
+.f_showScreen2 .screen_ls_in{
+	-webkit-transform:translate3d(0,-428px,0);
+	-moz-transform:translate3d(0,-428px,0);
+	-o-transform:translate3d(0,-428px,0);
+	transform:translate3d(0,-428px,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:-428px\9;
+}
+.f_showScreen3 .screen_ls_in{
+	-webkit-transform:translate3d(0,-856px,0);
+	-moz-transform:translate3d(0,-856px,0);
+	-o-transform:translate3d(0,-856px,0);
+	transform:translate3d(0,-856px,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:-856px\9;
+}
+
+.mod_bd .wording{ position: absolute; float:left; padding-left:112px; height:102px;
+	-webkit-transition:-webkit-transform .5s ease-in-out;
+	-moz-transition:-moz-transform .5s ease-in-out;
+	-o-transition:-o-transform .5s ease-in-out;
+	-ms-transition:-ms-transform .5s ease-in-out;
+	transition:transform .5s ease-in-out;
+}
+.mod_bd .wording li{ margin-bottom:30px; opacity:0; visibility:hidden\9;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	-o-transition:opacity .5s ease-in-out;
+	-ms-transition:opacity .5s ease-in-out;
+	transition:opacity .5s ease-in-out;
+}
+.mod_bd .wording .txt{ width:600px; height:102px; overflow:hidden}
+.mod_bd .wording .txt_in{ width:600px; height:310px}
+.mod_bd .wording p{ text-indent:-9999em}
+
+.mod_bd .e_wording_1{ overflow:hidden;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:0\9;
+}
+.mod_bd .e_wording_2{
+	-webkit-transform:translate3d(0,-134px,0);
+	-moz-transform:translate3d(0,-134px,0);
+	-o-transform:translate3d(0,-134px,0);
+	transform:translate3d(0,-134px,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:-134px\9;
+}
+.mod_bd .e_wording_3{
+	-webkit-transform:translate3d(0,-268px,0);
+	-moz-transform:translate3d(0,-268px,0);
+	-o-transform:translate3d(0,-268px,0);
+	transform:translate3d(0,-268px,0);
+	-ms-transform:translate3d(0,0,0);
+	margin-top:-268px\9;
+}
+
+.mod_bd .e_wording_1 .item1{ opacity:1; visibility:visible\9}
+.mod_bd .e_wording_2 .item2{ opacity:1; visibility:visible\9}
+.mod_bd .e_wording_3 .item3{ opacity:1; visibility:visible\9}
+
+
+.mod_bd .dots{ float:right; position: absolute; right:10px; width:24px;}
+.mod_bd .dots .item{ width:24px; height:24px; vertical-align:middle; margin-bottom:12px; overflow:hidden}
+.mod_bd .dots .num{ width:331px; height:100px;}
+.mod_bd .dots .num a{ position: relative; display:block; width:22px; padding-right:2px; width:24px\9; padding-right:0\9; height:24px; text-align:center; line-height:24px; line-height:23px\9; font-family:Helvetica,Arial; font-weight:800; color:#fff}
+.mod_bd .dots .num a:hover{ text-decoration:none}
+.mod_bd .dots .select a{ color:#908677}
+
+
+
+
+/* 3 结构
+================================================================*/
+
+/* 背景图
+----------------------------------------------------------------*/
+
+.bgGroup{ opacity:0; visibility:hidden\9; position:fixed; width:100%; height:100%; z-index:-1; right:0; top:0; background-position:50% 50%; background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	background-size:cover;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	-o-transition:opacity .5s ease-in-out;
+	-ms-transition:opacity .5s ease-in-out;
+	transition:opacity .5s ease-in-out;
+}
+.bgSelect{ opacity:1; visibility:visible\9;
+}
+
+.bgIE{ position:fixed; _position: absolute; left:0; top:0; width:100%; height:100%; z-index:-1; overflow:hidden}
+
+.mod_hd{ min-width:940px; max-width:1060px; _width:940px; margin:0 auto; padding:60px 11px 0 9px;}
+.mod_hd .topic{ position:relative; z-index:1; width:600px}
+.mod_hd .c1{ float:left; margin-right:22px; padding-top:5px}
+.mod_hd .c1 .logo{ width:90px; height:90px}
+.mod_hd .c2{ width:460px; overflow:hidden}
+.mod_hd .c2 .tit,
+.mod_hd .c2 .desc{ font-family:Microsoft Yahei,Helvetica,Arial,sans-serif; text-shadow:rgba(0,0,0,.4) 0 1px 5px; padding-left:4px}
+.mod_hd .c2 .tit{ padding-top:5px; font-size:34px}
+.mod_hd .c2 .desc{ font-size:22px}
+.mod_hd .c2 .action{ margin-top:35px}
+.mod_hd .c2 .action .acWrap{ float:left; width:220px;}
+.mod_hd .c2 .action .ac1{ height:72px}
+.mod_hd .c2 .action .ac2 .txt{ text-shadow:#343434 0 1px 0;}
+
+.mod_hd .c2 .action .acWrap .qrcode_down{ width:106px; padding-top:3px; text-align:center;}
+.mod_hd .c2 .action .acWrap .qrcode_down img{ vertical-align:top; border:#dcdcdc 1px solid;}
+.mod_hd .c2 .action .acWrap .ac2 .txt{ width:106px; margin-top:5px}
+
+.mod_hd .contact{ position: relative; z-index:1}
+
+.mod_ft{ position:fixed; bottom:0; width:100%;}
+
+.scrollFoot{ position:absolute; _display:none; zoom:1; bottom:0; left:50%; margin-left:-100px; width:200px; height:60px; cursor:pointer; background:url(about:blank)\9;}
+
+/* 浮层
+----------------------------------------------------------------*/
+
+.D_lay{ position:absolute; width:100%; height:100%; left:0; top:0; z-index:999; background:url(about:blank);}
+.D_wrap{ position:absolute; left:50%; top:45%; margin:-160px 0 0 -305px; width:610px; height:320px; background:#fff; background-clip:padding-box; border:#333 4px solid; border-color:rgba(0,0,0,.5); box-shadow:rgba(0,0,0,.75) 0 2px 8px;
+	-webkit-animation:DShow .5s ease-in-out 1;
+	-moz-animation:DShow .5s ease-in-out 1;
+	-o-animation:DShow .5s ease-in-out 1;
+	-ms-animation:DShow .5s ease-in-out 1;
+	animation:DShow .5s ease-in-out 1;
+}
+@-webkit-keyframes DShow{
+	0%{-webkit-transform:scale(.95); opacity:0;}
+	100%{-webkit-transform:scale(1); opacity:1;}
+}
+@-moz-keyframes DShow{
+	0%{-moz-transform:scale(.95); opacity:0;}
+	100%{-moz-transform:scale(1); opacity:1;}
+}
+@-o-keyframes DShow{
+	0%{-o-transform:scale(.95); opacity:0;}
+	100%{-o-transform:scale(1); opacity:1;}
+}
+@-ms-keyframes DShow{
+	0%{-ms-transform:scale(.95); opacity:0;}
+	100%{-ms-transform:scale(1); opacity:1;}
+}
+@keyframes DShow{
+	0%{transform:scale(.95); opacity:0;}
+	100%{transform:scale(1); opacity:1;}
+}
+.D_title{ height:34px; padding:3px 3px 0;}
+.D_cont{ padding:10px 26px 20px 40px;}
+.D_cont .c1{ width:310px; float:left; padding-top:16px}
+.D_cont .c1 .t{ margin-bottom:36px;}
+.D_cont .c1 .pic{ float:left; margin-right:10px; padding-top:2px}
+.D_cont .c1 .detail{ overflow:hidden; font-size:26px}
+.D_cont .c2{ width:232px; float:right}
+.D_cont .c2 .qrcode img{ width:232px; height:232px}
+.D_cont .c2 .txt{ color:#999}

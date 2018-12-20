@@ -1,0 +1,130 @@
+/* CSS GUIDE 全局基础样式
+================================================================
+ *
+ * PROJECT: 微视分享页、个人页、频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS reset;
+ * 2. 基础样式;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS reset
+================================================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,header,footer,nav,article,section{margin:0;padding:0}
+header,footer,nav,article{display:block}
+table{border-collapse:collapse;border-spacing:0}
+img{border:0; vertical-align:top}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+body{ font:16px/1.5 Helvetica,Arial,sans-serif; overflow-x: hidden; min-width:320px;background-color:#f9f9f9;}
+input,textarea,select,button{outline:none;resize:none;font:16px/1.5 Helvetica,Arial,sans-serif}
+button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
+strong{font-weight:800}
+a{text-decoration:none;outline:none;cursor:pointer; color:#006a92; -webkit-tap-highlight-color:transparent; -webkit-user-select: none; -webkit-focus-ring-color:transparent;}
+a:hover{text-decoration:underline}
+video,embed{ vertical-align:top; max-width:100%}
+video{ background:#f0f0f0;}
+
+
+
+
+
+/* 2 基础样式
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+.clear:after,
+.m_info_bd:after,
+.m_boxEssay .ft .talklistBox li:after,
+.mv_logo:after,
+.mv_msgList li:after,
+.mv_appPc:after,
+.a_bd:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+
+.left{float: left;}
+.right{float: right;}
+.cGray{color: #97999c;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+.tx_yh{}
+.tx_ar{ font-family:Arial}
+
+/* 小箭头 author: jelly
+----------------------------------------------------------------*/
+
+.a,.a u{display:inline-block;width:0px;height:0px;line-height:0;font-size:0;cursor:pointer}
+.a_t,.a_t u{border-top-style:solid;border-bottom:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_r,.a_r u{border-right-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-left:dashed transparent}
+.a_b,.a_b u{border-bottom-style:solid;border-top:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_l,.a_l u{border-left-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-right:dashed transparent}
+.a3{border-width:3px 4px 3px 3px;border-width:3px 3px 3px 2px\9}
+.a3_b{border-width:3px 3px 4px 3px\9;}
+.a4{border-width:4px 5px 4px 4px;border-width:4px 4px 4px 3px\9}
+.a4_b{border-width:4px 5px 4px 4px;border-width:5px 5px 5px 4px\9}
+.a5{border-width:5px 6px 5px 5px;border-width:5px 5px 5px 4px\9}
+.a5_b{border-width:5px 6px 5px 5px;border-width:6px 6px 6px 5px\9}
+.a u{ color:#fff}
+.a_t u{border-width:3px 3px 3px 2px\9;margin:-5px 0 0 -3px;margin:-5px 0 0 -2px\9}
+.a_r u{border-width:4px;margin:-4px 0 0 -2px;*margin:-4px 0 0 -2px}
+.a_b u{border-width:3px 3px 4px 3px\9;margin:-1px 0 0 -3px}
+.a_l u{border-width:3px;margin:-3px 0 0 -5px;margin:-3px 0 0 -4px\9}
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+.ic,
+.mv_logo .logo,
+.vip,
+.ico_cvip,
+.ico_master_star,
+.tagnav .dot,
+.topnav .logo .c1,
+.topnav .logo .c2{ background-image: url("http://mat1.gtimg.com/www/mb/mobile/mv/sprite_retina2_131121c.png"); background-repeat:no-repeat; background-size:108px 200px}
+.ic,
+.vip,
+.ico_cvip,
+.ico_master_star,
+.tagnav .dot{ width:16px; height:16px; font-size:0; display:inline-block; margin-left:2px; vertical-align:middle;}
+.shareList .ic{width:25px; height:24px; margin-right:5px}
+.mv_logo .logo{ background-position:0 0}
+
+.vip{ background-position:-51px 0}
+.ico_cvip{ background-position:-51px -17px}
+.ico_master_star{ background-position:-51px -34px}
+
+.ico_qq{background-position:-25px -51px; }
+.ico_wb{background-position:-25px -76px}
+.ico_qz{background-position:-25px -101px}
+.ico_sina{background-position:-25px -126px}
+.ico_rr{background-position:-25px -151px}
+.ico_db{background-position:-25px -175px}
+
+.ico_lction{background-position:-51px -69px; }
+.ico_tag{background-position:-51px -52px;}
+
+.tagnav .dot{ background-position:-51px -86px}
+
+.topnav .logo .c1{ background-position:-68px 0}
+.topnav .logo .c2{ background-position:-68px -38px}
+
+
+
+
+/* 3 media queries
+================================================================*/

@@ -1,0 +1,70 @@
+/* CSS GUIDE 搜索页业务结构样式
+================================================================
+ *
+ * PROJECT: 微视搜索页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+.m_searchBox .searchBox .c0,
+.m_searchBox .searchBox .submitBtn{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/searchBox_131227.png); background-repeat: no-repeat;}
+
+/* 顶部搜索模块
+----------------------------------------------------------------*/
+
+.m_searchBox{ border-width:1px; border-style:solid; border-radius:5px;}
+.m_searchBox .category{ margin-left:215px;}
+.m_searchBox .category .item{ position:relative; padding-top:20px; float:left;}
+.m_searchBox .category .item .lk{ display:block; float:left; width:70px; text-align:center; font-size:16px; color:#8d8d8d; font-family:Microsoft Yahei,Mingliu,sans-serif}
+.m_searchBox .category .item .lk:hover,
+.m_searchBox .category .select .lk{ color:#000; font-weight:bold; text-decoration:none}
+.m_searchBox .category .select .lk{ cursor:default}
+
+.m_searchBox .category .item .spacer{ margin-top:6px; float:left; font-size:0; height:16px; width:1px; background-color:#ccc}
+
+.m_searchBox .category .item .arr{ display:none; position: absolute; bottom:-11px; *bottom:-12px; left:50%; margin-left:-9px; width:20px; height:15px; overflow:hidden}
+.m_searchBox .category .item .arr em,
+.m_searchBox .category .item .arr i{ position:absolute; bottom:0; width:0; height:0; font-size:0; overflow:hidden; border-width:0 10px 10px 10px; border-style:dashed dashed solid dashed; border-color:transparent transparent #b2b2b2 transparent;}
+.m_searchBox .category .item .arr i{ border-bottom-color:#fff; bottom:-1px;}
+.focus .category .item .arr em{ border-bottom-color:#02929d;}
+.m_searchBox .category .select .arr{ display:block}
+
+.m_searchBox .searchBox{ padding-left:30px; height:80px}
+.m_searchBox .searchBox .c0{ width:185px; height:60px; float:left; text-indent:-9999em; overflow:hidden; text-indent:0\9; line-height:99em\9;}
+.m_searchBox .searchBox .c1,
+.m_searchBox .searchBox .c2{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; margin-top:10px}
+.m_searchBox .searchBox .c1 .text{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width:464px; height:36px; line-height:36px\9; padding:0 10px; font-size:16px; border:#b2b2b2 1px solid; border-right:none; outline:none}
+.focus .searchBox .c1 .text{ border-color:#02929d}
+.m_searchBox .searchBox .c2{ overflow:hidden; border:#02929d 1px solid;}
+.m_searchBox .searchBox .submitBtn{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width:92px; height:36px; background-position:0 -61px; background-color:#0cc0ce; text-indent:-9999em; overflow:hidden; text-indent:0\9; line-height:99em\9; cursor:pointer;}
+.m_searchBox .searchBox .submitBtn:hover{ background-position:-93px -61px}
+.m_searchBox .searchBox .submitBtn:active{ background-position:0 -98px}
+
+
+
+/* 2 结构
+================================================================*/
+
+.mv_conBox{}
+.a_bd{ width:902px; min-width:0}
+
+
+
+
+
+/* 3 media queries
+================================================================*/

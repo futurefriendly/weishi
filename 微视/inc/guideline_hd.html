@@ -1,0 +1,28 @@
+<style>
+html,body{ _height:100%}
+.demo_subtitle{ padding-top:42px; font-size:48px}
+.gmod{ padding-top:42px;}
+
+.gtable{ background:#fff; width:100%; table-layout:fixed; margin-bottom:10px;}
+.gtable th,
+.gtable td{ padding:10px; border:#999 1px solid;}
+.gtable th{ background:#eee; width:20%;}
+.gtable thead th{ width:auto;}
+.gtable thead th:first-child{ width:20%;}
+
+.demo_block{ width:98px; height:98px; border-width:1px; border-style:solid; line-height:98px; text-align:center;}
+
+.topnav .topNavSub{ display:none}
+.topnav .item:hover .topNavSub{ display:block}
+
+.D_lay{ display:none}
+</style>
+
+<script type="text/javascript" src="../lab/umbrella_b1/script/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function(){
+	var title= document.title;
+	$('.topnav .item').removeClass('select');
+	$('.topnav .item[rel='+title+']').addClass('select');
+}
+</script>

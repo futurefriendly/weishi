@@ -1,0 +1,120 @@
+<!--#include file="inc/Sub/w_hd.html"-->
+
+<title>微视个人资料页</title>
+
+<style>
+.bindAccount{ width:560px; margin:40px auto;}
+.bindAccount .hd{ position:relative; margin-bottom:40px; text-align:center;}
+.bindAccount .hd .line{ position:absolute; width:100%; top:50%; left:0; height:1px; font-size:0; overflow:hidden; background-color:#a0a0a0;}
+.bindAccount .hd .txt{ position:relative; padding:0 15px; display:inline-block; *display:inline; *zoom:1; color:#a0a0a0; background:#f0f0f0}
+.bindAccount .bd{}
+.bindAccount .bd .gp{ width:366px; padding-left:100px; margin:0 auto 28px;}
+.bindAccount .bd .gp .inputTail{ height:52px; width:100px; overflow:hidden; display:none; _display:inline; _zoom:1; vertical-align:top;}
+.bindAccount .bd .gp:hover .inputTail{ display:inline-block; *display:inline; *zoom:1;}
+.bindAccount .bd .gp .inputTail .c{ line-height:44px;}
+.bindAccount .bd .lk{ display:inline-block; *display:inline; *zoom:1; width:266px; vertical-align:top; font-size:20px; line-height:52px; overflow:hidden; color:#fff; border-radius:3px}
+.bindAccount .bd .lk:hover{ text-decoration:none}
+.bindAccount .bd .b1{ background:#29a6e3;}
+.bindAccount .bd .b2{ background:#eb5547;}
+.bindAccount .bd .lk i{ display:block; float:left; margin:6px 2px 0 10px; width:40px; height:40px; overflow:hidden; background:url(http://mat1.gtimg.com/www/mb/images/weishi/ico_bindsns.8a.png) 0 0 no-repeat;}
+.bindAccount .bd .lk .ico_bindsina{ background-position:0 0}
+.bindAccount .bd .lk .ico_bindqq{ background-position:-41px 0}
+.bindAccount .bd .lk .txt{ display:block; overflow:hidden; text-align:center;}
+</style>
+
+</head>
+
+<body>
+
+<!-- 顶部导航 Global/m_topNav.html -->
+<!--#include file="inc/Global/m_topNav.html"-->
+<!-- /顶部导航 -->
+
+<article class="clear">
+<div class="a_bd">
+
+<div class="m_profile e_profile_person clear">
+
+    <!-- 头像 -->
+    <div class="c1">
+        <a href="个人页.html" class="avatar"><img src="../images/img6.jpg" alt="" /></a>
+    </div>
+    <!-- /头像 -->
+
+    <!-- 资料 -->
+    <div class="c2">
+        <div class="username"><a href="个人页.html" class="name c_tx6">Benny Chia</a><span class="ico16 ico_male"></span><span class="vip"></span></div>
+        <div class="info mt10 tx_c c_tx6"><span class="location">北京 海淀</span></div>
+        <div class="summary mt10">
+            <p class="tx_c">海清，著名演员，金鹰飞天双料视后，被称为亚洲中产阶级女性的最佳代言人。代表作品：《双面胶》、《蜗居》、《媳妇的美好时代》、《心术》等。 </p>
+        </div>
+        <div class="opt mt20">
+            <a href="###" class="btn btn2_l"><span class="t">编辑</span></a>
+        </div>
+    </div>
+    <!-- /资料 -->
+
+    <!-- 编辑 -->
+    <div class="c2">
+        <form action="">
+            <div class="mt20 tx_c">
+                <div class="gb_inputTxt1">
+                    <label for="profile_nick" class="lb tx_c tx_14 c_tx2" style="width:238px">昵称</label>
+                    <input id="profile_nick" class="inputTxt tx_c tx_14 c_tx6" type="text" style="width:238px" />
+                </div>
+                <label for="profile_nick" class="inputTail"><span class="c c_tx5 tx_unbr">失败提示</span></label>
+                <label for="profile_nick" class="inputTail" style="display:none"><span class="c c_tx8 tx_unbr">成功提示</span></label>
+                <label for="profile_nick" class="inputTail" style="display:none"><span class="c c_tx2 tx_unbr">普通提示</span></label>
+            </div>
+            <div class="mt15 tx_c">
+                <span class="pr20"><label><input checked="checked" name="sex" class="check1" type="radio" /><span class="txt tx_14 c_tx6">男</span></label></span><span class="pl20"><label><input name="sex" class="check1" type="radio" /><span class="txt tx_14 c_tx6">女</span></label></span>
+            </div>
+            <div class="mt15">
+                <select class="select1 tx_14 c_tx6" style="width:100px; margin-right:30px">
+                    <option value="">国家</option>
+                </select><select class="select1 tx_14 c_tx6" style="width:100px; margin-right:30px">
+                    <option value="">所在城市</option>
+                </select><select class="select1 tx_14 c_tx6" style="width:100px">
+                    <option value="">市/区</option>
+                </select>
+            </div>
+            <div class="mt20">
+                <div class="gb_inputArea1">
+                    <label for="gb_inputArea1" class="lb tx_14 c_tx2">一句话介绍自己</label>
+                    <textarea id="gb_inputArea1" class="inputArea tx_14 c_tx6" style="width:348px; height:142px"></textarea>
+                </div>
+            </div>
+            <div class="mt20 clear">
+                <label class="btn btn2_l left"><input type="button" class="t" value="确定" /></label>
+                <label class="btn btn2_l right"><button type="button" class="t">取消</button></label>
+            </div>
+        </form>
+    </div>
+    <!-- /编辑 -->
+
+</div>
+
+<div class="bindAccount">
+    <div class="hd">
+        <em class="line"></em>
+        <div class="txt tx_16 tx_yh">绑定账号，发现更多精彩</div>
+    </div>
+    <div class="bd">
+        <div class="gp">
+            <a href="###" class="lk b1"><i class="ico_bindqq"></i><span class="txt tx_yh tx_unbr">Benny Chia(1234567890)</span></a><label class="inputTail"><a href="###" class="c c_tx3">取消绑定</a></label>
+        </div>
+        <div class="gp">
+            <a href="###" class="lk b2"><i class="ico_bindsina"></i><span class="txt tx_yh tx_unbr">绑定新浪微博账号</span></a><label class="inputTail"><a href="###" class="c c_tx3">取消绑定</a></label>
+        </div>
+    </div>
+</div>
+
+</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<!--#include file="inc/Global/m_copyright.html"-->
+<!-- /版权 -->
+
+</body>
+</html>

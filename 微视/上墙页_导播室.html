@@ -1,0 +1,321 @@
+<!--#include file="inc/Sub/w_hd.html"-->
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="../css/weishi/Sub/style.custom.css" /> -->
+
+<style>
+
+/* 模块 */
+.wall_mvwrap{ border-width:1px; border-style:solid;}
+.wall_mvwrap .hd{ padding:15px;}
+.wall_mvitem{ position:relative; padding:10px 15px 10px 2px; overflow:hidden;}
+.wall_mvitem .mvitem{ margin-bottom:0;}
+.wall_mvitem .col_hd{ width:48px; text-align:center;}
+.wall_mvitem .col_ft{ width:50px; text-align:center; cursor:pointer; background:#6fe0e8; color:#fff}
+.wall_mvitem .col_ft a:hover{ text-decoration:none}
+.wall_mvitem .col_ft .wall_addList{}
+.wall_mvitem .col_ft .wall_moveTop,
+.wall_mvitem .col_ft .wall_moveBottom{ position:absolute; width:50px; height:36px; right:15px; display:block; padding-top:14px; background:#66d4dc; color:#fff; font-weight:bold}
+.wall_mvitem .col_ft .wall_moveTop{ top:10px}
+.wall_mvitem .col_ft .wall_moveBottom{ bottom:10px}
+.wall_mvitem_cur{ padding:8px 13px 8px 0; border:#00a4b0 2px solid;}
+.wall_mvitem_cur .col_ft .wall_moveTop,
+.wall_mvitem_cur .col_ft .wall_moveBottom{ right:13px}
+.wall_mvitem_cur .col_ft .wall_moveTop{ top:8px}
+.wall_mvitem_cur .col_ft .wall_moveBottom{ bottom:8px}
+
+.ws_ls .videoBox .playbtn{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_mod_131031.png)}
+.ws_ls .videoBox .playbtn{ display:block; width:40px; height:30px; background-position:0 -129px;}
+.ws_ls .videoBox a:hover .playbtn{ background-position:-41px -129px}
+
+.ws_ls{ width:235px}
+.ws_ls .col{}
+.ws_ls .item{ vertical-align:top; background:#fff; margin:0 auto 30px; border-bottom:#e4e4e4 1px solid; color:#333; font-family:Microsoft Yahei}
+.ws_ls .videoBox{ position:relative;}
+.ws_ls .videoBox img{ width:235px; height:235px; vertical-align:top}
+.ws_ls .videoBox .playbtn{ position: absolute; top:190px; left:15px;;}
+.ws_ls .videoBox .mask{ position:absolute; width:235px; height:235px; left:0; top:0;
+}
+.ws_ls .videoBox a{ cursor:pointer;}
+.ws_ls .videoBox a .mask{ background:#000; opacity:.2; filter:alpha(opacity=20);
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	-ms-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+.ws_ls .videoBox a:hover .mask{ opacity:0; filter:alpha(opacity=0);}
+.ws_ls .comtBox{ position:relative; padding:15px 10px 10px; *zoom:1; _font-family:Tahoma,sans-serif}
+.ws_ls .comtBox .time{ position:absolute; right:10px; padding-top:6px; _padding-top:3px; line-height:24px}
+.ws_ls .comtBox .userPic{ margin-right:5px; float:left}
+.ws_ls .comtBox .userPic img{ width:35px; height:35px; border-radius:5px; vertical-align:top;}
+.ws_ls .comtBox .userName{ padding-top:5px; overflow:hidden; font-size:14px;}
+.ws_ls .comtBox .msgBox{ clear:both; padding-top:7px; *zoom:1;}
+.ws_ls .comtBox .msgCnt{ height:48px; overflow:hidden; word-wrap:break-word; word-break:break-all; line-height:24px}
+.ws_ls .comtBox .msgCnt img{ vertical-align:middle}
+
+.wall_waitGroup{ padding:5px 0 0 0;}
+.wall_waitGroup .hd{ background:#00b7c4; padding:5px 10px;}
+.wall_waitGroup .ws_ls{ padding:10px;}
+.wall_waitGroup .ws_ls .item{ margin-bottom:0;}
+.wall_waitlist{ background:#00b7c4}
+.wall_waititem{ padding:0 0 15px 15px}
+.wall_waititem td{ background:#f4f4f4}
+.cur_waititem td{ background:#6fe0e8}
+.wall_waititem .col_ft{ width:40px; padding-right:10px; text-align:center;}
+.wall_waititem .col_ft a{ color:#333}
+.wall_waititem .col_ft a:hover{ text-decoration:none}
+
+
+/* 结构 */
+.a_bd{ width:960px;}
+section{ width:592px;}
+.mv_aside{ width:335px;}
+
+</style>
+
+<title>微视上墙页_导播室</title>
+</head>
+
+<body>
+
+<!-- 顶部导航 Global/m_topNav.html -->
+<!--#include file="inc/Global/m_topNav.html"-->
+<!-- /顶部导航 -->
+
+<article class="clear">
+
+<div class="toptopic clear">
+	<h2><span class="tit">微视上墙导播室</span></h2>
+</div>
+
+<div class="a_bd">
+<div class="noticebar pb15">
+	<div class="bd">
+	<div class="pl10 pr10 pt5 pb5 c_tx6">请在投影屏幕中，打开微视墙页面 <a href="###">p.t.qq.com/openwall/screen.php?id=1234567</a> 或 您开通的是离线上墙模式，不能使用待上墙列表</div>
+	</div>
+</div>
+
+<section>
+
+<div class="subtopic clear">
+	<h2><span class="tit">编辑列表</span></h2>
+</div>
+
+<div class="bor1 c_bor1 mb15">
+	<div class="tb_form c_bg1">
+		<p><span class="c_tx6">输入微视ID，添加到编辑列表（多条以回车隔开）</span></p>
+		<form action="">
+		<table>
+		<tr>
+		<td>
+			<textarea class="inputArea" style="width:338px; height:92px"></textarea>
+		</td>
+		<td class="tx_r"><a href="###" class="btn btn3_l"><span class="t">添加到编辑列表</span></a></td>
+		</tr>
+		</table>
+		</form>
+	</div>
+</div>
+
+<div class="wall_mvwrap c_bor1 c_bg1">
+
+<div class="hd clear">
+<div class="left">
+	<label><input class="check1" type="checkbox"><span class="txt">全选</span></label>
+</div>
+<div class="right">
+	<span><a href="###">删除选中微视</a></span><span class="ml10"><a href="###" class="btn btn1"><span class="t">打包下载选中微视</span></a></span><span class="ml10"><a href="###" class="btn btn3"><span class="t">添加选中微视<span class="tx_song">&gt;&gt;</span></span></a></span>
+</div>
+</div>
+
+<ul>
+
+<li class="wall_mvitem wall_mvitem_cur">
+<table width="100%">
+<tr>
+<td class="col_hd">
+<p>第1条</p>
+<p><label><input type="checkbox"></label></p>
+</td>
+<td>
+
+<ul class="clear">
+<li class="mvitem">
+
+<!-- 用户顶部卡片 Sub/m_user.html -->
+<!--#include file="inc/Sub/m_user.html"-->
+<!-- /用户顶部卡片 -->
+
+<!-- 视频 Sub/m_video.html -->
+<!--#include file="inc/Sub/m_video.html"-->
+<!-- /视频 -->
+
+<!-- 视频补充信息 Sub/m_videoAddition.html -->
+<!--#include file="inc/Sub/m_videoAddition.html"-->
+<!-- /视频补充信息 -->
+
+<!-- 消息 Sub/m_msg.html -->
+<!--#include file="inc/Sub/m_msg_simple.html"-->
+<!-- /消息 -->
+
+</li>
+</ul>
+
+</td>
+<td class="col_ft">
+<span class="wall_addList"><span class="tx_song tx_26">&gt;&gt;</span></span>
+<a href="###" class="wall_moveTop">上移</a>
+<a href="###" class="wall_moveBottom">下移</a>
+</td>
+</tr>
+</table>
+</li>
+
+<li class="wall_mvitem">
+<table width="100%">
+<tr>
+<td class="col_hd">
+<p>第2条</p>
+<p><label><input type="checkbox"></label></p>
+</td>
+<td>
+
+<ul class="clear">
+<li class="mvitem">
+
+<!-- 用户顶部卡片 Sub/m_user.html -->
+<!--#include file="inc/Sub/m_user.html"-->
+<!-- /用户顶部卡片 -->
+
+<!-- 视频 Sub/m_video.html -->
+<!--#include file="inc/Sub/m_video.html"-->
+<!-- /视频 -->
+
+<!-- 视频补充信息 Sub/m_videoAddition.html -->
+<!--#include file="inc/Sub/m_videoAddition.html"-->
+<!-- /视频补充信息 -->
+
+<!-- 消息 Sub/m_msg_simple.html -->
+<!--#include file="inc/Sub/m_msg_simple.html"-->
+<!-- /消息 -->
+
+</li>
+</ul>
+
+</td>
+<td class="col_ft">
+<span class="wall_addList"><span class="tx_song tx_26">&gt;&gt;</span></span>
+<a href="###" class="wall_moveTop">上移</a>
+<a href="###" class="wall_moveBottom">下移</a>
+</td>
+</tr>
+</table>
+</li>
+
+</ul>
+</div>
+
+<div class="moreFoot mt15 loading">正在加载...</div>
+
+<div class="moreFoot2 mt15">
+	<a href="###" class="lk">加载剩余9条微视</a>
+</div>
+
+</section>
+
+<div class="mv_aside">
+<div class="mv_conBox clear">
+
+<div class="staticbox">
+
+<div class="subtopic clear">
+	<h2><span class="tit">待上墙列表</span></h2>
+	<div class="opt">
+		<a href="###" class="btn btn2"><span class="t">暂停上墙</span></a>
+	</div>
+</div>
+
+<div class="wall_waitGroup">
+
+<div class="hd clear">
+<div class="left"><span class="c_tx7">已有2条微视在排队</span></div>
+<div class="right"><a href="###">清空列表</a></div>
+</div>
+
+<div class="wall_waitlist">
+<ul class="clear">
+
+<li class="wall_waititem cur_waititem">
+<table>
+<tr>
+<td>
+	
+<!-- 瀑布流 Global/m_mvfall_item_simple.html -->
+<div class="ws_ls clear">
+<div class="col">
+<ul class="clear">
+<!--#include file="inc/Global/m_mvfall_item_simple.html"-->
+</ul>
+</div>
+</div>
+<!-- /瀑布流 -->
+
+</td>
+<td class="col_ft">
+
+<a href="###" class="tx_26">&times;</a>
+
+</td>
+</tr>
+</table>
+</li>
+
+<li class="wall_waititem">
+<table>
+<tr>
+<td>
+	
+<!-- 瀑布流 Global/m_mvfall_item_simple.html -->
+<div class="ws_ls clear">
+<div class="col">
+<ul class="clear">
+<!--#include file="inc/Global/m_mvfall_item_simple.html"-->
+</ul>
+</div>
+</div>
+<!-- /瀑布流 -->
+
+</td>
+<td class="col_ft">
+
+<a href="###" class="tx_26">&times;</a>
+
+</td>
+</tr>
+</table>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="fixbox" style="position:;"><!-- staticbox向上滚动消失后添加"position:fixed"，staticbox向下滚动出现时去掉fixed -->
+</div>
+
+</div>
+</div>
+
+</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<!--#include file="inc/Global/m_copyright.html"-->
+<!-- /版权 -->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<!--#include file="inc/Sub/m_floatOpt_returnOnly.html"-->
+<!-- /浮动操作 -->
+
+<!--#include file="inc/Sub/w_ft.html"-->

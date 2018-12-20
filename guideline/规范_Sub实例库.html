@@ -1,0 +1,1081 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico"/>
+
+<script type="text/javascript">
+document.createElement('header');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+</script>
+
+<link type="text/css" rel="stylesheet" media="screen" href="./images/style.global.css">
+
+<style>
+/* 节日皮肤 */
+/*@import url("../css/weishi/Festival/style.css");*/
+</style>
+<style>
+html,body{ _height:100%}
+.demo_subtitle{ padding-top:42px; font-size:48px}
+.gmod{ padding-top:42px;}
+
+.gtable{ background:#fff; width:100%; table-layout:fixed; margin-bottom:10px;}
+.gtable th,
+.gtable td{ padding:10px; border:#999 1px solid;}
+.gtable th{ background:#eee; width:20%;}
+.gtable thead th{ width:auto;}
+.gtable thead th:first-child{ width:20%;}
+
+.demo_block{ width:98px; height:98px; border-width:1px; border-style:solid; line-height:98px; text-align:center;}
+
+.topnav .topNavSub{ display:none}
+.topnav .item:hover .topNavSub{ display:block}
+
+.D_lay{ display:none}
+</style>
+
+<script type="text/javascript" src="./images/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function(){
+	var title= document.title;
+	$('.topnav .item').removeClass('select');
+	$('.topnav .item[rel='+title+']').addClass('select');
+}
+</script>
+
+<style>
+.a_bd{ width:920px; min-width:0}
+</style>
+
+<title>规范_Sub实例库</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<div class="topnav">
+	<div class="bd clear">
+		<div class="logo clear">
+			<div class="c1">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="c2">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="dis_b left ml5 tx_24 tx_yh c_tx7">PC侧Web规范</div>
+		</div>
+		<div class="nav right clear">
+
+			<div class="item" rel="规范_文件组织">
+				<a href="规范_文件组织.html" class="txt">文件组织</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_文件组织.html#resource">前端资源</a></li>
+						<li><a href="规范_文件组织.html#file">文件结构</a></li>
+						<li><a href="规范_文件组织.html#gaga">CSSgaga配置</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_设计规范">
+				<a href="规范_设计规范.html" class="txt">设计规范</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_设计规范.html#global_base">全局基础</a></li>
+						<li><a href="规范_设计规范.html#sub_base">Sub基础</a></li>
+						<li><a href="规范_设计规范.html#global_main">全局模块</a></li>
+						<li><a href="规范_设计规范.html#sub_main">Sub模块</a></li>
+						<li><a href="规范_设计规范.html#skin">全局皮肤</a></li>
+						<li><a href="规范_设计规范.html#global_browser">浏览器兼容</a></li>
+						<li><a href="规范_设计规范.html#global_zindex">z-index</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_浮层规范和实例">
+				<a href="规范_浮层规范和实例.html" class="txt">浮层规范和实例</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_浮层规范和实例.html#common">规范</a></li>
+						<li><a href="规范_浮层规范和实例.html#instance">实例</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_动画库">
+				<a href="规范_动画库.html" class="txt">动画库</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_动画库.html#enter">淡入</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_Sub实例库">
+				<a href="规范_Sub实例库.html" class="txt">Sub实例库</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="topnav_ph">
+	<!-- placeholder -->
+</div>
+<!-- /规范顶部导航 -->
+
+<!-- 通栏banner Sub/m_topBanner.html -->
+<div class="m_b_banner">
+	<h3>微视，8秒无限欢乐，视频随身享！</h3>
+	<p>腾讯旗下短视频分享社区</p>
+	<div class="m_b_qrCode">
+		<span class="m_b_dt">扫描二维码<br/>下载微视应用</span>
+		<img src="http://mat1.gtimg.com/www/mb/images/mv/qrcode_b131029b.png" alt="微视二维码">
+	</div>
+	<a href="" class="g_close_btn" title="关闭"><span>×</span></a>
+</div>
+
+<!-- 只有图的通栏banner -->
+<!--
+<div class="topbanner">
+	<a href="###"><img src="http://mat1.gtimg.com/www/mb/mobile/mv/channel_banner_131122.png" /></a>
+</div>
+-->
+<!-- /只有图的通栏banner -->
+<!-- /通栏banner -->
+
+<!-- 标签导航 Sub/m_tagNav.html -->
+<div class="tagnav clear"><!-- 页面向下滚动42px时添加e_tagnav_fix -->
+	<div class="bd">
+		<table class="tb_tag">
+			<tr>
+			<td>
+				<span class="item select">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">名人</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">美女</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">创意</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">萌宠</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">自拍</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">搞笑</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">设计</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="ar">◆</span><span class="txt">动画</span></a><span class="dot"></span>
+				</span>
+			</td>
+			<td>
+				<div style="position:relative">
+
+				<span class="item">
+					<a href="标签页.html" hidefocus="true"><span class="txt">更多最多七个字<em></em></span></a>
+				</span>
+
+				<div class="D_tagSub">
+				<b class="a a5 a_b"><u></u></b>
+				<ul class="clear">
+				<li class="item select"><a href="标签页.html">湾湾妹</a></li>
+				<li class="item"><a href="标签页.html">可爱颂</a></li>
+				<li class="item"><a href="标签页.html">微视</a></li>
+				<li class="item"><a href="标签页.html">湾湾妹</a></li>
+				<li class="item"><a href="标签页.html">可爱颂</a></li>
+				<li class="item"><a href="标签页.html">微视</a></li>
+				</ul>
+				</div>
+
+				</div>
+			</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<!-- /标签导航 -->
+
+<!-- 一级区块顶部标题 Sub/m_topTopic.html -->
+<div class="toptopic clear">
+	<h2><span class="tit"></span></h2>
+	<div class="opt">
+		<span class="c_tx2 vt_m dis_inb">模式切换：</span><span class="item select"><a title="列表模式" href="频道列表页.html"><i class="ico16 ico_channelmode2"></i></a></span><span class="item"><a title="瀑布流模式" href="频道列表页_瀑布流.html"><i class="ico16 ico_channelmode1"></i></a></span>
+	</div>
+</div>
+<!-- /一级区块顶部标题 -->
+
+<!-- 一级区块顶部标题 -->
+<div class="toptopic clear">
+	<h2><span class="tit">标题</span></h2>
+	<div class="desc"><span class="c_tx2">补充说明</span></div>
+	<div class="opt">
+		<span class="c_tx2 vt_m dis_inb">右侧信息</span>
+	</div>
+</div>
+<!-- /一级区块顶部标题 -->
+
+<article class="clear">
+<div class="a_bd">
+
+<section>
+
+<!-- 视频集title Sub/m_groupTitle.html -->
+<div class="groupTitle clear">
+	<h2><span class="tit">名人</span></h2>
+	<div class="des">
+		<a class="tag" href="###">分享频道</a>
+	</div>
+</div>
+<!-- /视频集title -->
+
+<div class="bor1 c_bor1 mb15">
+
+<!-- 用户展示列表搜索结果扩展 Sub/m_userAction_rs_item.html -->
+<div class="m_userAction e_userAction_rs">
+<ul class="clear">
+<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img5.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_18 tx_yh"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc">
+			<p class="c_tx6"><i class="ico16 ico_male"></i><span class="location ml5">北京 海淀</span></p>
+			<p class="mt5 c_tx6 tx_14">未来不需要改变，那是执着于<span class="c_keyword">信念</span>的人们必然迎接到来的明天。</p>
+			<p class="mt10 c_tx6"><a href="个人页.html" class="count">999 作品</a><span class="spacer ml10 mr10">|</span><span class="count">230 关注</span><span class="spacer ml10 mr10">|</span><span class="count">4500 粉丝</span></p>
+		</div>
+	</div>
+	<div class="c3">
+		<span class="vt_m mr5 c_tx2">已关注我</span><a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+	</div>
+</li>
+<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img5.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_18 tx_yh"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc">
+			<p class="c_tx6"><i class="ico16 ico_male"></i><span class="location ml5">北京 海淀</span></p>
+			<p class="mt5 c_tx6 tx_14">未来不需要改变，那是执着于<span class="c_keyword">信念</span>的人们必然迎接到来的明天。</p>
+			<p class="mt10 c_tx6"><a href="个人页.html" class="count">999 作品</a><span class="spacer ml10 mr10">|</span><span class="count">230 关注</span><span class="spacer ml10 mr10">|</span><span class="count">4500 粉丝</span></p>
+		</div>
+	</div>
+	<div class="c3">
+		<span class="vt_m mr5 c_tx2">已关注我</span><a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+	</div>
+</li>
+</ul>
+</div>
+<!-- /用户展示列表搜索结果扩展 -->
+
+</div>
+
+<!-- 二级区块顶部标题 -->
+<div class="subtopic clear pb10">
+	<h2><i class="ico16 ico_tag mr5"></i><span class="tit c_tx5">关键词</span></h2>
+	<div class="desc"><span class="c_tx2">共有12345678条微视</span></div>
+	<div class="opt"><a href="###">更多<span class="tx_song">&gt;&gt;</span></a></div>
+</div>
+<!-- /二级区块顶部标题 -->
+
+<div class="bor1 c_bor1 mb15">
+
+<!-- 微视缩略图列表左栏扩展 Sub/m_ws_gridList_rs_item.html -->
+<div class="ws_gridList e_ws_gridList_rs">
+<ul class="clear">
+<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+</ul>
+</div>
+<!-- /微视缩略图列表左栏扩展 -->
+
+</div>
+
+<!-- 二级区块顶部标题 -->
+<div class="subtopic clear pb10">
+	<h2><span class="tit c_tx6">相关微视</span></h2>
+	<div class="opt"></div>
+</div>
+<!-- /二级区块顶部标题 -->
+
+<ul class="clear">
+<li class="mvitem">
+
+<div class="mvnoitem">
+	<p>没有和“<span class="c_keyword">8秒找好车</span>”相关的数据哦</p>
+</div>
+
+</li>
+
+<li class="mvitem">
+
+<div class="mvnoitem">
+	<p>这个频道还没有数据哦~</p>
+</div>
+
+</li>
+<li class="mvitem">
+
+<div class="mvnoitem">
+	<p>暂无任何作品</p>
+</div>
+
+</li>
+<li class="mvitem">
+
+<!-- 用户顶部卡片 Sub/m_user.html -->
+<div class="mv_user clear">
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="panel clear">
+
+	    <div class="userName">
+	        <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 vip"></span><span class="ico16 ico_master_star"></span>
+	    </div>
+
+	    <div class="mt5 left">
+	    	<a href="分享页.html" class="time c_tx3">9月4日 16:32</a><a href="###" class="c_tx3 ml15"><strong>123456</strong> 次播放</a>
+	    </div>
+
+    	<div class="selectList2 mt5">
+    		<a href="###" class="selectBtn"><b class="a a4 a_t"></b></a>
+			<div class="dropList">
+				<ul class="clear">
+				<li class="item"><a class="lk" href="###">下载视频</a></li>
+				<li class="item"><a class="lk" href="###">编辑视频列表</a></li>
+				</ul>
+			</div>
+    	</div>
+    	
+    </div>
+	
+</div>
+<!-- /用户顶部卡片 -->
+
+<!-- 视频 Sub/m_video.html -->
+<div class="mv_video "><!--vPlay 播放时添加class ‘vPlay’-->
+	<div class="vWrap" thumbs="1">
+		<a class="btnPlay" style="display:block">
+			<em class="canPlay"></em>
+			<em class="verror" style="display:none"></em>
+			<em class="vloading" style="display:none"></em>
+		</a>
+		<img class="" src="http://shp.qpic.cn/qqvideo/0/d1500qxaoj8/0" width="458" height="458" style="display: inline;">
+	</div>
+	<div class="vBox">
+		<embed wmode="opaque" flashvars="vid=c1500r53vyo&amp;autoplay=0&amp;list=2&amp;adplay=1&amp;showcfg=0&amp;showend=0&amp;tpid=0&amp;searchbar=0&amp;pic=http://shp.qpic.cn/qqvideo/0/c1500r53vyo/0&amp;share=1" src="http://imgcache.qq.com/tencentvideo_v1/player/TPweishi.swf" quality="high" name="tenvideo_flash_player_1383219076082" id="tenvideo_flash_player_1383219076082" bgcolor="#000000" width="460" height="492" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/">
+	</div>
+</div>
+<!-- /视频 -->
+
+<!-- 视频补充信息 Sub/m_videoAddition.html -->
+<div class="mv_videoAddition pt10 pr15 pb10 pl15 clear">
+	<div class="left tx_14"><span class="ico16 ico_play"></span><a href="###" class="vt_m ml5 c_tx9">查看完整视频03:20</a></div>
+</div>
+<!-- /视频补充信息 -->
+
+<!-- 消息 Sub/m_msg.html -->
+<div class="mv_msg clear">
+
+    <div class="msgBox">
+        
+        <div class="msgCnt">
+            我们的设计应该对未来更加友好一些。我们应该通过对未来的预测，选择适合的技术，为人们创造出既满足今天需要，又能够适应未来变化的产品或价值。
+            <span class="location c_tx2 tx_12 ml5 tx_unbr">
+                <span class="ic ico_lction"></span><span>中关村海淀银科大厦</span>
+            </span>
+        </div>
+        
+        <div class="pubInfo clear">
+            <div class="left">
+                <span class="ic ico_tag"></span><a href="标签页.html" class="c_tx3 ml5">瞄星人</a><a href="###" class="c_tx3 ml5">瞄星人</a>
+            </div>
+        </div>
+
+        <div class="msgFunc">
+
+            <div class="funcBtn clear">
+                <div class="praise left checked">
+                    <a href="###" class="lk"><i>赞</i></a>
+                </div>
+                <div class="relay left">
+                    <a href="###" class="lk"><i>转播</i></a>
+                </div>
+                <div class="share left">
+                    <a href="###" class="lk"><i>分享</i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /消息 -->
+
+<!-- 转评列表 Sub/m_msgListItem.html -->
+<div class="mv_msgList">
+
+<!-- 提示 -->
+<div class="noticebar" style="display:none">
+	<div class="bd bor0">
+	<span class="dis_b pl10 pr10 pt5 pb5 tx_c tx_14 c_tx8">想要转发、评论，快去右侧下载微视客户端！</span>
+	<a href="###" class="g_close_btn"><span>×</span></a>
+	</div>
+</div>
+<!-- /提示 -->
+
+<ul class="pt10">
+<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+</ul>
+
+<!-- 转评数 -->
+<div class="msgNum tx_12">
+    <a href="###" class="c_tx9">1234赞 和 123转评</a>
+    <a href="###" style="display:none">加载更多转评</a>
+</div>
+<!-- /转评数 -->
+
+</div>
+<!-- /转评列表 -->
+
+<!-- 评论 Sub/m_msgComm.html -->
+<div class="mv_msgComm">
+
+	<form action="">
+    <div class="gb_inputTxt1 e_input_ra">
+    	<!-- label的for和input的id保持同值 -->
+        <label for="" class="lb tx_14 c_tx2">和作者说点啥吧~ 按回车(Enter)键提交<!-- wording待商榷 --></label>
+        <input id="" maxlength="140" class="dis_b inputTxt tx_14" type="text" value="" style="width:406px" />
+    </div>
+    <input type="submit" style="position:absolute; visibility:hidden; font-size:0" />
+    </form>
+
+</div>
+<!-- /评论 -->
+
+</li>
+</ul>
+
+<!-- 翻页 Sub/m_pagecount.html -->
+<div class="pagecount tx_r">
+	<a href="###" class="prev"><span class="tx_song">&lt;&lt;</span>上一页</a>
+	<a href="###">1</a>
+	<b>2</b>
+	<a href="###">3</a>
+	<a href="###">4</a>
+	<a href="###">5</a>
+	<a href="###">6</a>
+	<a href="###">7</a>
+	<a href="###">8</a>
+	<a href="###">9</a>
+	<span>...</span>
+	<a href="###" class="next">下一页<span class="tx_song">&gt;&gt;</span></a>
+</div>
+<!-- /翻页 -->
+
+</section>
+
+<div class="mv_aside" style="">
+
+<div class="mv_conBox clear">
+
+<div class="staticbox">
+
+<!-- 个人资料 Sub/m_profile.html -->
+<div class="m_profile clear">
+	<div class="c1">
+		<a href="个人页.html" class="avatar"><img src="./images/img6.jpg" alt="" /></a>
+	</div>
+	<div class="c2">
+		<div class="username"><a href="个人页.html" class="name c_tx6">Benny Chia</a><span class="ico16 ico_male"></span><span class="vip"></span></div>
+		<div class="opt mt10">
+			<a href="###" class="btn btn2_l"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+			<span class="btn btn1_l e_btn_disabled"><span class="t">相互关注</span></span>
+			<span class="optip dis_inb ml10">已关注我</span>
+		</div>
+		<div class="data mt15">
+			<span class="count">999 作品</span><span class="spacer">|</span><span class="count">230 关注</span><span class="spacer">|</span><span class="count">4500 粉丝</span>
+		</div>
+	</div>
+	<div class="c3">
+		<div class="info c_tx6"><span class="location">北京 海淀</span></div>
+		<div class="summary mt10">
+			<p>海清，著名演员，金鹰飞天双料视后，被称为亚洲中产阶级女性的最佳代言人。代表作品：《双面胶》、《蜗居》、《媳妇的美好时代》、《心术》等。 </p>
+		</div>
+		<div class="mt15"><a href="###" class="btn btn1"><span class="t">推荐用户</span></a></div><!-- 未登录态无推荐用户 -->
+	</div>
+</div>
+<!-- /个人资料 -->
+
+<!-- 个人资料 Sub/m_profile_self.html -->
+<div class="m_profile clear">
+	<div class="c1">
+		<span class="avatar"><img src="./images/img6.jpg" alt="" /></span>
+	</div>
+	<div class="c2">
+		<div class="username"><span class="name">Benny Chia</span><span class="ico16 ico_male"></span><span class="vip"></span></div>
+		<div class="data mt15">
+			<span class="count">999 作品</span><span class="spacer">|</span><span class="count">230 关注</span><span class="spacer">|</span><span class="count">4500 粉丝</span>
+		</div>
+	</div>
+	<div class="c3">
+		<div class="info c_tx6"><span class="location">北京 海淀</span></div>
+		<div class="summary mt10">
+			<p>海清，著名演员，金鹰飞天双料视后，被称为亚洲中产阶级女性的最佳代言人。代表作品：《双面胶》、《蜗居》、《媳妇的美好时代》、《心术》等。 </p>
+		</div>
+	</div>
+</div>
+<!-- /个人资料 -->
+
+<!-- 相关用户 Sub/m_SC_relateduser.html -->
+<div class="SC SC_userAction">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">相关用户</strong></h2>
+		<div class="opt">
+			<div class="switchOpt">
+				<a href="###" class="sl vt_m dis_inb tx_song">&lt;</a><span class="num vt_m dis_inb">1/3</span><a href="###" class="sr vt_m dis_inb tx_song">&gt;</a>
+			</div>
+		</div>
+	</div>
+	<div class="SC_bd">
+
+		<!-- 用户展示列表右栏扩展 -->
+		<div class="m_userAction e_userAction_sc">
+			<ul class="clear">
+			<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+			<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+			<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+			</ul>
+		</div>
+		<!-- /用户展示列表右栏扩展 -->
+
+	</div>
+</div>
+<!-- /相关用户 -->
+
+<!-- 热门微视 Sub/m_SC_hotmv.html -->
+<div class="SC SC_hotmv">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">热门微视</strong></h2>
+		<div class="opt">
+			<a href="###" class="tx_14 c_tx6">更多<span class="tx_song">&gt;&gt;</span></a>
+		</div>
+	</div>
+	<div class="SC_bd">
+
+		<!-- 微视缩略图列表右栏扩展 Sub/m_ws_gridList_sc_item.html -->
+		<div class="ws_gridList e_ws_gridList_sc">
+		<ul class="clear">
+		<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+		<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+		<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+		<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+		</ul>
+		</div>
+		<!-- /微视缩略图列表右栏扩展 -->
+
+	</div>
+</div>
+<!-- /热门微视 -->
+
+<!-- 热门频道 Sub/m_SC_hotchannel.html -->
+<div class="SC SC_hotchannel">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">热门频道</strong></h2>
+		<div class="opt">
+			<a href="频道列表页.html" class="tx_14 c_tx6">更多<span class="tx_song">&gt;&gt;</span></a>
+		</div>
+	</div>
+	<div class="SC_bd">
+
+		<!-- channelCloud基本：tx_14,tx_18,tx22字号随机，且只有e_item_1可以出现tx_22字号-->
+		<div class="channelCloud" style="display:none">
+		<ul class="clear">
+		<li class="item e_item_2 tx_14">
+			<a href="###">爸爸去哪儿</a>
+		</li>
+		<li class="item e_item_1 tx_22">
+			<a href="###">圣诞送惊喜</a>
+		</li>
+		<li class="item e_item_2 tx_18">
+			<a href="###">明星</a>
+		</li>
+		<li class="item e_item_2 tx_18">
+			<a href="###">可爱颂</a>
+		</li>
+		<li class="item e_item_3 tx_14">
+			<a href="###">嫩模</a>
+		</li>
+		<li class="item e_item_3 tx_18">
+			<a href="###">广州车展</a>
+		</li>
+		<li class="item e_item_3 tx_18">
+			<a href="###">8号设计师</a>
+		</li>
+		<li class="item e_item_3 tx_14">
+			<a href="###">微视</a>
+		</li>
+		<li class="item e_item_3 tx_14">
+			<a href="###">湾湾妹</a>
+		</li>
+		</ul>
+		</div>
+
+		<!-- e_channelCloud_1扩展-->
+		<div class="channelCloud e_channelCloud_1">
+		<ul class="clear">
+		<li class="item e_item_1 e_item_bg1 tx_20">
+			<a href="###">马上有对象</a>
+		</li>
+		<li class="item e_item_3 e_item_bg2 tx_20">
+			<a href="###">北京第一场雪</a>
+		</li>
+		<li class="item e_item_1 e_item_bg1 tx_20 e_item_sp">
+			<a href="###">圣诞节</a>
+		</li>
+		<li class="item e_item_3 e_item_bg3 tx_16">
+			<a href="###">微视微视神一般的演技</a>
+		</li>
+		<li class="item e_item_2 e_item_bg2 tx_18">
+			<a href="###">妈妈再抽我一次</a>
+		</li>
+		<li class="item e_item_4 e_item_bg3 tx_18">
+			<a href="###">微视剪刀手大集结</a>
+		</li>
+		<li class="item e_item_4 e_item_bg1 tx_18">
+			<a href="###">北京地铁调价</a>
+		</li>
+		<li class="item e_item_2 e_item_bg2 tx_18">
+			<a href="###">那些年我们一起撒的谎</a>
+		</li>
+		</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /热门频道 -->
+
+<!-- 标签 Sub/m_SC_label.html -->
+<div class="SC SC_label">
+	<div class="SC_hd"></div>
+	<div class="SC_bd">
+		<div class="shareLabel clear">
+
+			<div class="c1">
+				<i class="ico25 ico_tag25"></i><span class="labeltxt tx_yh tx_24 vt_m">8秒找美女</span>
+			</div>
+			<div class="c2">
+				<span class="dis_inb vt_m c_tx2">分享</span><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_wb25b"></i></a><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_qq25b"></i></a><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_qz25b"></i></a><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_sina25b"></i></a><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_rr25b"></i></a><a href="###" class="ml5 dis_inb vt_m"><i class="ico25 ico_db25b"></i></a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- /标签 -->
+
+<!-- 相关标签 Sub/m_SC_relatedlabel.html -->
+<div class="SC SC_similarlabel">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">相关标签</strong></h2>
+		<div class="opt"></div>
+	</div>
+	<div class="SC_bd">
+		<div class="tagCloud">
+		<ul class="clear">
+		<li class="item select"><a href="标签页.html" class="lk"><span class="t">8秒找好车</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">8秒找美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">可爱颂</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">恶搞</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">宝宝</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">吃货</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">8秒找好车</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">可爱颂</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">恶搞</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">宝宝</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">萌猫</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">吃货</span></a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+<!-- /相关标签 -->
+
+<!-- 热门标签 Sub/m_SC_hotlabel.html -->
+<div class="SC SC_similarlabel">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">热门标签</strong></h2>
+		<div class="opt"></div>
+	</div>
+	<div class="SC_bd">
+		<div class="tagCloud">
+		<ul class="clear">
+		<li class="item select"><a href="标签页.html" class="lk"><span class="t">8秒找好车</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">8秒找美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">可爱颂</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">恶搞</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">宝宝</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">吃货</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">8秒找好车</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">可爱颂</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">美女</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">恶搞</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">宝宝</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">萌猫</span></a></li>
+		<li class="item"><a href="标签页.html" class="lk"><span class="t">吃货</span></a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+<!-- /热门标签 -->
+
+<!-- 搜索历史 Sub/m_SC_schhistory.html -->
+<div class="SC SC_itemList">
+	<div class="SC_hd">
+		<h2 class="tit"><strong class="tit_tx">搜索历史</strong></h2>
+		<div class="opt"></div>
+	</div>
+	<div class="SC_bd">
+		<div class="itemList tx_14">
+			<ul class="clear">
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">FutureFriendly</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">BennyChia</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">BradFrost</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">LukeW</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">李梦雪</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">冯小刚</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">BennyChia</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">BradFrost</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">LukeW</span></a></li>
+			<li class="item"><a href="搜索页综合.html" class="lk" hidefocus="true"><span class="t">李梦雪</span></a></li>
+			</ul>
+		</div>
+		<div>
+			<a class="c_tx3" href="###" hidefocus="true">[清除记录]</a>
+		</div>
+	</div>
+</div>
+<!-- /搜索历史 -->
+
+</div>
+
+<div class="fixbox" style="position:;"><!-- staticbox向上滚动消失后添加"position:fixed"，staticbox向下滚动出现时去掉fixed -->
+
+<!-- hdTitle Sub/m_hdTitle.html -->
+<div class="hdTitle">
+<div class="mv_tit">
+    <div class="mv_logo">
+        <div class="logo"></div>
+        <div class="mv_logoTit ">微视</div>
+    </div>
+    <div class="mv_summary">
+        <h1><span class="mv_ws">微视</span></h1>
+        <p>腾讯旗下短视频分享社区</p>
+    </div>
+</div>
+
+<div class="slogan">
+    <p>微视是数千万用户的选择，</p>
+    <p>微视是众多名人秀欢乐的社区，</p>
+    <p>微视是App store免费榜单第一的金牌应用</p>
+</div>
+
+<div class="mv_appPc">
+    <div class="c1">
+    <div class="mv_iphone">
+        <a hidefocus="true" class="mv_iphone_btn" href="###">
+            <span class="ico_down_iphone"></span>
+            <span class="txt"><span class="tx_ar">iPhone</span><span class="tx_yh">版下载</span></span>
+        </a>
+    </div>
+	<div class="mv_btn_wrap hover">
+		<a hidefocus="true" class="mv_android_btn" href="javascript:void(0)" style="cursor:default">
+            <span class="ico_down_android"></span>
+            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+        </a>
+        <div class="mv_btn_flag"></div>
+        <div class="mv_btn_sub">
+        	<i class="arr"></i>
+        	<div class="hd"><div class="inner"></div></div>
+        	<div class="bd">
+        	<ul class="clear">
+        	<li class="item">
+        		<a href="###" class="lk" title="下载到本地"><span class="ico_down_todesktop"></span><span class="txt"><span class="tx_yh">下载到本地</span></span></a>
+        	</li>
+        	<li class="item bor0">
+        		<a href="###" class="lk" title="通过手机QQ直接安装到手机"><span class="ico_down_tomobile"></span><span class="txt"><span class="tx_yh">发送到手机</span></span></a>
+        	</li>
+        	</ul>
+        	</div>
+        	<div class="ft"><div class="inner"></div></div>
+        </div>
+    </div>
+    </div>
+    <div class="c2">
+    <p class="mv_2Code">
+        <img src="http://mat1.gtimg.com/www/mb/mobile/mv/mVideo_qr_130913.png" />
+    </p>
+    <p>扫一扫，马上下载</p>
+    </div>
+</div>
+</div>
+<!-- /hdTitle -->
+
+<!-- bannerAd Sub/m_hdBanner.html -->
+<div class="BannerArea">
+	<a href="###"><img src="http://mat1.gtimg.com/www/mb/mobile/mv/banner_131224.png" width="415" /></a>
+</div>
+<!-- /bannerAd -->
+
+<!-- 右栏下方信息 Sub/m_sideInfo.html -->
+<div class="sideInfo tx_r">
+	<a class="c_tx6" href="###">分享应用</a><span class="spacer">|</span><span class="c_tx6">联系我们：</span><a href="###"><span class="ico25 ico_wechat25"></span></a><a class="ml5" href="###"><span class="ico25 ico_weibo25"></span></a>
+</div>
+<!-- /右栏下方信息 -->
+
+</div>
+
+</div>
+</div>
+
+</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<div class="copyright">
+	<div class="bd">
+		<p>Copyright &copy; 1998 - 2014 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" target="_blank">All Rights Reserved</a></p>
+		<p><a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">腾讯公司</a> 版权所有</p>
+	</div>
+</div>
+<!-- /版权 -->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<div class="floatopt">
+	<div class="bd">
+
+		<div class="dr">
+			<ul class="drbtn">
+			<!-- drbtn中的公共按钮根据页面需要选取 -->
+			<li class="item">
+				<a class="lk" href="#" title="返回顶部"><i class="ico_dr ico_drReturn"></i><span class="txt">返回顶部</span></a>
+			</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /浮动操作 -->
+
+</body>
+</html>

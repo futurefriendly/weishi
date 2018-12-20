@@ -1,0 +1,251 @@
+<!--#include file="inc/Sub/w_hd.html"-->
+<!--#include file="inc/guideline_hd.html"-->
+
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="../css/weishi/Sub/asyn.css" /> -->
+
+<script type="text/javascript">
+// function d_lay(){
+
+// 	var docw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// 	var doch = document.body.clientHeight;
+// 	var winh = window.screen.height;
+// 	var scrolltop = document.body.scrollTop;
+
+// 	$('.D_bg').each(function(){
+// 		$(this).css({
+// 			width : docw,
+// 			height : doch
+// 		});
+// 	});
+// 	$('.D_wrap').each(function(){
+// 		var w = $(this).width();
+// 		var h = $(this).height();
+// 		$(this).css({
+// 			width : w,
+// 			height : h,
+// 			marginLeft : Math.floor(-w/2),
+// 			marginTop : Math.floor(-h/2),
+// 			top : scrolltop + Math.floor(winh/2-h/2)
+// 		});
+// 	});
+
+// }
+$(function(){
+	$('.D_lay .close').click(function(){
+		$(this).parents('.D_lay').hide();
+	});
+})
+function showlay(o){
+	var tg = $(o).attr('name');
+	$('.D_lay').hide();
+	$('#'+tg).show();
+	$('#'+tg+' .D_wrap').css({
+		marginLeft : Math.floor(-$('#'+tg+' .D_wrap').width()/2),
+		marginTop : Math.floor(-$('#'+tg+' .D_wrap').height()/2)
+	});
+}
+</script>
+
+<title>规范_浮层规范和实例</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<!--#include file="inc/guideline_topNav.html"-->
+<!-- /规范顶部导航 -->
+
+<article class="clear">
+	<div class="a_bd">
+		<h1 class="tx_26 tx_yh pt15">浮层规范和实例</h1>
+		<h3 class="tx_16 tx_yh">
+			<p>* 浮层规范内容引用全局基础样式 <span class="c_tx4">Sub/style.base.css</span> ，全局结构样式 <span class="c_tx4">Sub/style.main.css</span>，且依赖异步样式 <span class="c_tx4">Sub/asyn.css</span></p>
+			<p>* .D_bg需要计算width,height，.D_wrap需要计算left,top,width，逻辑可参考微博主站</p>
+			<p>* 本规范使用制作稿真实环境样式，实时维护更新</p>
+			<p>* 规范维护：bennyzhai</p>
+		</h3>
+
+		<a name="common"></a>
+		<h2 class="demo_subtitle tx_yh">#规范</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#common_alert" class="lk"><span class="t">提示框</span></a></li>
+			</ul>
+		</div>
+
+		<a name="common_alert"></a>
+		<div class="gmod">
+
+			<h3 class="tx_24 tx_yh">提示框</h3>
+
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>普通提示</th>
+						<td><a name="D_alert_noclose" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">Alert(无关闭按钮)</span></a></td>
+						<th>普通提示</th>
+						<td><a name="D_alert" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">Alert(有关闭按钮)</span></a></td>
+					</tr>
+					<tr>
+						<th>成功提示</th>
+						<td>-</td>
+						<th>警告提示</th>
+						<td>-</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="instance"></a>
+		<h2 class="demo_subtitle tx_yh">#实例</h2>
+
+		<div class="gmod">
+
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>扫一扫登录</th>
+						<td><a name="D_login" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">扫一扫登录</span></a></td>
+						<th>联系我们</th>
+						<td><a name="D_contact" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">联系我们</span></a></td>
+					</tr>
+					<tr>
+						<th>分享到SNS</th>
+						<td><a name="D_sharesns" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">分享到SNS</span></a></td>
+						<th>下载手机客户端</th>
+						<td><a name="D_down" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">下载手机客户端</span></a></td>
+					</tr>
+					<tr>
+						<th>上传视频提示</th>
+						<td><a name="D_uploadmv" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">上传视频提示</span></a></td>
+						<th>验证码</th>
+						<td><a name="D_captcha" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">验证码</span></a></td>
+					</tr>
+					<tr>
+						<th>ptlogin登录</th>
+						<td><a name="D_ptlogin" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">ptlogin登录</span></a></td>
+						<th>转发到微视</th>
+						<td><a name="D_relay" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">转发到微视</span></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<!--#include file="inc/Global/m_copyright.html"-->
+<!-- /版权 -->
+
+<!--
+
+通用浮层
+=====================================================================================
+
+-->
+
+<!-- 浮层 alert 无关闭按钮  -->
+<div id="D_alert_noclose" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:230px">
+	<div class="D_title clear">
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">提示文字</h2>
+
+		<div class="mt15 tx_c"><a href="###" class="btn btn3_l" onclick="$('.D_lay').hide()"><span class="t">确定</span></a></div>
+
+	</div>		
+</div>
+
+</div>
+<!-- /浮层 alert 无关闭按钮 -->
+
+<!-- 浮层 alert 有关闭按钮  -->
+<div id="D_alert" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:230px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">提示文字</h2>
+
+		<div class="mt15 tx_c"><a href="###" class="btn btn3_l" onclick="$('.D_lay').hide()"><span class="t">确定</span></a></div>
+
+	</div>		
+</div>
+
+</div>
+<!-- /浮层 alert 有关闭按钮 -->
+
+<!--
+
+实例浮层 start
+=====================================================================================
+
+-->
+
+<!-- 浮层 登录 Sub/d_lay_login.html -->
+<div id="D_login" class="D_lay">
+<!--#include file="inc/Sub/d_lay_login.html"-->
+</div>
+<!-- /浮层 登录 -->
+
+<!-- 浮层 联系我们 d_lay_contact.html -->
+<div id="D_contact" class="D_lay">
+<!--#include file="inc/Sub/d_lay_contact.html"-->
+</div>
+<!-- /浮层 联系我们 -->
+
+<!-- 浮层 分享到SNS Sub/d_lay_sharesns.html  -->
+<div id="D_sharesns" class="D_lay">
+<!--#include file="inc/Sub/d_lay_sharesns.html"-->
+</div>
+<!-- /浮层 分享到SNS -->
+
+<!-- 浮层 下载 Sub/d_lay_down.html -->
+<div id="D_down" class="D_lay">
+<!--#include file="inc/Sub/d_lay_down.html"-->
+</div>
+<!-- /浮层 下载 -->
+
+<!-- 浮层 上传视频提示 Sub/d_lay_uploadmv.html -->
+<div id="D_uploadmv" class="D_lay">
+<!--#include file="inc/Sub/d_lay_uploadmv.html"-->
+</div>
+<!-- /浮层 上传视频提示 -->
+
+<!-- 浮层 验证码 Sub/d_lay_captcha.html -->
+<div id="D_captcha" class="D_lay">
+<!--#include file="inc/Sub/d_lay_captcha.html"-->
+</div>
+<!-- /浮层 验证码 -->
+
+<!-- 浮层 ptlogin登录 Sub/d_lay_ptlogin.html -->
+<div id="D_ptlogin" class="D_lay">
+<!--#include file="inc/Sub/d_lay_ptlogin.html"-->
+</div>
+<!-- /浮层 ptlogin登录 -->
+
+<!-- 浮层 转发到微视 Sub/d_lay_relay.html -->
+<div id="D_relay" class="D_lay">
+<!--#include file="inc/Sub/d_lay_relay.html"-->
+</div>
+<!-- /浮层 转发到微视 -->
+
+<!--
+
+/ 实例浮层 end
+=====================================================================================
+
+-->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<!--#include file="inc/Sub/m_floatOpt_returnOnly.html"-->
+<!-- /浮动操作 -->
+
+<!--#include file="inc/Sub/w_ft.html"-->

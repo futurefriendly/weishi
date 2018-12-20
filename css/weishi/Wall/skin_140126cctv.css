@@ -1,0 +1,86 @@
+/* CSS GUIDE - 上墙页皮肤样式
+================================================================
+ *
+ * PROJECT:	微视;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	zexzhang, bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET
+ * 2. 模块;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+body{ background: #f4efec}
+
+
+
+
+
+/* 2 模块
+================================================================*/
+
+/* 视频
+----------------------------------------------------------------*/
+
+/* 消息
+----------------------------------------------------------------*/
+
+.userPic{ padding-left:12px}
+.userPic .avatar,
+.userPic img{ width:52px; height:52px;}
+.userPic .avatar{ margin-top:0}
+
+/* 原消息
+----------------------------------------------------------------*/
+
+.mv_msg{ padding-bottom: 12px}
+.mv_msg .msgBox{ font-size:0!important; height: 52px; line-height:52px!important;}
+.mv_msg .userName .name{ font-size: 24px}
+.mv_msg .msgCnt{ display:none}
+
+/* TL列表项
+----------------------------------------------------------------*/
+
+.mvitem{ padding-top:128px; height:640px}
+
+/* hdTitle
+----------------------------------------------------------------*/
+
+.mv_summary{ display:none}
+
+/* mv_appPc */
+.mv_2Code{ display:none}
+
+/* 上墙信息
+----------------------------------------------------------------*/
+
+.mv_floatInfo{ display:none; color:#fff}
+
+/* 上墙控制
+----------------------------------------------------------------*/
+
+.wall_control .bd{ background-color:rgba(0,0,0,.3);}
+.wall_control .txt{ color:#fff}
+
+
+
+/* 3 结构
+================================================================*/
+
+article{
+	/* 在线 */
+	/*	background-image:url(http://mat1.gtimg.com/www/mb/images/weishi/Wall/skin/140126cctv_bg.jpg); */
+	/* 离线 */
+	background-image:url(./skin/images/140126cctv_bg.jpg);
+}
+
+.mv_aside{ display: none}

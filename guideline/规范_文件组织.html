@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico"/>
+
+<script type="text/javascript">
+document.createElement('header');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+</script>
+
+<link type="text/css" rel="stylesheet" media="screen" href="./images/style.global.css">
+
+<style>
+/* 节日皮肤 */
+/*@import url("../css/weishi/Festival/style.css");*/
+</style>
+<style>
+html,body{ _height:100%}
+.demo_subtitle{ padding-top:42px; font-size:48px}
+.gmod{ padding-top:42px;}
+
+.gtable{ background:#fff; width:100%; table-layout:fixed; margin-bottom:10px;}
+.gtable th,
+.gtable td{ padding:10px; border:#999 1px solid;}
+.gtable th{ background:#eee; width:20%;}
+.gtable thead th{ width:auto;}
+.gtable thead th:first-child{ width:20%;}
+
+.demo_block{ width:98px; height:98px; border-width:1px; border-style:solid; line-height:98px; text-align:center;}
+
+.topnav .topNavSub{ display:none}
+.topnav .item:hover .topNavSub{ display:block}
+
+.D_lay{ display:none}
+</style>
+
+<script type="text/javascript" src="./images/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function(){
+	var title= document.title;
+	$('.topnav .item').removeClass('select');
+	$('.topnav .item[rel='+title+']').addClass('select');
+}
+</script>
+
+<title>规范_文件组织</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<div class="topnav">
+	<div class="bd clear">
+		<div class="logo clear">
+			<div class="c1">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="c2">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="dis_b left ml5 tx_24 tx_yh c_tx7">PC侧Web规范</div>
+		</div>
+		<div class="nav right clear">
+
+			<div class="item" rel="规范_文件组织">
+				<a href="规范_文件组织.html" class="txt">文件组织</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_文件组织.html#resource">前端资源</a></li>
+						<li><a href="规范_文件组织.html#file">文件结构</a></li>
+						<li><a href="规范_文件组织.html#gaga">CSSgaga配置</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_设计规范">
+				<a href="规范_设计规范.html" class="txt">设计规范</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_设计规范.html#global_base">全局基础</a></li>
+						<li><a href="规范_设计规范.html#sub_base">Sub基础</a></li>
+						<li><a href="规范_设计规范.html#global_main">全局模块</a></li>
+						<li><a href="规范_设计规范.html#sub_main">Sub模块</a></li>
+						<li><a href="规范_设计规范.html#skin">全局皮肤</a></li>
+						<li><a href="规范_设计规范.html#global_browser">浏览器兼容</a></li>
+						<li><a href="规范_设计规范.html#global_zindex">z-index</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_浮层规范和实例">
+				<a href="规范_浮层规范和实例.html" class="txt">浮层规范和实例</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_浮层规范和实例.html#common">规范</a></li>
+						<li><a href="规范_浮层规范和实例.html#instance">实例</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_动画库">
+				<a href="规范_动画库.html" class="txt">动画库</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_动画库.html#enter">淡入</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_Sub实例库">
+				<a href="规范_Sub实例库.html" class="txt">Sub实例库</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="topnav_ph">
+	<!-- placeholder -->
+</div>
+<!-- /规范顶部导航 -->
+
+<article class="clear">
+	<div class="a_bd">
+		<h1 class="tx_26 tx_yh pt15">文件组织</h1>
+		<h3 class="tx_16 tx_yh">
+			<p>* 文件结构图实时维护更新，图片文件名即为版本号</p>
+			<p>* 微视sprite图片管理依赖CSSgaga工具，下载地址和说明：<a href="http://www.99css.com/archives/542">http://www.99css.com/archives/542</a></p>
+			<p>* 规范维护：bennyzhai</p>
+		</h3>
+
+		<a name="resource"></a>
+		<h2 class="demo_subtitle tx_yh">#前端资源</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#resource_source" class="lk"><span class="t">资源</span></a></li>
+			<li class="item"><a href="#resource_img" class="lk"><span class="t">特殊图片</span></a></li>
+			</ul>
+		</div>
+		
+		<a name="resource_source"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">资源</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>SVN</th>
+						<th>HTTP</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>HTML目录: </th>
+						<td>/microblog_web_proj/trunk/docs/制作稿/微视/</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>CSS目录: </th>
+						<td>/microblog_web_proj/trunk/docs/制作稿/css/weishi/</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>CSSgaga资源目录: </th>
+						<td>/microblog_web_proj/trunk/docs/制作稿/gaga/weishi/</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>图片目录: </th>
+						<td>/microblog_web_proj/trunk/docs/制作稿/images/weishi/</td>
+						<td>http://mat1.gtimg.com/www/mb/images/weishi/</td>
+					</tr>
+					<tr>
+						<th><span class="c_tx2">图片目录（临时）: </span></th>
+						<td><span class="c_tx2">/microblog_web_proj/trunk/docs/制作稿/images/mv/</span></td>
+						<td><span class="c_tx2">http://mat1.gtimg.com/www/mb/images/mv/</span></td>
+					</tr>
+					<tr>
+						<th>PSD资源目录: </th>
+						<td>/microblog_web_proj/trunk/docs/制作稿/图片PSD/微视/</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>如引用jQuery，统一使用: </th>
+						<td>-</td>
+						<td>http://mat1.gtimg.com/www/mb/mv/js/jquery.min.js (1.8.3)</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<a name="resource_img"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">特殊图片</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>URL</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>0%全透明背景 1*1px gif</th>
+						<td>http://mat1.gtimg.com/www/mb/images/weishi/spacer.gif</td>
+					</tr>
+					<tr>
+						<th>12%黑色背景 10*10px png32</th>
+						<td>http://mat1.gtimg.com/www/mb/images/opa_000_12.png</td>
+					</tr>
+					<tr>
+						<th>30%黑色背景 10*10px png32</th>
+						<td>http://mat1.gtimg.com/www/mb/images/opa_000_30.png</td>
+					</tr>
+					<tr>
+						<th>50%黑色背景 10*10px png32</th>
+						<td>http://mat1.gtimg.com/www/mb/images/opa_000_50.png</td>
+					</tr>
+					<tr>
+						<th>60%黑色背景 10*10px png32</th>
+						<td>http://mat1.gtimg.com/www/mb/images/opa_000_60.png</td>
+					</tr>
+					<tr>
+						<th>30%白色背景 10*10px png32</th>
+						<td>http://mat1.gtimg.com/www/mb/images/opa_fff_30.png</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="file"></a>
+		<h2 class="demo_subtitle tx_yh">#文件结构</h2>
+		
+		<div class="gmod">
+			<div class="gmod_bd">
+			<a href="./images/140822.png" target="_blank"><img src="./images/140822.png" alt="" style="width:100%" /></a>
+			</div>
+		</div>
+
+		<a name="gaga"></a>
+		<h2 class="demo_subtitle tx_yh">#CSSgaga配置</h2>
+		
+		<div class="gmod">
+			<table class="gtable">
+				<tr>
+					<th>1. 设置绝对路径</th>
+					<td>
+						<img src="./images/gaga1.png" alt="" />
+					</td>
+				</tr>
+				<tr>
+					<th>2. 注意网址设置，路径和提单路径均为CSS根目录（不含'weishi'）</th>
+					<td>
+						<img src="./images/gaga3.png" alt="" />
+					</td>
+				</tr>
+				<tr>
+					<th>3. 每次修改base样式中引用的图片时，在CSSgaga中修改版本号</th>
+					<td>
+						<img src="./images/gaga2.png" alt="" />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<div class="copyright">
+	<div class="bd">
+		<p>Copyright &copy; 1998 - 2014 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" target="_blank">All Rights Reserved</a></p>
+		<p><a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">腾讯公司</a> 版权所有</p>
+	</div>
+</div>
+<!-- /版权 -->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<div class="floatopt">
+	<div class="bd">
+
+		<div class="dr">
+			<ul class="drbtn">
+			<!-- drbtn中的公共按钮根据页面需要选取 -->
+			<li class="item">
+				<a class="lk" href="#" title="返回顶部"><i class="ico_dr ico_drReturn"></i><span class="txt">返回顶部</span></a>
+			</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /浮动操作 -->
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* CSS GUIDE - 结构
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 结构;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 结构
+================================================================*/
+
+/* 顶部导航
+----------------------------------------------------------------*/
+
+.topnav{ position:absolute;}
+
+/* 导航fix占位 */
+.topnav_ph{ display:none}
+
+/* 背景图
+----------------------------------------------------------------*/
+
+.bgGroup{ opacity:0; visibility:hidden\9; position:absolute; width:100%; height:100%; right:0; top:0; background-position:50% 50%; background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	background-size:cover;
+	-webkit-transition:opacity .5s ease-in-out;
+	-moz-transition:opacity .5s ease-in-out;
+	-o-transition:opacity .5s ease-in-out;
+	-ms-transition:opacity .5s ease-in-out;
+	transition:opacity .5s ease-in-out;
+}
+.bgSelect{ opacity:1; visibility:visible\9;
+}
+.bgIE{ position: absolute; left:0; top:0; width:100%; height:100%; overflow:hidden}
+
+/* 中部结构
+----------------------------------------------------------------*/
+
+.mod_bd{}
+.mod_bd .m_b{}
+.mod_bd .m_b_hd,
+.mod_bd .m_b_bd{ min-width:960px; max-width:1004px; _width:960px; margin:0 auto;}
+.mod_bd .m_b_hd{ height:64px; border-bottom:#dbdbdb 1px solid}
+.mod_bd .m_b_hd .tit{ float:left; padding-top:24px; font-size:24px; font-family:Microsoft Yahei,Mingliu; color:#333}
+.mod_bd .m_b_hd .opt{ float:right; font-size:14px; padding-top:34px; font-family:Microsoft Yahei,Mingliu}
+.mod_bd .m_b_hd .opt a{ color:#888}
+.mod_bd .m_b_bd{ padding-bottom:30px}
+
+/* 底部结构
+----------------------------------------------------------------*/
+
+.mod_ft{ margin-top:45px;}
+
+/* 底部固定模块 */
+.mod_flft{ position:fixed; _position:relative; z-index:901; bottom:0; width:100%; height:70px;
+	-webkit-animation:flft .5s ease;
+	-moz-animation:flft .5s ease;
+	-o-animation:flft .5s ease;
+}
+@-webkit-keyframes flft{
+	0%{ -webkit-transform:translate3d(0,90px,0)}
+	100%{ -webkit-transform:translate3d(0,0,0)}
+}
+@-moz-keyframes flft{
+	0%{ -moz-transform:translate3d(0,90px,0)}
+	100%{ -moz-transform:translate3d(0,0,0)}
+}
+@-o-keyframes flft{
+	0%{ -o-transform:translate3d(0,90px,0)}
+	100%{ -o-transform:translate3d(0,0,0)}
+}
+.mod_flft .darkbg{ position: absolute; width:100%; height:100%; left:0; top:0; background:#000; opacity:.5; filter:alpha(opacity=50); _filter:none; _background:#808080}
+.mod_flft_in{ padding-top:5px; position:relative; width:960px; margin:0 auto;}
+.mod_flft .logo{ float:left; width:60px; height:60px; overflow:hidden; margin-right:12px}
+.mod_flft .logo_in{ width:90px; height:151px; margin:-91px 0 0 0;}
+.mod_flft_in .tit{ float:left; padding-top:10px; font-size:22px; color:#fff; font-family:Microsoft Yahei,Mingliu}
+.mod_flft_in .action{ float:left; padding-top:2px; margin-left:12px}
+.mod_flft_in .qrcode_down{ float:left; padding-top:5px; padding-left:15px}
+.mod_flft_in .qrcode_down img{ width:50px; height:50px}
+.mod_flft_in .qrcode_con{position: absolute; right:-4px; bottom:60px; width:204px; height:218px; padding:4px 0 0 4px;
+	background:url(http://mat1.gtimg.com/www/mb/images/mv/qrcode_con.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/qrcode_con.png');
+	-webkit-animation:enter_b_10 .5s ease 1;
+	-moz-animation:enter_b_10 .5s ease 1;
+	-o-animation:enter_b_10 .5s ease 1;
+	-ms-animation:enter_b_10 .5s ease 1;
+	animation:enter_b_10 .5s ease 1;
+}
+.mod_flft_in .qrcode_con img{ vertical-align:top}
+
+/* 底部版权 */
+.copyright{ min-width:940px; max-width:1004px; _width:940px; margin:20px auto 0; padding:0 11px 115px 9px; _padding-bottom:45px; color:#888; background:none;}
+.copyright a,
+.copyright a:hover{ color:#888}
+
+/* 浮层
+----------------------------------------------------------------*/
+
+.D_lay{ position:absolute; width:100%; height:100%; left:0; top:0; z-index:999; background:url(about:blank);}
+.D_wrap{ position:absolute; left:50%; top:45%; margin:-160px 0 0 -305px; width:610px; height:320px; background:#fff; background-clip:padding-box; border:#333 4px solid; border-color:rgba(0,0,0,.5); box-shadow:rgba(0,0,0,.75) 0 2px 8px;
+	-webkit-animation:DShow .5s ease-in-out 1;
+	-moz-animation:DShow .5s ease-in-out 1;
+	-o-animation:DShow .5s ease-in-out 1;
+	-ms-animation:DShow .5s ease-in-out 1;
+	animation:DShow .5s ease-in-out 1;
+}
+@-webkit-keyframes DShow{
+	0%{-webkit-transform:scale(.95); opacity:0;}
+	100%{-webkit-transform:scale(1); opacity:1;}
+}
+@-moz-keyframes DShow{
+	0%{-moz-transform:scale(.95); opacity:0;}
+	100%{-moz-transform:scale(1); opacity:1;}
+}
+@-o-keyframes DShow{
+	0%{-o-transform:scale(.95); opacity:0;}
+	100%{-o-transform:scale(1); opacity:1;}
+}
+@-ms-keyframes DShow{
+	0%{-ms-transform:scale(.95); opacity:0;}
+	100%{-ms-transform:scale(1); opacity:1;}
+}
+@keyframes DShow{
+	0%{transform:scale(.95); opacity:0;}
+	100%{transform:scale(1); opacity:1;}
+}
+.D_title{ height:34px; padding:3px 3px 0;}
+.D_cont{ padding:10px 26px 20px 40px;}
+.D_cont .c1{ width:310px; float:left; padding-top:16px}
+.D_cont .c1 .t{ margin-bottom:36px;}
+.D_cont .c1 .pic{ float:left; margin-right:10px; padding-top:2px}
+.D_cont .c1 .detail{ overflow:hidden; font-size:26px}
+.D_cont .c2{ width:232px; float:right}
+.D_cont .c2 .qrcode img{ width:232px; height:232px}
+.D_cont .c2 .txt{ color:#999}

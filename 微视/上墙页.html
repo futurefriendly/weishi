@@ -1,0 +1,139 @@
+<!--#include file="inc/Wall/w_hd.html"-->
+
+<title>微视上墙页</title>
+
+</head>
+
+<body>
+
+<!-- 浏览器兼容提示 Global/browserSupport.html -->
+<!--#include file="inc/Global/browserSupport.html"-->
+<!-- /浏览器兼容提示 -->
+
+<article class="clear">
+<div class="a_bd">
+
+<aside>
+
+<!-- 三栏左栏 -->
+<div class="taside">
+
+</div>
+<!-- /三栏左栏 -->
+
+</aside>
+
+<section id="wallSection">
+
+<ul class="clear">
+
+<li class="mvitem">
+
+<!-- 视频 Wall/m_video.html -->
+<!--#include file="inc/Wall/m_video.html"-->
+<!-- /视频 -->
+
+<!-- 消息 Wall/m_msg.html -->
+<!--#include file="inc/Wall/m_msg.html"-->
+<!-- /消息 -->
+
+<!-- 上墙信息 -->
+<!--#include file="inc/Wall/m_floatInfo.html"-->
+<!-- 上墙信息 -->
+
+</li>
+
+<li class="mvitem">
+
+<!-- 视频 Wall/m_video.html -->
+<!--#include file="inc/Wall/m_video.html"-->
+<!-- /视频 -->
+
+<!-- 消息 Wall/m_msg.html -->
+<!--#include file="inc/Wall/m_msg.html"-->
+<!-- /消息 -->
+
+<!-- 上墙信息 -->
+<!--#include file="inc/Wall/m_floatInfo.html"-->
+<!-- 上墙信息 -->
+
+</li>
+
+<li class="mvitem">
+
+<!-- 视频 Wall/m_video.html -->
+<!--#include file="inc/Wall/m_video.html"-->
+<!-- /视频 -->
+
+<!-- 消息 Wall/m_msg.html -->
+<!--#include file="inc/Wall/m_msg.html"-->
+<!-- /消息 -->
+
+<!-- 上墙信息 -->
+<!--#include file="inc/Wall/m_floatInfo.html"-->
+<!-- 上墙信息 -->
+
+</li>
+
+</ul>
+
+</section>
+
+<div class="mv_aside">
+
+<div class="mv_conBox clear">
+
+<div class="fixbox" style="position:fixed">
+
+<!-- hdTitle Wall/m_hdTitle.html -->
+<!--#include file="inc/Wall/m_hdTitle.html"-->
+<!-- /hdTitle -->
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</article>
+
+<!-- 上墙控制 Wall/m_wallcontrol.html -->
+<!--#include file="inc/Wall/m_wallcontrol.html"-->
+<!-- 上墙控制 -->
+
+<script src="http://mat1.gtimg.com/www/mb/mv/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+// 上墙手动滚动
+function _wallScroll(o){
+
+	var _walls = new Object();
+		_walls.obj = document.getElementById('wallSection');
+		_walls.dist = _walls.obj.clientHeight;
+		_walls.scro = _walls.obj.scrollTop;
+
+	switch(o){
+		// 向上滚动 scrollTop变小
+		case 0 : {
+			_walls.corr = _walls.scro - Math.ceil( _walls.scro / _walls.dist ) * _walls.dist;//修正因快速点击产生的误差
+			$(_walls.obj).stop().animate({
+				'scrollTop' : _walls.scro - _walls.dist - _walls.corr + 'px'
+			},'100');
+		}
+		break;
+
+		// 向下滚动 scrollTop变大
+		case 1 : {
+			_walls.corr = _walls.scro - Math.floor( _walls.scro / _walls.dist ) * _walls.dist;//修正因快速点击产生的误差
+			$(_walls.obj).stop().animate({
+				'scrollTop' : _walls.scro + _walls.dist - _walls.corr + 'px'
+			},'100');
+		}
+		break;
+	}
+	console.log(_walls.corr);
+}
+</script>
+
+<!--#include file="inc/Wall/w_ft.html"-->

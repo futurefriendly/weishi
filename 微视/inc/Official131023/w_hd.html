@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico" />
+<link type="text/css" rel="stylesheet" media="screen" href="../css/weishi/Official131023/style.css" />
+<!--交互用jQuery-->
+<script type="text/javascript" src="../lab/umbrella_b1/script/jquery-1.10.2.min.js"></script>
+<script>
+$(function(){
+	$('.dots a').click(function(){
+		var num = $(this).text();
+		$('.dots .num').removeClass('select');
+		$(this).parent().addClass('select');
+		$('.bgGroup').removeClass('bgSelect');
+		$('.bgGroup.bg'+num).addClass('bgSelect');
+		$('.wording').removeClass('e_wording_1 e_wording_2 e_wording_3').addClass('e_wording_'+num);
+		$('.screen_ls').removeClass('f_showScreen1 f_showScreen2 f_showScreen3').addClass('f_showScreen'+num);
+		return false;
+	});
+});
+</script>
+<title>微视</title>
+</head>
+<body>

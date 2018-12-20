@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico"/>
+
+<script type="text/javascript">
+document.createElement('header');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+</script>
+
+<link type="text/css" rel="stylesheet" media="screen" href="./images/style.global.css">
+
+<style>
+/* 节日皮肤 */
+/*@import url("../css/weishi/Festival/style.css");*/
+</style>
+<style>
+html,body{ _height:100%}
+.demo_subtitle{ padding-top:42px; font-size:48px}
+.gmod{ padding-top:42px;}
+
+.gtable{ background:#fff; width:100%; table-layout:fixed; margin-bottom:10px;}
+.gtable th,
+.gtable td{ padding:10px; border:#999 1px solid;}
+.gtable th{ background:#eee; width:20%;}
+.gtable thead th{ width:auto;}
+.gtable thead th:first-child{ width:20%;}
+
+.demo_block{ width:98px; height:98px; border-width:1px; border-style:solid; line-height:98px; text-align:center;}
+
+.topnav .topNavSub{ display:none}
+.topnav .item:hover .topNavSub{ display:block}
+
+.D_lay{ display:none}
+</style>
+
+<script type="text/javascript" src="./images/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function(){
+	var title= document.title;
+	$('.topnav .item').removeClass('select');
+	$('.topnav .item[rel='+title+']').addClass('select');
+}
+</script>
+
+<!-- <link type="text/css" rel="stylesheet" media="screen" href="../css/weishi/Sub/asyn.css" /> -->
+
+<script type="text/javascript">
+// function d_lay(){
+
+// 	var docw = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// 	var doch = document.body.clientHeight;
+// 	var winh = window.screen.height;
+// 	var scrolltop = document.body.scrollTop;
+
+// 	$('.D_bg').each(function(){
+// 		$(this).css({
+// 			width : docw,
+// 			height : doch
+// 		});
+// 	});
+// 	$('.D_wrap').each(function(){
+// 		var w = $(this).width();
+// 		var h = $(this).height();
+// 		$(this).css({
+// 			width : w,
+// 			height : h,
+// 			marginLeft : Math.floor(-w/2),
+// 			marginTop : Math.floor(-h/2),
+// 			top : scrolltop + Math.floor(winh/2-h/2)
+// 		});
+// 	});
+
+// }
+$(function(){
+	$('.D_lay .close').click(function(){
+		$(this).parents('.D_lay').hide();
+	});
+})
+function showlay(o){
+	var tg = $(o).attr('name');
+	$('.D_lay').hide();
+	$('#'+tg).show();
+	$('#'+tg+' .D_wrap').css({
+		marginLeft : Math.floor(-$('#'+tg+' .D_wrap').width()/2),
+		marginTop : Math.floor(-$('#'+tg+' .D_wrap').height()/2)
+	});
+}
+</script>
+
+<title>规范_浮层规范和实例</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<div class="topnav">
+	<div class="bd clear">
+		<div class="logo clear">
+			<div class="c1">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="c2">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="dis_b left ml5 tx_24 tx_yh c_tx7">PC侧Web规范</div>
+		</div>
+		<div class="nav right clear">
+
+			<div class="item" rel="规范_文件组织">
+				<a href="规范_文件组织.html" class="txt">文件组织</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_文件组织.html#resource">前端资源</a></li>
+						<li><a href="规范_文件组织.html#file">文件结构</a></li>
+						<li><a href="规范_文件组织.html#gaga">CSSgaga配置</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_设计规范">
+				<a href="规范_设计规范.html" class="txt">设计规范</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_设计规范.html#global_base">全局基础</a></li>
+						<li><a href="规范_设计规范.html#sub_base">Sub基础</a></li>
+						<li><a href="规范_设计规范.html#global_main">全局模块</a></li>
+						<li><a href="规范_设计规范.html#sub_main">Sub模块</a></li>
+						<li><a href="规范_设计规范.html#skin">全局皮肤</a></li>
+						<li><a href="规范_设计规范.html#global_browser">浏览器兼容</a></li>
+						<li><a href="规范_设计规范.html#global_zindex">z-index</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_浮层规范和实例">
+				<a href="规范_浮层规范和实例.html" class="txt">浮层规范和实例</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_浮层规范和实例.html#common">规范</a></li>
+						<li><a href="规范_浮层规范和实例.html#instance">实例</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_动画库">
+				<a href="规范_动画库.html" class="txt">动画库</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_动画库.html#enter">淡入</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_Sub实例库">
+				<a href="规范_Sub实例库.html" class="txt">Sub实例库</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="topnav_ph">
+	<!-- placeholder -->
+</div>
+<!-- /规范顶部导航 -->
+
+<article class="clear">
+	<div class="a_bd">
+		<h1 class="tx_26 tx_yh pt15">浮层规范和实例</h1>
+		<h3 class="tx_16 tx_yh">
+			<p>* 浮层规范内容引用全局基础样式 <span class="c_tx4">Sub/style.base.css</span> ，全局结构样式 <span class="c_tx4">Sub/style.main.css</span>，且依赖异步样式 <span class="c_tx4">Sub/asyn.css</span></p>
+			<p>* .D_bg需要计算width,height，.D_wrap需要计算left,top,width，逻辑可参考微博主站</p>
+			<p>* 本规范使用制作稿真实环境样式，实时维护更新</p>
+			<p>* 规范维护：bennyzhai</p>
+		</h3>
+
+		<a name="common"></a>
+		<h2 class="demo_subtitle tx_yh">#规范</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#common_alert" class="lk"><span class="t">提示框</span></a></li>
+			</ul>
+		</div>
+
+		<a name="common_alert"></a>
+		<div class="gmod">
+
+			<h3 class="tx_24 tx_yh">提示框</h3>
+
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>普通提示</th>
+						<td><a name="D_alert_noclose" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">Alert(无关闭按钮)</span></a></td>
+						<th>普通提示</th>
+						<td><a name="D_alert" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">Alert(有关闭按钮)</span></a></td>
+					</tr>
+					<tr>
+						<th>成功提示</th>
+						<td>-</td>
+						<th>警告提示</th>
+						<td>-</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="instance"></a>
+		<h2 class="demo_subtitle tx_yh">#实例</h2>
+
+		<div class="gmod">
+
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>扫一扫登录</th>
+						<td><a name="D_login" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">扫一扫登录</span></a></td>
+						<th>联系我们</th>
+						<td><a name="D_contact" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">联系我们</span></a></td>
+					</tr>
+					<tr>
+						<th>分享到SNS</th>
+						<td><a name="D_sharesns" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">分享到SNS</span></a></td>
+						<th>下载手机客户端</th>
+						<td><a name="D_down" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">下载手机客户端</span></a></td>
+					</tr>
+					<tr>
+						<th>上传视频提示</th>
+						<td><a name="D_uploadmv" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">上传视频提示</span></a></td>
+						<th>验证码</th>
+						<td><a name="D_captcha" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">验证码</span></a></td>
+					</tr>
+					<tr>
+						<th>ptlogin登录</th>
+						<td><a name="D_ptlogin" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">ptlogin登录</span></a></td>
+						<th>转发到微视</th>
+						<td><a name="D_relay" onclick="showlay(this)" href="###" class="btn btn2_l"><span class="t">转发到微视</span></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<div class="copyright">
+	<div class="bd">
+		<p>Copyright &copy; 1998 - 2014 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" target="_blank">All Rights Reserved</a></p>
+		<p><a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">腾讯公司</a> 版权所有</p>
+	</div>
+</div>
+<!-- /版权 -->
+
+<!--
+
+通用浮层
+=====================================================================================
+
+-->
+
+<!-- 浮层 alert 无关闭按钮  -->
+<div id="D_alert_noclose" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:230px">
+	<div class="D_title clear">
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">提示文字</h2>
+
+		<div class="mt15 tx_c"><a href="###" class="btn btn3_l" onclick="$('.D_lay').hide()"><span class="t">确定</span></a></div>
+
+	</div>		
+</div>
+
+</div>
+<!-- /浮层 alert 无关闭按钮 -->
+
+<!-- 浮层 alert 有关闭按钮  -->
+<div id="D_alert" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:230px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">提示文字</h2>
+
+		<div class="mt15 tx_c"><a href="###" class="btn btn3_l" onclick="$('.D_lay').hide()"><span class="t">确定</span></a></div>
+
+	</div>		
+</div>
+
+</div>
+<!-- /浮层 alert 有关闭按钮 -->
+
+<!--
+
+实例浮层 start
+=====================================================================================
+
+-->
+
+<!-- 浮层 登录 Sub/d_lay_login.html -->
+<div id="D_login" class="D_lay">
+<style>
+@import url("./images/m.saoLogin.css"); /* 扫一扫登录模块 */
+</style>
+
+<div class="D_bg"></div>
+<div class="D_wrap">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+		<div class="cont clear" style="width:551px">
+
+			<h2 class="toptxt mb20">
+				<p class="tx_18">这里需要登录哦！</p>
+				<p class="mt10 tx_30">用微视客户端 <span class="c_tx4">扫一扫登录</span></p>
+			</h2>
+
+			<div class="preBox bor0 pr10">
+
+				<!-- 扫一扫登录 simple扩展 -->
+				<div class="saoLogin e_saoLogin_simple left">
+
+				<!-- 二维码 Sub/m_saoLoginCode_simple.html -->
+				<div class="saoLoginCode">
+				<div class="inner" id="saoLoginCode">
+	<img src="http://mat1.gtimg.com/www/mb/images/mv/qrcodedemo_140.png" alt="" />
+    <span class="logo"><i></i></span>
+</div>
+<p><span class="c_tx2">微视2.0版本支持本功能</span></p>
+
+<!-- 扫描成功提示 -->
+<div class="loginsuc">
+    <div class="ico_sucbox"><div class="ico_suc"></div></div>
+    <p>扫描成功!<br />请在手机上点击确认，即可登录</p> 
+</div>
+<!-- /扫描成功提示 -->
+				</div>
+				<!-- /二维码 -->
+
+				</div>
+				<!-- /扫一扫登录 -->
+
+			</div>
+			
+			<div class="conBox" style="padding-top:20px; height:140px">
+
+				<h2 class="toptxt">
+					<p class="tx_18">还没安装微视？</p>
+					<p class="tx_18">直接扫描左侧二维码就可以安装哦</p>
+				</h2>
+				<p class="mt5"><span class="c_tx2">您也可以到</span> <a href="###">官网下载 <span class="tx_song">&gt;&gt;</span></a></p>
+
+			</div>
+
+		</div>
+	</div>		
+</div>
+</div>
+<!-- /浮层 登录 -->
+
+<!-- 浮层 联系我们 d_lay_contact.html -->
+<div id="D_contact" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:630px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+		<div class="pt15 left" style="width:310px; line-height:1.5">
+			<div class="pb15">
+				<div class="left mr10 pt5">
+					<div class="ico_lay_wechat"></div><!-- 微博ico: ico_lay_weibo -->
+				</div>
+				<div class="detail" style="overflow:hidden">
+					<div class="tx_16 c_tx6 tx_yh">微视公共帐号</div>
+					<div class="tx_yh tx_26">QQweishi</div>
+				</div>
+			</div>
+			<div class="pt15 c_tx6">产品的完善和成长，离不开小伙伴们的关注与支持。<br />快扫描二维码，通过微信与我们零距离交流吧~</div>
+		</div>
+		<div class="right" style="width:232px">
+			<div class="qrcode">
+				<img src="http://mat1.gtimg.com/www/mb/images/mv/qrcode_weixin.png" />
+			</div>
+			<div class="tx_c"><span class="c_tx6">扫描二维码添加微信帐号</span></div>
+		</div>
+	</div>		
+</div>
+</div>
+<!-- /浮层 联系我们 -->
+
+<!-- 浮层 分享到SNS Sub/d_lay_sharesns.html  -->
+<div id="D_sharesns" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:478px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">分享频道到</h2>
+
+		<div class="D_sharelist">
+		<ul class="clear">
+		<li class="item">
+			<a href="###"><i class="ico36 ico_wb36"></i><span class="t">腾讯微博</span></a>
+		</li>
+		<li class="item">
+			<a href="###"><i class="ico36 ico_qq36"></i><span class="t">QQ好友</span></a>
+		</li>
+		<li class="item">
+			<a href="###"><i class="ico36 ico_qz36"></i><span class="t">QQ空间</span></a>
+		</li>
+		</ul>
+		<ul class="clear">
+		<li class="item">
+			<a href="###"><i class="ico36 ico_sina36"></i><span class="t">新浪微博</span></a>
+		</li>
+		<li class="item">
+			<a href="###"><i class="ico36 ico_rr36"></i><span class="t">人人网</span></a>
+		</li>
+		<li class="item">
+			<a href="###"><i class="ico36 ico_db36"></i><span class="t">豆瓣</span></a>
+		</li>
+		</ul>
+		</div>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 分享到SNS -->
+
+<!-- 浮层 下载 Sub/d_lay_down.html -->
+<div id="D_down" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">手机没有安装微视？立刻下载手机客户端！</h2>
+
+		<div class="mv_appPc">
+		    <div class="c1">
+		    <div class="mv_iphone">
+		        <a hidefocus="true" class="mv_iphone_btn" href="###">
+		            <span class="ico_down_iphone"></span>
+		            <span class="txt"><span class="tx_ar">iPhone</span><span class="tx_yh">版下载</span></span>
+		        </a>
+		    </div>
+		    <div class="mv_android">
+		        <a hidefocus="true" class="mv_android_btn" href="###">
+		            <span class="ico_down_android"></span>
+		            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+		        </a>
+		    </div>
+		    </div>
+		    <div class="c2">
+		    <p class="mv_2Code">
+		        <img src="http://mat1.gtimg.com/www/mb/mobile/mv/mVideo_qr_130913.png" />
+		    </p>
+		    <p>扫一扫，马上下载</p>
+		    </div>
+		</div>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 下载 -->
+
+<!-- 浮层 上传视频提示 Sub/d_lay_uploadmv.html -->
+<div id="D_uploadmv" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:410px">
+	<div class="D_title clear">
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">你今天已经上传过视频，<br />每位用户每天在PC端只能发布1条视频。</h2>
+
+		<div class="mt15 tx_c"><a href="###" class="btn btn3_l" onclick="$('.D_lay').hide()"><span class="t">确定</span></a></div>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 上传视频提示 -->
+
+<!-- 浮层 验证码 Sub/d_lay_captcha.html -->
+<div id="D_captcha" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:341px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">请输入验证码</h2>
+
+		<div class="tb_form c_bg1">
+			<form action="">
+			<table>
+			<tr>
+				<td>
+					<a href="###" class="vt_m dis_inb"><img src="http://captcha.qq.com/getimage?aid=13001401&Math.random" alt="" /></a><span class="ml5 vt_m"><a href="###">看不清楚，换一张</a></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" maxlength="4" class="inputTxt" style="width:118px" /><span class="ml5"><a href="###" class="btn btn3"><span class="t">验证</span></a></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="c_tx4">验证成功！</span>
+					<span class="c_tx5">输入错误，请重试</span>
+				</td>
+			</tr>
+			</table>
+			</form>
+		</div>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 验证码 -->
+
+<!-- 浮层 ptlogin登录 Sub/d_lay_ptlogin.html -->
+<div id="D_ptlogin" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:450px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+        
+        <style>
+        .login_mt_sina,
+        .login_mt_wechat,
+        .login_mt_weishi{ display:inline-block; padding:0 3px; border-radius:3px; color:#fff;}
+        .login_mt_sina:hover,
+        .login_mt_wechat:hover,
+        .login_mt_weishi:hover{ color:#fff; text-decoration:none}
+        .login_mt_sina i,
+        .login_mt_wechat i,
+        .login_mt_weishi i{ margin-right:2px}
+        .login_mt_sina{
+            background: #eb5042;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#eb5446), to(#eb4c3e)); /* Saf4+, Chrome */
+            background-image:-webkit-linear-gradient(top, #eb5446, #eb4c3e); /* Chrome 10+, Saf5.1+ */
+            background-image:-moz-linear-gradient(top, #eb5446, #eb4c3e); /* FF3.6+ */
+            background-image:-ms-linear-gradient(top, #eb5446, #eb4c3e); /* IE10 */
+            background-image:-o-linear-gradient(top, #eb5446, #eb4c3e); /* Opera 11.10+ */
+            background-image:linear-gradient(top, #eb5446, #eb4c3e); /* W3C */
+        }
+        .login_mt_wechat{
+            background: #43ba54;
+            background-image:-webkit-gradient(linear, left top, left bottom, from(#40b951), to(#34b547)); /* Saf4+, Chrome */
+            background-image:-webkit-linear-gradient(top, #40b951, #34b547); /* Chrome 10+, Saf5.1+ */
+            background-image:-moz-linear-gradient(top, #40b951, #34b547); /* FF3.6+ */
+            background-image:-ms-linear-gradient(top, #40b951, #34b547); /* IE10 */
+            background-image:-o-linear-gradient(top, #40b951, #34b547); /* Opera 11.10+ */
+            background-image:linear-gradient(top, #40b951, #34b547); /* W3C */
+        }
+        .login_mt_weishi{
+            background: #20bec6;
+        }
+        </style>
+
+    	<div class="loginBox">
+            <!-- 出验证码时iframe的高度变为393 -->
+            <iframe allowtransparency="true" scrolling="no" frameborder="0" width="100%" height="316" src="http://ui.ptlogin2.qq.com/cgi-bin/login?f_url=loginerroralert&style=13&appid=24000201&hide_title_bar=1&target=self&link_target=blank&hide_close_icon=1&s_url=http%3A//music.qq.com/close.html"></iframe>
+        </div>
+
+        <div class="pr10 pt10" style=" border-top:#20bec6 1px dotted">
+        	<span class="dis_inb vt_m c_tx2">其他登录方式</span><span class="dis_inb ml5 vt_m"><a class="login_mt_sina" href="###"><i class="ico16 ico_sina16 vt_m"></i><span class="vt_m">新浪微博帐号</span></a><a class="login_mt_wechat ml10" href="###"><i class="ico16 ico_wechat16 vt_m"></i><span class="vt_m">微信帐号</span></a><a class="login_mt_weishi ml10" href="###"><i class="ico16 ico_qrcode16 vt_m"></i><span class="vt_m">微视扫一扫</span></a></span>
+        </div>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 ptlogin登录 -->
+
+<!-- 浮层 转发到微视 Sub/d_lay_relay.html -->
+<div id="D_relay" class="D_lay">
+<div class="D_bg"></div>
+<div class="D_wrap" style="width:440px">
+	<div class="D_title clear">
+		<a hidefocus="true" href="###" class="close"></a>
+	</div>
+	<div class="D_cont clear">
+
+		<h2 class="toptxt">转发到微视</h2>
+
+		<form action="">
+
+			<div class="talkbox mt20">
+				<div class="gb_inputArea1">
+					<label for="txt_relay" class="lb c_tx2 tx_14">亲，说两句吧...</label>
+					<textarea id="txt_relay" class="inputArea tx_14" style="width:348px; height:82px"></textarea>
+					<div class="tx_r"><span class="c_tx2">剩余 <span class="c_tx4">144</span> 字</span></div>
+				</div>
+			</div>
+
+			<div class="quotebox mt15 clear">
+				<div class="pic">
+					<img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" alt="" />
+					<a href="###" class="btnPlay"><em class="canPlay"></em></a>
+				</div>
+				<div class="txt">
+					<p><strong>微视</strong></p>
+					<p class="mt5 tx_br c_tx6">准备好跟我去旅行了咩？</p>
+				</div>
+			</div>
+
+			<div class="mt20 tx_r">
+				<label class="btn btn2_l"><input type="button" class="t" value="分享"></label>
+			</div>
+
+		</form>
+
+	</div>		
+</div>
+</div>
+<!-- /浮层 转发到微视 -->
+
+<!--
+
+/ 实例浮层 end
+=====================================================================================
+
+-->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<div class="floatopt">
+	<div class="bd">
+
+		<div class="dr">
+			<ul class="drbtn">
+			<!-- drbtn中的公共按钮根据页面需要选取 -->
+			<li class="item">
+				<a class="lk" href="#" title="返回顶部"><i class="ico_dr ico_drReturn"></i><span class="txt">返回顶部</span></a>
+			</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /浮动操作 -->
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* 扫一扫登录
+----------------------------------------------------------------*/
+
+/* 图片 */
+.saoLogin{ margin:auto;}
+.saoLoginPhone i,
+.ico_suc{
+	background-image:url(http://mat1.gtimg.com/www/mb/mv/login/phone_sao_131202.png);
+	background-image:none\9; 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src="http://mat1.gtimg.com/www/mb/mv/login/phone_sao_131202.png");
+}
+.saoLoginCode .logo i{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_global_131227.png);}
+:root .saoLoginPhone i,
+:root .ico_suc{filter:none}
+
+/* 手机图 */
+.saoLoginPhone{}
+
+/* 二维码 */
+.saoLoginCode{ text-align:center;}
+.saoLoginCode .inner{ position:relative; display:inline-block; *display:inline; *zoom:1; _overflow:visible;
+	background-color:#fff;
+	box-shadow:rgba(0,0,0,.2) 0 0 8px;
+}
+.saoLoginCode .inner:after{
+	content:''; position:absolute; width:100%; height:100%; left:0; top:0; opacity:.3;
+	background-image: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,.2) 25%, transparent 50%, rgba(0,0,0,.2) 75%, transparent 100%),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(25%,rgba(0,0,0,.2)), color-stop(50%, transparent), color-stop(75%, rgba(0,0,0,.2)), color-stop(100%,transparent)),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.2) 25%, transparent 50%, rgba(0,0,0,.2) 75%, transparent 100%),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, transparent 0%, rgba(0,0,0,.2) 25%, transparent 50%, rgba(0,0,0,.2) 75%, transparent 100%),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, transparent 0%, rgba(0,0,0,.2) 25%, transparent 50%, rgba(0,0,0,.2) 75%, transparent 100%),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* IE10+ */
+	background-image: linear-gradient(top, transparent 0%, rgba(0,0,0,.2) 25%, transparent 50%, rgba(0,0,0,.2) 75%, transparent 100%),url(http://mat1.gtimg.com/www/mb/images/mv/bgpattern1.jpg); /* IE10+ */
+}
+.saoLoginCode .logo{ position:absolute; left:50%; top:50%; background-color:#fff;}
+.saoLoginCode .logo i{ display:block; border-radius:5px; overflow:hidden; float:left}
+.saoLoginCode img{ _overflow-y:visible; display:block; margin:0 auto; background-color:#fff;}
+.saoLoginCode h3{ font-size:16px; font-family:Microsoft Yahei,Mingliu,sans-serif; margin-top:15px;}
+.saoLoginCode p{ color:#7b7b7b}
+
+/* 扫描成功提示 */
+.loginsuc{ width:270px; margin:20px auto 0;}
+.loginsuc p{ font-size:14px; color:#333; text-align:left; line-height:20px; overflow:hidden}
+.ico_suc{ width:265px; height:550px; margin:-512px 0 0 0}
+.ico_sucbox{ width:38px; height:38px; padding-top:2px; float:left; overflow: hidden; margin-right:10px; *display:inline;}
+
+
+
+
+
+/* 扫一扫登录 simple扩展
+----------------------------------------------------------------*/
+
+.e_saoLogin_simple{ width:220px; overflow:hidden}
+
+/* 手机图 */
+.e_saoLogin_simple .saoLoginPhone{ display:none}
+
+/* 二维码 */
+.e_saoLogin_simple .saoLoginCode{ padding-top:8px;}
+.e_saoLogin_simple .saoLoginCode .inner{ min-width:140px; _width:140px; min-height:140px; _height:140px; box-shadow:none}
+.e_saoLogin_simple .saoLoginCode .inner:after{ content:none;}
+.e_saoLogin_simple .saoLoginCode .logo{ display:none}
+.e_saoLogin_simple .saoLoginCode img{ min-width:140px; _width:140px; min-height:140px; _height:140px; border:#e1e1e1 1px solid;}
+.e_saoLogin_simple .saoLoginCode h3{ display:none}
+
+/* 扫描成功提示 */
+.e_saoLogin_simple .loginsuc{ width:220px; margin-top:10px}
+.e_saoLogin_simple .loginsuc p{ font-size:12px}
+
+
+
+/* 扫一扫登录 single扩展
+----------------------------------------------------------------*/
+
+.e_saoLogin_single{ height:550px; width:380px;}
+
+/* 手机图 */
+.e_saoLogin_single .saoLoginPhone{ position:absolute; top:60px; z-index:500; display:block; width:265px; height:480px;}
+.e_saoLogin_single .saoLoginPhone i{ display:block; height:480px; background-position:0 0;}
+
+/* 二维码 */
+.e_saoLogin_single .saoLoginCode{ padding-top:80px}
+.e_saoLogin_single .saoLoginCode .inner{ min-width:256px; *width:256px; min-height:256px; *height:256px;}
+.e_saoLogin_single .saoLoginCode .logo{ display:block; width:47px; height:47px; padding:5px 0 0 5px; margin:-26px 0 0 -26px;}
+.e_saoLogin_single .saoLoginCode .logo i{ width:42px; height:42px;}
+.e_saoLogin_single .saoLoginCode img{ min-width:256px; *width:256px; min-height:256px; *height:256px;}

@@ -1,0 +1,295 @@
+/* CSS GUIDE - 基础元素
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS RESET
+ * 2. 全局公用CSS;
+ * 3. 全局颜色;
+ * 4. 基本通用元素;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS RESET
+================================================================*/
+
+html{ overflow:hidden; height:100%}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+body{ width:100%; height:100%;font:12px/1.5 Helvetica,Arial,sans-serif; overflow:hidden; _background-attachment:fixed; _background-image:url(about:blank);}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+strong{font-weight:bold}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+h3{ font-size:14px}
+sup{ vertical-align:text-top}
+sub{ vertical-align:text-bottom}
+input,textarea,select{font-family:Tahoma,Arial,sans-serif; font-size:inherit; *font-size:100%; font:12px/1.5 Helvetica,Arial,sans-serif; font-weight:inherit; outline:none}
+textarea{ resize:none; overflow-y:auto; outline:none}
+a{ text-decoration:none}
+a:hover{ text-decoration:underline}
+a:focus{ outline:none}
+
+
+
+
+
+/* 2 全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after{content:'';display:table;clear:both}
+.clear{zoom:1}
+
+.left{float:left}
+.right{float:right}
+
+/* DISPLAY */
+.dis_b{ display:block}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block; *display:inline; *zoom:1}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字体 */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Helvetica}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+
+/* 字号 */
+.tx_12{ font-size:12px}
+.tx_14{ font-size:14px}
+.tx_16{ font-size: 16px}
+
+/* 字重 */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_unbr,
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* 边距 */
+.mt5{ margin-top:5px}
+.mt10{ margin-top:10px}
+.mr5{ margin-right:5px}
+.mr10{ margin-right:10px}
+.mr15{ margin-right:15px}
+.mb5{ margin-bottom:5px}
+.mb10{ margin-bottom:10px}
+.ml5{ margin-left:5px}
+.ml10{ margin-left:10px}
+.ml15{ margin-left:15px}
+
+.pt5{ padding-top:5px}
+.pt10{ padding-top:10px}
+.pr5{ padding-right:5px}
+.pr10{ padding-right:10px}
+.pb5{ padding-bottom:5px}
+.pb10{ padding-bottom:10px}
+.pl5{ padding-left:5px}
+.pl10{ padding-left:10px}
+
+/* 其他
+----------------------------------------------------------------*/
+
+.cur_auto{ cursor: auto!important;}
+.cur_default{ cursor: default!important;}
+.cur_pointer{ cursor:pointer!important;}
+
+
+
+
+
+/* 3 全局颜色
+================================================================*/
+
+/* color
+----------------------------------------------------------------*/
+
+.c_tx0,body{ color:#000}/* 默认文字颜色 */
+.c_tx1,a{ color:#006a92}/* 默认链接色 */a:hover{ color:#006a92}a:active{ color:#006a92}
+.c_tx2{ color:#7baebf}/* 弱链接色 */.c_tx2:hover{ color:#7baebf}.c_tx2:active{ color:#7baebf}
+.c_tx3{ color:#fff}/* 强化文字色 */
+.c_tx4{ color:#fff}/* 弱化文字色 */
+.c_tx5{ color:#ba5d12}/* 强调色 标红 */
+.c_tx6{ color:#666}/* 弱化文字色2 */
+
+/* background
+----------------------------------------------------------------*/
+
+.bg0,body{ background-color:#000}/* body背景色 */
+
+/* border
+----------------------------------------------------------------*/
+
+.bor0{}
+
+
+
+
+
+/* 4 基本通用元素
+================================================================*/
+
+/* 图标
+----------------------------------------------------------------*/
+
+/* loading */
+.loading{ background:url(http://mat1.gtimg.com/www/mb/images/loading.gif) 50% 50% no-repeat}
+
+/* 16*16图标 */
+.ico16{ display:inline-block; *display: inline; *zoom:1; width:16px; height:16px; overflow: hidden; background-repeat:no-repeat; font-size:0;}
+
+
+
+/* 按钮
+----------------------------------------------------------------*/
+
+/* 新按钮 */
+.gb_btn,
+.icon{ background-image:url(http://mat1.gtimg.com/www/mb/images/s/nbt111227.png)}
+.gb_btn1s{ background-image:url(http://mat1.gtimg.com/www/mb/images/s/bts_120330.png)}
+.gb_btn{ display:inline-block; _overflow:hidden; height:16px; padding:2px 8px 1px; margin:0; text-align:center; line-height:normal; border-width:1px; border-style:solid; background-repeat:repeat-x; border-radius:2px; cursor:pointer}
+.gb_btn:hover{text-decoration:none}
+.icon,
+.gb_btn .t{ display:inline-block; height:16px; vertical-align:middle; cursor:pointer}
+.gb_btn .icon{ margin-right:4px}
+.gb_btn .t,
+.gb_foed .t{ width:auto; _width:0; *overflow:visible; margin:0; padding:0; font-size:12px; line-height:1.333; *line-height:17px; border:0; white-space:nowrap; background:none; outline:none}
+.gb_btn span.t{ _margin-top:-1px}
+.gb_btn1,
+.gb_btn1s,
+.gb_btn3,
+.gb_btn5,
+.gb_btn7{ min-width:47px}
+.gb_btn2,
+.gb_btn4,
+.gb_btn6{ min-width:67px; padding:3px 8px 4px; *padding:4px 8px 3px}
+.gb_btn2 .t,
+.gb_btn4 .t,
+.gb_btn6 .t{ font-size:14px}
+
+.gb_btn1,
+.gb_btn2{ border-color:#9bc38d; background:#9bc38d; background-position:0 -18px}
+.gb_btn1s{ border-color:#a6cdea; background-color:#f1f9ff; background-position:0 0}
+.gb_btn1 .t,
+.gb_btn2 .t{color:#fff}
+.gb_btn1s .t{ color:#006a92}
+.gb_btn1:hover,
+.gb_btn2:hover{ opacity:.9; filter:alpha(opacity=90); background-position:0 -42px}
+.gb_btn1:focus,
+.gb_btn1:active,
+.gb_btn2:focus,
+.gb_btn2:active{ opacity:.9; filter:alpha(opacity=90); background-position:0 -66px}
+
+.gb_btn3,
+.gb_btn4{ border-color:#BBE395; background-color:#F0FFDF; background-position:0 -90px}
+.gb_btn3 .t,
+.gb_btn4 .t,
+.gb_btn8 .t{color:#5AB009}
+.gb_btn3:hover,
+.gb_btn4:hover{ box-shadow:0 0 5px #ABD683 inset;background-position:0 -114px}
+.gb_btn3:focus,
+.gb_btn3:active,
+.gb_btn4:focus,
+.gb_btn4:active{ box-shadow:0 0 5px #ABD683 inset;background-position:0 -138px}
+
+.gb_btn5,
+.gb_btn6{border-color:#CFCFCF;background-color:#E5E5E5;background-position:0 -162px}
+.gb_btn5 .t,
+.gb_btn6 .t{color:#777}
+.gb_btn5:hover,
+.gb_btn6:hover{ box-shadow:0 0 5px #D5D5D5 inset;background-position:0 -186px}
+.gb_btn5:focus,
+.gb_btn5:active,
+.gb_btn6:focus,
+.gb_btn6:active{border-color:#96CCDC; box-shadow:0 0 5px #8ED9EF inset; background-position:0 -210px}
+
+.gb_btn7{border-color:#E17032;background-color:#FF9729;background-position:0 -234px}
+.gb_btn7 .t{color:#fff}
+.gb_btn7:hover,
+.gb_btn7:focus,
+.gb_btn7:active{ box-shadow:0 0 5px #FFECD7 inset; background-position:0 -253px}
+
+.gb_btn8{ border-width:0; padding:2px 3px 1px; background-image:none}
+.gb_btn8:hover,
+.gb_btn8:focus,
+.gb_btn8:active{border-width:1px;border-color:#BAE393;padding:1px 2px 0;background-color:#F1FDE4}
+
+.gb_disabled{ opacity:.55; filter:alpha(opacity:55)}
+.gb_disabled,
+.gb_disabled .i,
+.gb_disabled .t{cursor:default}
+.gb_disabled,
+.gb_disabled:hover,
+.gb_disabled:focus,
+.gb_disabled:active{ box-shadow:none; background-image:none}
+
+.gb_foed{display:inline-block;_overflow:hidden;height:16px;margin:0;color:#777;line-height:normal;vertical-align:middle}
+.gb_foed .icon{margin-right:4px;cursor:default}
+.gb_foed .t{display:inline-block;height:16px;vertical-align:middle}
+.gb_foed .line{margin:0 5px;color:#BEBEBE;text-decoration:none}
+.gb_fo2{padding:3px 8px 4px;border:1px solid #D9D9D9; border-radius:2px; background-color:#F6F6F6}
+
+.icon_fo{width:11px;background-position:-12px 0}
+.icon_fo2{width:10px}
+.icon_sfo{width:15px;background-position:-25px 0}
+.icon_bfo{width:16px;background-position:-42px 0}
+
+.btn_group{ display:inline-block; padding-left:1px}
+.btn_group .gb_btn{ margin-left:-1px}
+
+/* 按钮组
+----------------------------------------------------------------*/
+
+.bt_gp1{}
+.bt_gp1 .bt_gp_c { position:relative; *z-index:10;}
+.bt_gp_c .gb_btn5  { z-index:1; display:block; _float:left; min-width:10px; padding-left:10px; padding-right:10px; }
+.bt_gp_c .gb_btn5 .t i{ margin-right:4px}
+.bt_gp_c .arrow{position:relative;z-index:1;left:2px;top:2px;display:inline-block;font-family: simsun; font-size: 0;height: 0; overflow: hidden; width: 0;border-width: 4px;border-style: solid dashed dashed;border-color: #BBBBBB transparent transparent;vertical-align:middle}
+
+/* hover 变换箭头方向 + 展开下拉层*/
+.open .arrow {top:-2px;border-style: dashed dashed solid; border-color: transparent transparent #BBBBBB;}
+.open .w_drop { display:block}
+
+/* 横排 */
+.bt_gp1_x1 .bt_gp_c,.bt_gp1_x2 .bt_gp_c{ float:left;}
+
+/* 无缝横排 */
+.bt_gp1_x1 .gb_btn  { margin-left:-1px; border-radius:0 0 0 0}
+.bt_gp1_x1 .first .gb_btn { margin-left:0; border-radius:2px 0 0 2px}
+.bt_gp1_x1 .last .gb_btn { border-radius:0 2px 2px 0}
+
+/* 间隔横排 */
+.bt_gp1_x2 .bt_gp_c { padding-right:5px; _display:inline;}

@@ -1,0 +1,1924 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico"/>
+
+<script type="text/javascript">
+document.createElement('header');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+</script>
+
+<link type="text/css" rel="stylesheet" media="screen" href="./images/style.global.css">
+
+<style>
+/* 节日皮肤 */
+/*@import url("../css/weishi/Festival/style.css");*/
+</style>
+<style>
+html,body{ _height:100%}
+.demo_subtitle{ padding-top:42px; font-size:48px}
+.gmod{ padding-top:42px;}
+
+.gtable{ background:#fff; width:100%; table-layout:fixed; margin-bottom:10px;}
+.gtable th,
+.gtable td{ padding:10px; border:#999 1px solid;}
+.gtable th{ background:#eee; width:20%;}
+.gtable thead th{ width:auto;}
+.gtable thead th:first-child{ width:20%;}
+
+.demo_block{ width:98px; height:98px; border-width:1px; border-style:solid; line-height:98px; text-align:center;}
+
+.topnav .topNavSub{ display:none}
+.topnav .item:hover .topNavSub{ display:block}
+
+.D_lay{ display:none}
+</style>
+
+<script type="text/javascript" src="./images/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function(){
+	var title= document.title;
+	$('.topnav .item').removeClass('select');
+	$('.topnav .item[rel='+title+']').addClass('select');
+}
+</script>
+
+<title>规范_设计规范</title>
+</head>
+
+<body>
+
+<!-- 规范顶部导航 guideline_topNav.html -->
+<div class="topnav">
+	<div class="bd clear">
+		<div class="logo clear">
+			<div class="c1">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="c2">
+				<a href="###" title="微视"></a>
+			</div>
+			<div class="dis_b left ml5 tx_24 tx_yh c_tx7">PC侧Web规范</div>
+		</div>
+		<div class="nav right clear">
+
+			<div class="item" rel="规范_文件组织">
+				<a href="规范_文件组织.html" class="txt">文件组织</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_文件组织.html#resource">前端资源</a></li>
+						<li><a href="规范_文件组织.html#file">文件结构</a></li>
+						<li><a href="规范_文件组织.html#gaga">CSSgaga配置</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_设计规范">
+				<a href="规范_设计规范.html" class="txt">设计规范</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_设计规范.html#global_base">全局基础</a></li>
+						<li><a href="规范_设计规范.html#sub_base">Sub基础</a></li>
+						<li><a href="规范_设计规范.html#global_main">全局模块</a></li>
+						<li><a href="规范_设计规范.html#sub_main">Sub模块</a></li>
+						<li><a href="规范_设计规范.html#skin">全局皮肤</a></li>
+						<li><a href="规范_设计规范.html#global_browser">浏览器兼容</a></li>
+						<li><a href="规范_设计规范.html#global_zindex">z-index</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_浮层规范和实例">
+				<a href="规范_浮层规范和实例.html" class="txt">浮层规范和实例</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_浮层规范和实例.html#common">规范</a></li>
+						<li><a href="规范_浮层规范和实例.html#instance">实例</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_动画库">
+				<a href="规范_动画库.html" class="txt">动画库</a>
+				<div class="topNavSub">
+					<b class="a a5 a_b"><u></u></b>
+					<ul class="clear">
+						<li><a href="规范_动画库.html#enter">淡入</a></li>
+					</ul>
+				</div>
+			</div><div class="item" rel="规范_Sub实例库">
+				<a href="规范_Sub实例库.html" class="txt">Sub实例库</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="topnav_ph">
+	<!-- placeholder -->
+</div>
+<!-- /规范顶部导航 -->
+
+<article class="clear">
+	<div class="a_bd">
+		<h1 class="tx_26 tx_yh pt15">设计和重构规范</h1>
+		<h3 class="tx_16 tx_yh">
+			<p>* 设计和重构规范内容只引用全局基础样式 <span class="c_tx4">Sub/style.base.css</span><span class="c_tx6">(基础元素、皮肤)</span> 和全局结构样式 <span class="c_tx4">Sub/style.main.css</span><span class="c_tx6">(结构元素)</span></p>
+			<p>* 本规范使用制作稿真实环境样式，实时维护更新</p>
+			<p>* 规范维护：bennyzhai</p>
+		</h3>
+
+		<a name="global_base"></a>
+		<h2 class="demo_subtitle tx_yh">#全局基础</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#global_base_txt" class="lk"><span class="t">文字</span></a></li>
+			<li class="item"><a href="#global_base_a" class="lk"><span class="t">小箭头</span></a></li>
+			<li class="item"><a href="#global_base_hr" class="lk"><span class="t">分隔线</span></a></li>
+			<li class="item"><a href="#global_base_tbform" class="lk"><span class="t">表单框架及元素</span></a></li>
+			<li class="item"><a href="#global_base_btn" class="lk"><span class="t">按钮</span></a></li>
+			<li class="item"><a href="#global_base_btn_down" class="lk"><span class="t">下载按钮</span></a></li>
+			<li class="item"><a href="#global_base_notice" class="lk"><span class="t">提示</span></a></li>
+			<li class="item"><a href="#global_base_ico" class="lk"><span class="t">图标</span></a></li>
+			</ul>
+		</div>
+
+		<a name="global_base_txt"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">文字</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.tx_song 宋体</th>
+						<td>
+							<span class="tx_song tx_12">宋体12px</span><br />
+							<span class="tx_song tx_14">宋体14px</span><br />
+							<span class="tx_song tx_16">宋体16px</span><br />
+							<span class="tx_song tx_18">宋体18px</span><br />
+							<span class="tx_song tx_20">宋体20px</span><br />
+							<span class="tx_song tx_22">宋体22px</span><br />
+							<span class="tx_song tx_24">宋体24px</span><br />
+							<span class="tx_song tx_26">宋体26px</span><br />
+							<span class="tx_song tx_30">宋体30px</span>
+						</td>
+						<th>.tx_yh 微软雅黑<br /><span class="c_tx6">1. 系统若无“微软雅黑”则显示为“细明体”；<br />2. “微软雅黑”属于无衬线字体，且在小字号情况下不易辨别，故不使用12px字号</span></th>
+						<td>
+							<span class="tx_yh tx_14">微软雅黑14px</span><br />
+							<span class="tx_yh tx_16">微软雅黑16px</span><br />
+							<span class="tx_yh tx_18">微软雅黑18px</span><br />
+							<span class="tx_yh tx_20">微软雅黑20px</span><br />
+							<span class="tx_yh tx_22">微软雅黑22px</span><br />
+							<span class="tx_yh tx_24">微软雅黑24px</span><br />
+							<span class="tx_yh tx_26">微软雅黑26px</span><br />
+							<span class="tx_yh tx_30">微软雅黑30px</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_a"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">小箭头</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+				    <tr>
+				    	<th>.a</th>
+				        <th>.a5 5px三角</th>
+				        <th>.a4 4px三角</th>
+				        <th>.a3 3px三角</th>
+				        <th>.a5&gt;u 5px箭头</th>
+				        <th>.a4&gt;u 4px箭头</th>
+				        <th>.a3&gt;u 3px箭头</th>
+				    </tr>
+				    </thead>
+				    <tr>
+				    	<th>.a_t 下</th>
+				        <td><b class="a a5 a_t"></b></td>
+				        <td><b class="a a4 a_t"></b></td>
+				        <td><b class="a a3 a_t"></b></td>
+				        <td><b class="a a5 a_t"><u></u></b></td>
+				        <td><b class="a a4 a_t"><u></u></b></td>
+				        <td><b class="a a3 a_t"><u></u></b></td>
+				    </tr>
+				    <tr>
+				    	<th>.a_r 左</th>
+				        <td><b class="a a5 a5r a_r"></b></td>
+				        <td><b class="a a4 a4r a_r"></b></td>
+				        <td><b class="a a3 a3r a_r"></b></td> 
+				        <td><b class="a a5 a_r"><u></u></b></td>
+				        <td><b class="a a4 a_r"><u></u></b></td>
+				        <td><b class="a a3 a_r"><u></u></b></td>
+				    </tr>
+				    <tr>
+				    	<th>.a_b 上</th>
+				        <td><b class="a a5 a5b a_b"></b></td>
+				        <td><b class="a a4 a4b a_b"></b></td>
+				        <td><b class="a a3 a3b a_b"></b></td>
+				        <td><b class="a a5 a5b a_b"><u></u></b></td>
+				        <td><b class="a a4 a4b a_b"><u></u></b></td>
+				        <td><b class="a a3 a3b a_b"><u></u></b></td>
+				    </tr>
+					<tr>
+				    	<th>.a_l 右</th>
+				        <td><b class="a a5 a5l a_l"></b></td>
+				        <td><b class="a a4 a4l a_l"></b></td>
+				        <td><b class="a a3 a3l a_l "></b></td>
+				        <td><b class="a a5 a5l a_l "><u></u></b></td>
+				        <td><b class="a a4 a4l a_l "><u></u></b></td>
+				        <td><b class="a a3 a3l a_l "><u></u></b></td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_hr"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">分隔线</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.hr1</th>
+						<td>
+							<hr class="hr1" />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_tbform"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">表单框架及元素</h3>
+			<div class="gmod_bd">
+
+				<div class="tb_form c_bg1">
+				
+				<div class="subtopic clear mb10">
+					<h2><span class="tit">表单标题</span></h2>
+				</div>
+
+				<hr class="hr1 mb10" />
+
+				<form action="">		
+				<table>
+				<tr>
+				<th>radio 单选框</th>
+				<td><span><label><input class="check1" type="radio" /><span class="txt">.check1</span></label></span><span class="ml15"><label><input class="check1" type="radio" /><span class="txt">.check1</span></label></span></td>
+				</tr>
+				<tr>
+				<th>checkbox 复选框</th>
+				<td><span><label><input class="check1" type="checkbox" /><span class="txt">.check1</span></label></span><span class="ml15"><label><input class="check1" type="checkbox" /><span class="txt">.check1</span></label></span></td>
+				</tr>
+				</table>
+				</form>
+				</div>
+
+				<hr class="hr1" />
+				
+				<div class="tb_form c_bg1">
+				<form action="">		
+				<table>
+				<tr>
+				<th>input 文本框</th>
+				<td><input class="inputTxt" type="text" style="width:238px" value=".inputTxt" /><span class="ml5"><a href="###" class="btn btn3"><span class="t">.btn3</span></a></span><label class="inputTail"><span class="c c_tx5">文字提示</span></label></td>
+				</tr>
+				<tr>
+				<th>input 文本框</th>
+				<td>
+					<div class="gb_inputTxt1"><input class="inputTxt" type="text" value=".gb_inputTxt1" style="width:238px" /></div><span class="ml5"><a href="###" class="btn btn3"><span class="t">.btn3</span></a></span>
+				</td>
+				</tr>
+				<tr>
+				<th>input 文本框(带label)</th>
+				<td>
+					<div class="gb_inputTxt1">
+						<label for="gb_inputTxt1" class="lb c_tx2">.gb_inputTxt1</label>
+						<input id="gb_inputTxt1" class="inputTxt" type="text" value="" style="width:238px" />
+					</div><span class="ml5"><a href="###" class="btn btn3"><span class="t">.btn3</span></a></span>
+				</td>
+				</tr>
+				<tr>
+				<th>.e_input_ra(圆角)</th>
+				<td><input class="inputTxt e_input_ra" type="text" style="width:238px" value=".inputTxt" /><span class="ml5"><a href="###" class="btn btn3"><span class="t">.btn3</span></a></span></td>
+				</tr>
+				<tr>
+				<th>&nbsp;</th>
+				<td><span class="c_tx4">有disabled需求使用.inputTxt，有.txtShadow需求使用.gb_inputTxt1，文本框标准宽度238px（视觉宽度250px）</span></td>
+				</tr>
+				<tr>
+				<th>textarea 文本域</th>
+				<td><textarea class="inputArea" style="width:288px; height:142px">.inputArea</textarea></td>
+				</tr>
+				<tr>
+				<th>textarea 文本域</th>
+				<td>
+					<div class="gb_inputArea1">
+					<textarea class="inputArea" style="width:288px; height:142px">.gb_inputArea1</textarea>
+					</div>
+				</td>
+				</tr>
+				<tr>
+				<th>textarea 文本域(带label)</th>
+				<td>
+					<div class="gb_inputArea1">
+					<label for="gb_inputArea1" class="lb c_tx2">.gb_inputArea1</label>
+					<textarea id="gb_inputArea1" class="inputArea" style="width:288px; height:142px"></textarea>
+					</div>
+				</td>
+				</tr>
+				<tr>
+				<th>.e_input_ra(圆角)</th>
+				<td><textarea class="inputArea e_input_ra" style="width:288px; height:142px">.inputArea</textarea></td>
+				</tr>
+				<tr>
+				<th>&nbsp;</th>
+				<td><span class="c_tx4">有disabled需求使用.inputArea，有.txtShadow需求使用.gb_inputArea1，文本域标准宽度288px（视觉宽度300px），标准高度142px（视觉高度150px）</span></td>
+				</tr>
+				<tr>
+				<th>&nbsp;</th>
+				<td><label class="btn btn3_xl"><input type="button" class="t" value=".btn3_xl" /></label></td>
+				</tr>
+				</table>
+				</form>
+				</div>
+
+			</div>
+		</div>
+
+		<a name="global_base_btn"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">按钮</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>.btn1</th>
+						<th>.btn1_l</th>
+						<th>.btn1_xl</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>.btn1系 a</th>
+						<td>
+							<a href="###" class="btn btn1"><span class="t">按钮</span></a>
+							<span class="btn btn1 e_btn_disabled"><span class="t">按钮disabled</span></span>
+						</td>
+						<td>
+							<a href="###" class="btn btn1_l"><span class="t">按钮</span></a>
+						</td>
+						<td>
+							<a href="###" class="btn btn1_xl"><span class="t">按钮</span></a>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn1系 input</th>
+						<td>
+							<label class="btn btn1"><input type="button" class="t" value="按钮" /></label>
+							<label class="btn btn1 e_btn_disabled"><input disabled="disabled" type="button" class="t" value="按钮disabled" /></label>
+						</td>
+						<td>
+							<label class="btn btn1_l"><input type="button" class="t" value="按钮" /></label>
+						</td>
+						<td>
+							<label class="btn btn1_xl"><input type="button" class="t" value="按钮" /></label>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn1系 button</th>
+						<td>
+							<label class="btn btn1"><button type="button" class="t">按钮</button></label>
+							<label class="btn btn1 e_btn_disabled"><button disabled="disabled" type="button" class="t">按钮disabled</button></label>
+						</td>
+						<td>
+							<label class="btn btn1_l"><button type="button" class="t">按钮</button></label>
+						</td>
+						<td>
+							<label class="btn btn1_xl"><button type="button" class="t">按钮</button></label>
+						</td>
+					</tr>
+				</table>
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>.btn2</th>
+						<th>.btn2_l</th>
+						<th>.btn2_xl</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>.btn2系 a</th>
+						<td>
+							<a href="###" class="btn btn2"><span class="t">按钮</span></a>
+							<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">按钮</span></a>
+							<span class="btn btn2 e_btn_disabled"><span class="t">按钮disabled</span></span>
+						</td>
+						<td>
+							<a href="###" class="btn btn2_l"><span class="t">按钮</span></a>
+							<a href="###" class="btn btn2_l"><i class="ico16 ico_fo"></i><span class="t">按钮</span></a>
+						</td>
+						<td>
+							<a href="###" class="btn btn2_xl"><span class="t">按钮</span></a>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn2系 input</th>
+						<td>
+							<label class="btn btn2"><input type="button" class="t" value="按钮" /></label>
+							<label class="btn btn2"><i class="ico16 ico_fo"></i><input type="button" class="t" value="按钮" /></label>
+							<label class="btn btn2 e_btn_disabled"><input disabled="disabled" type="button" class="t" value="按钮disabled" /></label>
+						</td>
+						<td>
+							<label class="btn btn2_l"><input type="button" class="t" value="按钮" /></label>
+							<label class="btn btn2_l"><i class="ico16 ico_fo"></i><input type="button" class="t" value="按钮" /></label>
+						</td>
+						<td>
+							<label class="btn btn2_xl"><input type="button" class="t" value="按钮" /></label>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn2系 button</th>
+						<td>
+							<label class="btn btn2"><button type="button" class="t">按钮</button></label>
+							<label class="btn btn2"><i class="ico16 ico_fo"></i><button type="button" class="t">按钮</button></label>
+							<label class="btn btn2 e_btn_disabled"><button disabled="disabled" type="button" class="t">按钮disabled</button></label>
+						</td>
+						<td>
+							<label class="btn btn2_l"><button type="button" class="t">按钮</button></label>
+							<label class="btn btn2_l"><i class="ico16 ico_fo"></i><button type="button" class="t">按钮</button></label>
+						</td>
+						<td>
+							<label class="btn btn2_xl"><button type="button" class="t">按钮</button></label>
+						</td>
+					</tr>
+				</table>
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>.btn3</th>
+						<th>.btn3_l</th>
+						<th>.btn3_xl</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>.btn3系 a</th>
+						<td>
+							<a href="###" class="btn btn3"><span class="t">按钮</span></a>
+							<span class="btn btn3 e_btn_disabled"><span class="t">按钮disabled</span></span>
+						</td>
+						<td>
+							<a href="###" class="btn btn3_l"><span class="t">按钮</span></a>
+						</td>
+						<td>
+							<a href="###" class="btn btn3_xl"><span class="t">按钮</span></a>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn3系 input</th>
+						<td>
+							<label class="btn btn3"><input type="button" class="t" value="按钮" /></label>
+							<label class="btn btn3 e_btn_disabled"><input disabled="disabled" type="button" class="t" value="按钮disabled" /></label>
+						</td>
+						<td>
+							<label class="btn btn3_l"><input type="button" class="t" value="按钮" /></label>
+						</td>
+						<td>
+							<label class="btn btn3_xl"><input type="button" class="t" value="按钮" /></label>
+						</td>
+					</tr>
+					<tr>
+						<th>.btn3系 button</th>
+						<td>
+							<label class="btn btn3"><button type="button" class="t">按钮</button></label>
+							<label class="btn btn3 e_btn_disabled"><button disabled="disabled" type="button" class="t">按钮disabled</button></label>
+						</td>
+						<td>
+							<label class="btn btn3_l"><button type="button" class="t">按钮</button></label>
+						</td>
+						<td>
+							<label class="btn btn3_xl"><button type="button" class="t">按钮</button></label>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_btn_down"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">下载按钮</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>~</th>
+						<th>flag</th>
+						<th>.e_mv_btn_l</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>.mv_iphone_btn</th>
+						<td>
+							<a hidefocus="true" class="mv_iphone_btn" href="###">
+					            <span class="ico_down_iphone"></span>
+					            <span class="txt"><span class="tx_ar">iPhone</span><span class="tx_yh">版下载</span></span>
+					        </a>
+					    </td>
+						<td>
+							<div style="position:relative; float:left">
+							<a hidefocus="true" class="mv_iphone_btn" href="###">
+					            <span class="ico_down_iphone"></span>
+					            <span class="txt"><span class="tx_ar">iPhone</span><span class="tx_yh">版下载</span></span>
+					        </a>
+					        <div class="mv_btn_flag"></div>
+					        </div>
+					    </td>
+					    <td>
+							<a hidefocus="true" class="mv_iphone_btn e_mv_btn_l" href="###">
+					            <span class="ico_down_iphone"></span>
+					            <span class="txt"><span class="tx_ar">iPhone</span><span class="tx_yh">版下载</span></span>
+					        </a>
+						</td>
+					</tr>
+					<tr>
+						<th>.mv_andriod_btn</th>
+						<td>
+							<a hidefocus="true" class="mv_android_btn" href="###">
+					            <span class="ico_down_android"></span>
+					            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+					        </a>
+					    </td>
+						<td>
+							<div style="position:relative; float:left">
+							<a hidefocus="true" class="mv_android_btn" href="###">
+					            <span class="ico_down_android"></span>
+					            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+					        </a>
+					        <div class="mv_btn_flag"></div>
+					        </div>
+					    </td>
+					    <td>
+							<a hidefocus="true" class="mv_android_btn e_mv_btn_l" href="###">
+					            <span class="ico_down_android"></span>
+					            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+					        </a>
+						</td>
+					</tr>
+					<tr>
+						<th>.mv_btn_wrap</th>
+						<td>
+							<div class="mv_btn_wrap hover">
+								<a hidefocus="true" class="mv_android_btn" href="javascript:void(0)" style="cursor:default">
+						            <span class="ico_down_android"></span>
+						            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+						        </a>
+						        <div class="mv_btn_sub">
+						        	<i class="arr"></i>
+						        	<div class="hd"><div class="inner"></div></div>
+						        	<div class="bd">
+						        	<ul class="clear">
+						        	<li class="item">
+						        		<a href="###" class="lk" title="下载到本地"><span class="ico_down_todesktop"></span><span class="txt"><span class="tx_yh">下载到本地</span></span></a>
+						        	</li>
+						        	<li class="item bor0">
+						        		<a href="###" class="lk" title="通过手机QQ直接安装到手机"><span class="ico_down_tomobile"></span><span class="txt"><span class="tx_yh">发送到手机</span></span></a>
+						        	</li>
+						        	</ul>
+						        	</div>
+						        	<div class="ft"><div class="inner"></div></div>
+						        </div>
+					        </div>
+					    </td>
+						<td>
+							<div class="mv_btn_wrap hover">
+								<a hidefocus="true" class="mv_android_btn" href="javascript:void(0)" style="cursor:default">
+						            <span class="ico_down_android"></span>
+						            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+						        </a>
+						        <div class="mv_btn_sub">
+						        	<i class="arr"></i>
+						        	<div class="hd"><div class="inner"></div></div>
+						        	<div class="bd">
+						        	<ul class="clear">
+						        	<li class="item">
+						        		<a href="###" class="lk" title="下载到本地"><span class="ico_down_todesktop"></span><span class="txt"><span class="tx_yh">下载到本地</span></span></a>
+						        	</li>
+						        	<li class="item bor0">
+						        		<a href="###" class="lk" title="通过手机QQ直接安装到手机"><span class="ico_down_tomobile"></span><span class="txt"><span class="tx_yh">发送到手机</span></span></a>
+						        	</li>
+						        	</ul>
+						        	</div>
+						        	<div class="ft"><div class="inner"></div></div>
+						        </div>
+						        <div class="mv_btn_flag"></div>
+					        </div>
+					    </td>
+					    <td>
+							<div class="mv_btn_wrap hover">
+								<a hidefocus="true" class="mv_android_btn e_mv_btn_l" href="javascript:void(0)" style="cursor:default">
+						            <span class="ico_down_android"></span>
+						            <span class="txt"><span class="tx_ar">Android</span><span class="tx_yh">版下载</span></span>
+						        </a>
+						        <div class="mv_btn_sub e_mv_btn_sub_l">
+						        	<i class="arr"></i>
+						        	<div class="hd"><div class="inner"></div></div>
+						        	<div class="bd">
+						        	<ul class="clear">
+						        	<li class="item">
+						        		<a href="###" class="lk" title="下载到本地"><span class="ico_down_todesktop"></span><span class="txt"><span class="tx_yh">下载到本地</span></span></a>
+						        	</li>
+						        	<li class="item bor0">
+						        		<a href="###" class="lk" title="通过手机QQ直接安装到手机"><span class="ico_down_tomobile"></span><span class="txt"><span class="tx_yh">发送到手机</span></span></a>
+						        	</li>
+						        	</ul>
+						        	</div>
+						        	<div class="ft"><div class="inner"></div></div>
+						        </div>
+					        </div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_notice"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">提示</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.noticebar</th>
+						<td>
+							<div class="noticebar">
+								<div class="bd">
+								<div class="pl10 pr10 pt5 pb5 c_tx6">提示文字左对齐 <a href="###">链接</a></div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.noticebar</th>
+						<td>
+							<div class="noticebar">
+								<div class="bd">
+								<div class="pl10 pr10 pt5 pb5 tx_c c_tx6">提示文字居中对齐 <a href="###">链接</a></div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.noticebar</th>
+						<td>
+							<div class="noticebar">
+								<div class="bd">
+								<div class="pl10 pr10 pt5 pb5 tx_r c_tx6">提示文字右对齐 <a href="###">链接</a></div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.e_noticebar_whole</th>
+						<td>
+							<div class="noticebar e_noticebar_whole">
+								<div class="bd">
+								<a href="###" class="dis_b pl10 pr10 pt5 pb5 tx_c">链接 - 整条可点</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.noticebar</th>
+						<td>
+							<div class="noticebar">
+								<div class="bd">
+								<span class="dis_b pl10 pr10 pt5 pb5 tx_c c_tx8 tx_14">无链接14px强化文字颜色，带关闭按钮</span>
+								<a href="###" class="g_close_btn"><span>×</span></a>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_base_ico"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">图标</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.ico16系 普通</th>
+						<td>
+							<i class="ico16 ico_person">人</i>
+							<i style="background-color:#000" class="ico16 ico_qrcode16">二维码</i>
+						</td>
+					</tr>
+					<tr>
+						<th>.ico16系 认证</th>
+						<td>
+							<i class="ico16 vip">个人认证</i>
+							<i class="ico16 ico_cvip">机构认证</i>
+							<i class="ico16 ico_master_star">微博之星</i>
+						</td>
+					</tr>
+					<tr>
+						<th>.ico16系 SNS</th>
+						<td>
+							<i style="background-color:#000" class="ico16 ico_sina16">新浪</i>
+							<i style="background-color:#000" class="ico16 ico_wechat16">微信</i>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_base"></a>
+		<h2 class="demo_subtitle tx_yh">#Sub(登录后内页)基础</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#sub_base_ico" class="lk"><span class="t">图标</span></a></li>
+			</ul>
+		</div>
+
+		<a name="sub_base_ico"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">图标</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.ico16系 普通</th>
+						<td>
+							<i class="ico16 ico_lction">位置</i>
+							<i class="ico16 ico_tag">标签</i>
+							<i class="ico16 ico_plus">加号</i>
+							<i class="ico16 ico_female">女</i>
+							<i class="ico16 ico_male">男</i>
+							<i class="ico16 ico_down">下载</i>
+							<i class="ico16 ico_play">播放ico（查看完整视频）</i>
+						</td>
+					</tr>
+					<tr>
+						<th>.ico16系 频道页模式切换</th>
+						<td>
+							<i class="ico16 ico_channelmode1">频道页瀑布流模式</i>
+							<i class="ico16 ico_channelmode2">频道页列表模式</i>
+						</td>
+					</tr>
+					<tr>
+						<th>.ico25系 普通</th>
+						<td>
+
+							<i class="ico25 ico_tag25">标签</i>
+
+							<i class="ico25 ico_wechat25">微信（联系我们）</i>
+							<i class="ico25 ico_weibo25">微博（联系我们）</i>
+
+						</td>
+					</tr>
+					<tr>
+						<th>.ico25系 SNS</th>
+						<td>
+							
+							<i class="ico25 ico_wb25a">微博</i>
+							<i class="ico25 ico_qq25a">QQ</i>
+							<i class="ico25 ico_qz25a">qzone</i>
+							<i class="ico25 ico_sina25a">新浪微博</i>
+							<i class="ico25 ico_rr25a">人人</i>
+							<i class="ico25 ico_db25a">豆瓣</i>
+							
+							<i class="ico25 ico_wb25b">微博</i>
+							<i class="ico25 ico_qq25b">QQ</i>
+							<i class="ico25 ico_qz25b">qzone</i>
+							<i class="ico25 ico_sina25b">新浪微博</i>
+							<i class="ico25 ico_rr25b">人人</i>
+							<i class="ico25 ico_db25b">豆瓣</i>
+
+							<i class="ico25 ico_wb25c">微博</i>
+							<i class="ico25 ico_qq25c">QQ</i>
+							<i class="ico25 ico_qz25c">qzone</i>
+							<i class="ico25 ico_sina25c">新浪微博</i>
+							<i class="ico25 ico_rr25c">人人</i>
+							<i class="ico25 ico_db25c">豆瓣</i>
+
+							<i class="ico25 ico_sina25d">新浪微博</i>
+							<i class="ico25 ico_wechat25d">微信</i>
+
+						</td>
+					</tr>
+					<tr>
+						<th>.ico36系 SNS</th>
+						<td>
+							<i class="ico36 ico_wb36">微博</i>
+							<i class="ico36 ico_qq36">QQ</i>
+							<i class="ico36 ico_qz36">qzone</i>
+							<i class="ico36 ico_sina36">新浪微博</i>
+							<i class="ico36 ico_rr36">人人</i>
+							<i class="ico36 ico_db36">豆瓣</i>
+						</td>
+					</tr>
+					<tr>
+						<th>loading系</th>
+						<td>
+							<i class="ico_loading_l"></i>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_main"></a>
+		<h2 class="demo_subtitle tx_yh">#全局模块</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#global_main_toptopic" class="lk"><span class="t">toptopic 一级区块顶部标题</span></a></li>
+			<li class="item"><a href="#global_main_subtopic" class="lk"><span class="t">subtopic 二级区块顶部标题</span></a></li>
+			<li class="item"><a href="#global_main_saologin" class="lk"><span class="t">saoLogin 扫一扫登录</span></a></li>
+			<li class="item"><a href="#global_main_morefoot" class="lk"><span class="t">moreFoot</span></a></li>
+			</ul>
+		</div>
+
+		<a name="global_main_toptopic"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">toptopic 一级区块顶部标题（通栏）</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<td>
+							<div class="toptopic clear">
+								<h2><span class="tit">标题</span></h2>
+								<div class="desc"><span class="c_tx2">补充说明</span></div>
+								<div class="opt">
+									<span class="c_tx2 vt_m dis_inb">右侧信息</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_main_subtopic"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">subtopic 二级区块顶部标题</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.subtopic</th>
+						<td>
+							<div class="subtopic clear">
+								<h2><span class="tit">标题</span></h2>
+								<div class="desc"><span class="c_tx2">补充说明</span></div>
+								<div class="opt">
+									<span class="c_tx2 vt_m dis_inb">右侧信息</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_main_saologin"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">saoLogin 扫一扫登录 <span class="c_tx2">需要引入Global/m.saoLogin.css</span></h3>
+			<style>
+			@import url("./images/m.saoLogin.css"); /* 扫一扫登录模块 */
+			</style>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.e_saoLogin_single single扩展</th>
+						<td>
+
+						<!-- 扫一扫登录 single扩展 -->
+						<div class="saoLogin e_saoLogin_single">
+
+						<!-- 二维码 Sub/m_saoLoginCode_single.html -->
+						<div class="saoLoginCode">
+						<div class="inner" id="saoLoginCode">
+	<img src="http://mat1.gtimg.com/www/mb/mv/login/saologin_131230.png" alt="" />
+    <span class="logo"><i></i></span>
+</div>
+<h3>用微视扫一扫二维码，即可登录</h3>
+<p>微视2.0以上版本支持该功能 <a href="###">下载微视</a></p>
+
+<!-- 扫描成功提示 -->
+<div class="loginsuc">
+    <div class="ico_sucbox"><div class="ico_suc"></div></div>
+    <p>扫描成功!<br />请在手机上点击确认，即可登录</p> 
+</div>
+<!-- /扫描成功提示 -->
+						</div>
+						<!-- /二维码 -->
+
+						</div>
+						<!-- /扫一扫登录 -->
+
+						</td>
+					</tr>
+					<tr>
+						<th>.e_saoLogin_simple simple扩展</th>
+						<td>
+
+						<!-- 扫一扫登录 simple扩展 -->
+						<div class="saoLogin e_saoLogin_simple">
+
+						<!-- 二维码 Sub/m_saoLoginCode_simple.html -->
+						<div class="saoLoginCode">
+						<div class="inner" id="saoLoginCode">
+	<img src="http://mat1.gtimg.com/www/mb/images/mv/qrcodedemo_140.png" alt="" />
+    <span class="logo"><i></i></span>
+</div>
+<p><span class="c_tx2">微视2.0版本支持本功能</span></p>
+
+<!-- 扫描成功提示 -->
+<div class="loginsuc">
+    <div class="ico_sucbox"><div class="ico_suc"></div></div>
+    <p>扫描成功!<br />请在手机上点击确认，即可登录</p> 
+</div>
+<!-- /扫描成功提示 -->
+						</div>
+						<!-- /二维码 -->
+
+						</div>
+						<!-- /扫一扫登录 -->
+
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_main_morefoot"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">moreFoot</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.moreFoot</th>
+						<td>
+							<div class="moreFoot loading">正在加载...</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.moreFoot2</th>
+						<td>
+							<div class="moreFoot2">
+								<a href="###" class="lk">更多精彩微视 <span class="tx_song">&gt;&gt;</span></a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main"></a>
+		<h2 class="demo_subtitle tx_yh">#Sub(登录后内页)模块</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#sub_main_tagcloud" class="lk"><span class="t">tagCloud 标签云</span></a></li>
+			<li class="item"><a href="#sub_main_pagecount" class="lk"><span class="t">pagecount 翻页</span></a></li>
+			<li class="item"><a href="#sub_main_useraction" class="lk"><span class="t">m_userAction 用户展示列表</span></a></li>
+			<li class="item"><a href="#sub_main_gridlist" class="lk"><span class="t">ws_gridList 微视缩略图列表</span></a></li>
+			<li class="item"><a href="#sub_main_user" class="lk"><span class="t">mv_user 用户顶部卡片</span></a></li>
+			<li class="item"><a href="#sub_main_msg" class="lk"><span class="t">mv_msg 消息模块</span></a></li>
+			<li class="item"><a href="#sub_main_msglist" class="lk"><span class="t">mv_msgList 转评列表</span></a></li>
+			<li class="item"><a href="#sub_main_selectlist" class="lk"><span class="t">selectList 下拉选择浮层</span></a></li>
+			<li class="item"><a href="#sub_main_switchopt" class="lk"><span class="t">switchOpt 异步分页</span></a></li>
+			</ul>
+		</div>
+
+		<a name="sub_main_tagcloud"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">tagCloud 标签云</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.tagCloud</th>
+						<td>
+							<div class="tagCloud">
+							<ul class="clear">
+							<li class="item select"><a href="###" class="lk"><span class="t">8秒找好车</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">8秒找美女</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">可爱颂</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">美女</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">恶搞</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">宝宝</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">萌猫</span></a></li>
+							<li class="item"><a href="###" class="lk"><span class="t">吃货</span></a></li>
+							</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_pagecount"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">pagecount 翻页</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.pagecount</th>
+						<td>
+							<!-- 翻页 Sub/m_pagecount.html -->
+							<div class="pagecount tx_r">
+	<a href="###" class="prev"><span class="tx_song">&lt;&lt;</span>上一页</a>
+	<a href="###">1</a>
+	<b>2</b>
+	<a href="###">3</a>
+	<a href="###">4</a>
+	<a href="###">5</a>
+	<a href="###">6</a>
+	<a href="###">7</a>
+	<a href="###">8</a>
+	<a href="###">9</a>
+	<span>...</span>
+	<a href="###" class="next">下一页<span class="tx_song">&gt;&gt;</span></a>
+</div>
+							<!-- /翻页 -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_useraction"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">m_userAction 用户展示列表</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.e_userAction_sc <br /><span class="c_tx2">用户展示列表右栏扩展</span></th>
+						<td>
+						<div class="mv_conBox">
+						<div class="fixbox">
+						<div class="SC SC_userAction">
+							<div class="SC_hd"></div>
+							<div class="SC_bd">
+
+							<!-- 用户展示列表右栏扩展 -->
+							<div class="m_userAction e_userAction_sc">
+								<ul class="clear">
+								<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+								<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+								<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img3.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_14"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc"><p class="c_tx2">认证资料：未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</p></div>
+	</div>
+	<div class="c3">
+		<!-- 未关注 -->
+		<a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+		<!-- 已关注 -->
+		<span style="display:none" class="btn btn1 e_btn_disabled"><span class="t">已关注</span></span>
+	</div>
+</li>
+								</ul>
+							</div>
+							<!-- /用户展示列表右栏扩展 -->
+								
+							</div>
+						</div>
+						</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.e_userAction_rs <br /><span class="c_tx2">用户展示列表搜索结果扩展</span></th>
+						<td>
+						<section>
+						<div class="bor1 c_bor1 mb15">
+
+						<!-- 用户展示列表搜索结果扩展 -->
+						<div class="m_userAction e_userAction_rs">
+							<ul class="clear">
+							<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img5.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_18 tx_yh"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc">
+			<p class="c_tx6"><i class="ico16 ico_male"></i><span class="location ml5">北京 海淀</span></p>
+			<p class="mt5 c_tx6 tx_14">未来不需要改变，那是执着于<span class="c_keyword">信念</span>的人们必然迎接到来的明天。</p>
+			<p class="mt10 c_tx6"><a href="个人页.html" class="count">999 作品</a><span class="spacer ml10 mr10">|</span><span class="count">230 关注</span><span class="spacer ml10 mr10">|</span><span class="count">4500 粉丝</span></p>
+		</div>
+	</div>
+	<div class="c3">
+		<span class="vt_m mr5 c_tx2">已关注我</span><a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+	</div>
+</li>
+							<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img5.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_18 tx_yh"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc">
+			<p class="c_tx6"><i class="ico16 ico_male"></i><span class="location ml5">北京 海淀</span></p>
+			<p class="mt5 c_tx6 tx_14">未来不需要改变，那是执着于<span class="c_keyword">信念</span>的人们必然迎接到来的明天。</p>
+			<p class="mt10 c_tx6"><a href="个人页.html" class="count">999 作品</a><span class="spacer ml10 mr10">|</span><span class="count">230 关注</span><span class="spacer ml10 mr10">|</span><span class="count">4500 粉丝</span></p>
+		</div>
+	</div>
+	<div class="c3">
+		<span class="vt_m mr5 c_tx2">已关注我</span><a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+	</div>
+</li>
+							<li class="item clear">
+	<div class="c1">
+		<span class="avatar">
+			<a href="个人页.html"><img src="./images/img5.jpg" alt="" /></a>
+		</span>
+	</div>
+	<div class="c2">
+		<div class="tit tx_18 tx_yh"><a class="vt_m" href="个人页.html">Benny Chia</a><span class="ico16 vip"></span></div>
+		<div class="desc">
+			<p class="c_tx6"><i class="ico16 ico_male"></i><span class="location ml5">北京 海淀</span></p>
+			<p class="mt5 c_tx6 tx_14">未来不需要改变，那是执着于<span class="c_keyword">信念</span>的人们必然迎接到来的明天。</p>
+			<p class="mt10 c_tx6"><a href="个人页.html" class="count">999 作品</a><span class="spacer ml10 mr10">|</span><span class="count">230 关注</span><span class="spacer ml10 mr10">|</span><span class="count">4500 粉丝</span></p>
+		</div>
+	</div>
+	<div class="c3">
+		<span class="vt_m mr5 c_tx2">已关注我</span><a href="###" class="btn btn2"><i class="ico16 ico_fo"></i><span class="t">关注</span></a>
+	</div>
+</li>
+							</ul>
+						</div>
+						<!-- /用户展示列表搜索结果扩展 -->
+
+						</div>
+						</section>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_gridlist"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">ws_gridList 微视缩略图列表</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.e_ws_gridList_sc <br /><span class="c_tx2">微视缩略图列表右栏扩展</span></th>
+						<td>
+						<div class="mv_conBox">
+						<div class="fixbox">
+						<div class="SC SC_hotmv">
+							<div class="SC_hd"></div>
+							<div class="SC_bd">
+
+							<!-- 微视缩略图列表右栏扩展 Sub/m_ws_gridList_sc_item.html -->
+							<div class="ws_gridList e_ws_gridList_sc">
+							<ul class="clear">
+							<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+							<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+							<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+							<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+							</ul>
+							</div>
+							<!-- /用户展示列表右栏扩展 -->
+								
+							</div>
+						</div>
+						</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<th>.e_ws_gridList_rs <br /><span class="c_tx2">微视缩略图列表左栏扩展</span></th>
+						<td>
+						<section>
+						<div class="bor1 c_bor1 mb15">
+
+						<!-- 微视缩略图列表左栏扩展 Sub/m_ws_gridList_rs_item.html -->
+						<div class="ws_gridList e_ws_gridList_rs">
+						<ul class="clear">
+						<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+						<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+						<li class="item">
+	<div class="videoBox">
+	<a href="分享页.html"><img src="http://mat1.gtimg.com/www/mb/images/mv/video_demopic.jpg" />
+		<span class="playbtn"></span>
+		<span class="mask"></span>
+		<span class="desc"><strong>Benny Chia：</strong>未来不需要改变，那是执着于信念的人们必然迎接到来的明天。</span>
+	</a>
+	</div>
+</li>
+						</ul>
+						</div>
+						<!-- /用户展示列表搜索结果扩展 -->
+
+						</div>
+						</section>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_user"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">mv_user 用户顶部卡片</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.mv_user 用户顶部卡片</th>
+						<td>
+							<!-- 用户顶部卡片 Sub/m_user.html -->
+							<div class="mv_user clear">
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="panel clear">
+
+	    <div class="userName">
+	        <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 vip"></span><span class="ico16 ico_master_star"></span>
+	    </div>
+
+	    <div class="mt5 left">
+	    	<a href="分享页.html" class="time c_tx3">9月4日 16:32</a><a href="###" class="c_tx3 ml15"><strong>123456</strong> 次播放</a>
+	    </div>
+
+    	<div class="selectList2 mt5">
+    		<a href="###" class="selectBtn"><b class="a a4 a_t"></b></a>
+			<div class="dropList">
+				<ul class="clear">
+				<li class="item"><a class="lk" href="###">下载视频</a></li>
+				<li class="item"><a class="lk" href="###">编辑视频列表</a></li>
+				</ul>
+			</div>
+    	</div>
+    	
+    </div>
+	
+</div>
+							<!-- /用户顶部卡片 -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_msg"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">mv_msg 消息模块</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.mv_msg 原消息</th>
+						<td>
+							<!-- 消息 Sub/m_msg.html -->
+							<div class="mv_msg clear">
+
+    <div class="msgBox">
+        
+        <div class="msgCnt">
+            我们的设计应该对未来更加友好一些。我们应该通过对未来的预测，选择适合的技术，为人们创造出既满足今天需要，又能够适应未来变化的产品或价值。
+            <span class="location c_tx2 tx_12 ml5 tx_unbr">
+                <span class="ic ico_lction"></span><span>中关村海淀银科大厦</span>
+            </span>
+        </div>
+        
+        <div class="pubInfo clear">
+            <div class="left">
+                <span class="ic ico_tag"></span><a href="标签页.html" class="c_tx3 ml5">瞄星人</a><a href="###" class="c_tx3 ml5">瞄星人</a>
+            </div>
+        </div>
+
+        <div class="msgFunc">
+
+            <div class="funcBtn clear">
+                <div class="praise left checked">
+                    <a href="###" class="lk"><i>赞</i></a>
+                </div>
+                <div class="relay left">
+                    <a href="###" class="lk"><i>转播</i></a>
+                </div>
+                <div class="share left">
+                    <a href="###" class="lk"><i>分享</i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+							<!-- /消息 -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_msglist"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">mv_msgList 转评列表</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.mv_msgList 转评列表</th>
+						<td>
+							<!-- 转评列表 Sub/m_msgListItem.html -->
+							<div class="mv_msgList">
+							<ul class="pt10">
+							<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+							<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+							<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+							<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+							<li>
+
+    <div class="userPic">
+        <a href="主人页.html" class="avatar"><img src="./images/img1.jpg" title="" /></a>
+    </div>
+
+    <div class="msgBox">
+        <div class="userName">
+            <a href="主人页.html" class="name c_tx0">Benny Chia</a><span class="ico16 ico_cvip"></span>：
+        </div>
+        <div class="msgCnt">套马的汉子你威武雄壮，你是我的瞎苹果<span class="c_tx2 tx_unbr">（10分钟前·评论）</span></div>
+    	<div class="msgAct"><a href="###" class="c_tx3">回复</a></div>
+    </div>
+
+</li>
+							</ul>
+							<!-- 转评数 -->
+							<div class="msgNum tx_12">
+							    <a href="###" class="c_tx9">1234赞 和 123转评</a>
+							    <a href="###" style="display:none">加载更多转评</a>
+							</div>
+							<!-- /转评数 -->
+							</div>
+							<!-- /转评列表 -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_msglist"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">mv_msgComm 评论模块</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.mv_msgComm 评论模块</th>
+						<td>
+							<!-- 评论 Sub/m_msgComm.html -->
+							<div class="mv_msgComm">
+
+	<form action="">
+    <div class="gb_inputTxt1 e_input_ra">
+    	<!-- label的for和input的id保持同值 -->
+        <label for="" class="lb tx_14 c_tx2">和作者说点啥吧~ 按回车(Enter)键提交<!-- wording待商榷 --></label>
+        <input id="" maxlength="140" class="dis_b inputTxt tx_14" type="text" value="" style="width:406px" />
+    </div>
+    <input type="submit" style="position:absolute; visibility:hidden; font-size:0" />
+    </form>
+
+</div>
+							<!-- /评论 -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_selectlist"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">selectList 下拉选择浮层</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.selectList 分享浮层向上<br /><span class="c_tx2">(top,right,bottom,left样式写行内)</span></th>
+						<td>
+							<div style="position:relative; height:250px">
+
+							<div class="selectList e_selectList_up">
+			                    <ul>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_wb25a"></span><span class="t">腾讯微博</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_qq25a"></span><span class="t">手机QQ</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_qz25a"></span><span class="t">QQ空间</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_sina25a"></span><span class="t">新浪微博</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_rr25a"></span><span class="t">人人网</span></a></li>
+			                    <li class="item last"><a href="###"><span class="ico25 mr5 ico_db25a"></span><span class="t">豆瓣网</span></a></li>
+			                    </ul> 
+			                    <b class="a a_t a5"><u></u></b>
+			                </div>
+
+			                </div>
+						</td>
+						<th>.selectList 分享浮层向下<br /><span class="c_tx2">(top,right,bottom,left样式写行内)</span></th>
+						<td>
+							<div style="position:relative; height:250px">
+
+							<div class="selectList e_selectList_down">
+			                    <ul>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_wb25a"></span><span class="t">腾讯微博</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_qq25a"></span><span class="t">手机QQ</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_qz25a"></span><span class="t">QQ空间</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_sina25a"></span><span class="t">新浪微博</span></a></li>
+			                    <li class="item"><a href="###"><span class="ico25 mr5 ico_rr25a"></span><span class="t">人人网</span></a></li>
+			                    <li class="item last"><a href="###"><span class="ico25 mr5 ico_db25a"></span><span class="t">豆瓣网</span></a></li>
+			                    </ul> 
+			                    <b class="a a_b a5"><u></u></b>
+			                </div>
+
+				            </div>
+						</td>
+					</tr>
+					<tr>
+						<th>.selectList2</th>
+						<td>
+							<div style="position:relative; height:80px">
+
+					    	<div class="selectList2">
+					    		<a href="###" class="selectBtn"><b class="a a4 a_t"></b></a>
+								<div class="dropList">
+									<ul class="clear">
+									<li class="item"><a class="lk" href="###">下载视频</a></li>
+									<li class="item"><a class="lk" href="###">编辑视频列表</a></li>
+									</ul>
+								</div>
+					    	</div>
+
+			                </div>
+						</td>
+						<th>&nbsp;</th>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="sub_main_switchopt"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">switchOpt 异步分页</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.switchOpt<br /><span class="c_tx2">一般用在右栏SC模块标题右侧的opt中</span></th>
+						<td>
+							<div class="switchOpt">
+								<a href="###" class="sl vt_m dis_inb tx_song">&lt;</a><span class="num vt_m dis_inb">1/3</span><a href="###" class="sr vt_m dis_inb tx_song">&gt;</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="skin"></a>
+		<h2 class="demo_subtitle tx_yh">#全局皮肤</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#skin_txt" class="lk"><span class="t">文字</span></a></li>
+			<li class="item"><a href="#skin_bor" class="lk"><span class="t">边框</span></a></li>
+			<li class="item"><a href="#skin_bg" class="lk"><span class="t">背景</span></a></li>
+			<li class="item"><a href="#skin_imgbg" class="lk"><span class="t">底纹</span></a></li>
+			</ul>
+		</div>
+
+		<a name="skin_txt"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">文字</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.c_tx0</th>
+						<td><span class="c_tx0">body默认文字色: #333</span></td>
+						<th>.c_tx1</th>
+						<td><a href="###" class="c_tx1">默认链接色: #366 经过: #366 点击: #366</a></td>
+					</tr>
+					<tr>
+						<th>.c_tx2</th>
+						<td><span class="c_tx2">弱文字色1: #97999c</span></td>
+						<th>.c_tx3</th>
+						<td><a href="###" class="c_tx3">弱链接色1: #97999c 经过:#97999c 点击:#97999c</a></td>
+					</tr>
+					<tr>
+						<th>.c_tx4, .c_keyword</th>
+						<td><span class="c_tx4">强文字色1, 搜索关键词提示色: #fc5105</span></td>
+						<th>.c_tx5</th>
+						<td><span class="c_tx5">强文字色2: #cd1901</span></td>
+					</tr>
+					<tr>
+						<th>.c_tx6</th>
+						<td><span class="c_tx6">弱文字色2: #666</span></td>
+						<th>.c_tx7(白色)</th>
+						<td><span class="c_tx7">白色: #fff</span></td>
+					</tr>
+					<tr>
+						<th>.c_tx8</th>
+						<td><span class="c_tx8">强文字色3, 小黄条内强文字色: #f1a330</span></td>
+						<th>.c_tx9</th>
+						<td><a href="###" class="c_tx9">弱链接色2: #09a</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="skin_bor"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">边框</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.c_bor1: #ccc<br /><span class="c_tx6">两栏结构左栏模块边框色</span></th>
+						<td>
+							<div class="demo_block c_bor1"></div>
+						</td>
+						<th>.c_bor2: #ddd<br /><span class="c_tx6">两栏结构右栏模块边框色</span></th>
+						<td>
+							<div class="demo_block c_bor2"></div>
+						</td>
+					</tr>
+					<tr>
+						<th>.c_bor3: #d9d9d9<br /><span class="c_tx6">通栏结构边框色，比如微视搜索顶部</span></th>
+						<td>
+							<div class="demo_block c_bor3"></div>
+						</td>
+						<th>&nbsp;</th>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="skin_bg"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">背景</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.c_bg0: #f0f0f0<br /><span class="c_tx6">body背景色</span></th>
+						<td>
+							<div class="demo_block c_bg0"></div>
+						</td>
+						<th>.c_bg1: #fff<br /><span class="c_tx6">白色</span></th>
+						<td>
+							<div class="demo_block c_bg1"></div>
+						</td>
+					</tr>
+					<tr>
+						<th>.c_bg2: #ebebeb<br /><span class="c_tx6">一些通栏模块的背景色，比如微视搜索顶部</span></th>
+						<td>
+							<div class="demo_block c_bg2"></div>
+						</td>
+						<th>.c_bg3: #fafafa</th>
+						<td>
+							<div class="demo_block c_bg3"></div>
+						</td>
+					</tr>
+					<tr>
+						<th>.c_bg4: #f4f4f4</th>
+						<td>
+							<div class="demo_block c_bg4"></div>
+						</td>
+						<th>&nbsp;</th>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="skin_imgbg"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">底纹</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>.img_bg1: 底纹1<br /><span class="c_tx6">功能页(扫一扫登录页、上传视频页)body背景底纹</span></th>
+						<td>
+							<div class="demo_block img_bg1"></div>
+						</td>
+						<th>.img_bg2: 底纹2<br /><span class="c_tx6">官网主页mod_hd背景底纹</span></th>
+						<td>
+							<div class="demo_block img_bg2"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_browser"></a>
+		<h2 class="demo_subtitle tx_yh">#浏览器兼容</h2>
+		<div class="tagCloud">
+			<ul class="clear">
+			<li class="item"><a href="#global_browser_pc" class="lk"><span class="t">PC</span></a></li>
+			<li class="item"><a href="#global_browser_mobile" class="lk"><span class="t">Mobile</span></a></li>
+			</ul>
+		</div>
+
+		<a name="global_browser_pc"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">PC</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>WinXP</th>
+						<th>Win7/8</th>
+						<th>OS X</th>
+					</tr>
+					</thead>
+					<tr>
+						<th>IE11</th>
+						<td>-</td>
+						<td>B</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>IE10</th>
+						<td>-</td>
+						<td>A</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>IE9</th>
+						<td>-</td>
+						<td>A</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>IE8</th>
+						<td>B</td>
+						<td>B</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>IE7</th>
+						<td>B</td>
+						<td>B</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>IE6</th>
+						<td>C</td>
+						<td>C</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>Chrome32</th>
+						<td>A+</td>
+						<td>A+</td>
+						<td>A+</td>
+					</tr>
+					<tr>
+						<th>Safari7</th>
+						<td>A+</td>
+						<td>A+</td>
+						<td>A+</td>
+					</tr>
+					<tr>
+						<th>Opera12</th>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_browser_mobile"></a>
+		<div class="gmod">
+			<h3 class="tx_24 tx_yh">Mobile</h3>
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>IE10 mobile</th>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<th>Android2.3.3</th>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<th>Android4.2</th>
+						<td>A</td>
+						<td>A</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<th>Safari5</th>
+						<td>A+</td>
+						<td>A+</td>
+						<td>A+</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<a name="global_zindex"></a>
+		<h2 class="demo_subtitle tx_yh">#z-index</h2>
+
+		<div class="gmod">
+			<div class="gmod_bd">
+				<table class="gtable">
+					<tr>
+						<th>z-index取值范围</th>
+						<td>
+							<p>以body定位的元素: <span class="c_tx4">900 - 999</span></p>
+							<p>普通元素: <span class="c_tx4">1 - 99</span></p>
+						</td>
+						<th>基本模块的z-index值</th>
+						<td>
+							<p>右侧浮动操作(.floatopt): <span class="c_tx4">970</span></p>
+							<p>导航(.topnav): <span class="c_tx4">990</span></p>
+							<p>模态浮层(.D_lay): <span class="c_tx4">999</span></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<div class="copyright">
+	<div class="bd">
+		<p>Copyright &copy; 1998 - 2014 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" target="_blank">All Rights Reserved</a></p>
+		<p><a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">腾讯公司</a> 版权所有</p>
+	</div>
+</div>
+<!-- /版权 -->
+
+<!-- 浮动操作 Sub/m_floatOpt_returnOnly.html -->
+<div class="floatopt">
+	<div class="bd">
+
+		<div class="dr">
+			<ul class="drbtn">
+			<!-- drbtn中的公共按钮根据页面需要选取 -->
+			<li class="item">
+				<a class="lk" href="#" title="返回顶部"><i class="ico_dr ico_drReturn"></i><span class="txt">返回顶部</span></a>
+			</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<!-- /浮动操作 -->
+
+</body>
+</html>

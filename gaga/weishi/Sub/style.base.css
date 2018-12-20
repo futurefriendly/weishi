@@ -1,0 +1,157 @@
+/* CSS GUIDE Sub内全局基础样式
+================================================================
+ *
+ * PROJECT: 微视分享页、个人页、频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS reset;
+ * 2. 基础样式;
+ * 3. 结构图片;
+ * 4. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS reset
+================================================================*/
+
+
+
+
+
+/* 2 基础样式
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after,
+.m_info_bd:after,
+.m_boxEssay .ft .talklistBox li:after,
+.mv_logo:after,
+.mv_msgList:after,
+.mv_msgList li:after,
+.mv_appPc:after,
+.a_bd:after,
+.SC_hd:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+.clear,
+.m_info_bd,
+.m_boxEssay .ft .talklistBox li,
+.mv_logo,
+.mv_msgList,
+.mv_msgList li,
+.mv_appPc,
+.a_bd,
+.SC_hd{zoom:1}
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+.ico_fo,
+.ic,
+.mv_logo .logo,
+.vip,
+.ico_cvip,
+.ico_master_star,
+.topnav .logo .c1{ background-repeat:no-repeat;}
+
+/* ico16 */
+.ico_lction{ background-image:url(../img/slice/ico_lction.png)}
+.ico_tag{ background-image:url(../img/slice/ico_tag.png)}
+.ico_plus{ background-image:url(../img/slice/ico_plus.png)}
+
+.ico_female{ background-image:url(../img/slice/ico_female.png);}
+.ico_male{ background-image:url(../img/slice/ico_male.png);}
+
+.btn2 .ico_fo{ background-image:url(../img/slice/ico_fo.png);}
+
+.btn2_l .ico_fo{ background-image:url(../img/slice/ico_fo_l.png); width:17px; height:17px; margin-right:10px}
+
+.ico_channelmode1{ background-image:url(../img/slice/ico_channelmode1.png); vertical-align:top}
+.ico_channelmode2{ background-image:url(../img/slice/ico_channelmode2.png); vertical-align:top}
+
+a:hover .ico_channelmode1,
+.select .ico_channelmode1{ background-image:url(../img/slice/ico_channelmode1b.png);}
+a:hover .ico_channelmode2,
+.select .ico_channelmode2{ background-image:url(../img/slice/ico_channelmode2b.png);}
+
+.ico_down{ background-image:url(../img/slice/ico_down.png);}
+
+.ico_play{ background-image:url(../img/slice/ico_play.png);}
+
+/* ico25 */
+.ico_wb25a{ background-image:url(../img/slice/ico_wb25a.png);}
+.ico_qq25a{ background-image:url(../img/slice/ico_qq25a.png);}
+.ico_qz25a{ background-image:url(../img/slice/ico_qz25a.png);}
+.ico_sina25a{ background-image:url(../img/slice/ico_sina25a.png);}
+.ico_rr25a{ background-image:url(../img/slice/ico_rr25a.png);}
+.ico_db25a{ background-image:url(../img/slice/ico_db25a.png);}
+
+.ico_wb25b,.selectList a:hover .ico_wb25a{ background-image:url(../img/slice/ico_wb25b.png);}
+.ico_qq25b,.selectList a:hover .ico_qq25a{ background-image:url(../img/slice/ico_qq25b.png);}
+.ico_qz25b,.selectList a:hover .ico_qz25a{ background-image:url(../img/slice/ico_qz25b.png);}
+.ico_sina25b,.selectList a:hover .ico_sina25a{ background-image:url(../img/slice/ico_sina25b.png);}
+.ico_rr25b,.selectList a:hover .ico_rr25a{ background-image:url(../img/slice/ico_rr25b.png);}
+.ico_db25b,.selectList a:hover .ico_db25a{ background-image:url(../img/slice/ico_db25b.png);}
+
+.ico_wb25c{ background-image:url(../img/slice/ico_wb25c.png)}
+.ico_qq25c{ background-image:url(../img/slice/ico_qq25c.png)}
+.ico_qz25c{ background-image:url(../img/slice/ico_qz25c.png)}
+.ico_sina25c{ background-image:url(../img/slice/ico_sina25c.png)}
+.ico_rr25c{ background-image:url(../img/slice/ico_rr25c.png)}
+.ico_db25c{ background-image:url(../img/slice/ico_db25c.png)}
+
+.ico_sina25d{ background-image:url(../img/slice/ico_sina25d.png)}
+.ico_wechat25d{ background-image:url(../img/slice/ico_wechat25d.png)}
+
+.ico_tag25{ background-image:url(../img/slice/ico_tag25.png);}
+
+.ico_wechat25,
+.ico_weibo25{ width:28px; height:28px;}
+.ico_wechat25{ background-image:url(../img/slice/ico_wechat25.png);}
+.ico_weibo25{ background-image:url(../img/slice/ico_weibo25.png);}
+
+/* ico36 */
+
+/* ico_dr */
+.ico_dr{ display:inline-block; *display:inline; *zoom:1; vertical-align:top; width:36px; height:34px; background-repeat:no-repeat}
+.ico_drReturn{ background-image:url(../img/slice/ico_drReturn.png);}
+.ico_drShare{ background-image:url(../img/slice/ico_drShare.png);}
+.ico_drPlay{ background-image:url(../img/slice/ico_drPlay.png);}
+.ico_drHand{ background-image:url(../img/slice/ico_drHand.png);}
+.ico_drWall{ background-image:url(../img/slice/ico_drWall.png);}
+
+/* loading */
+.ico_loading_l{ display:inline-block; *display:inline; *zoom:1; width:60px; height:60px; background:url(http://mat1.gtimg.com/www/mb/images/mv/loading_l.GIF);}
+
+/* func */
+.funcBtn .lk{ background-image:url(../img/slice/func_bg.png);}
+.funcBtn .checked .lk{ background-image:url(../img/slice/func_bg2.png);}
+.funcBtn .praise .lk i{ background-image:url(../img/slice/func_praise.png);}
+.funcBtn .relay .lk i{ background-image:url(../img/slice/func_relay.png);}
+.funcBtn .share .lk i{ background-image:url(../img/slice/func_share.png);}
+
+/* 其他 */
+.mv_logo .logo{ background-image:url(../img/slice/mv_logo1.png);}
+.e_3cols .mv_logo .logo{ background-image:url(../img/slice/mv_logo2.png);}
+
+
+
+
+
+/* 3 结构图片
+================================================================*/
+
+
+
+
+
+/* 4 media queries
+================================================================*/

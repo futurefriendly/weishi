@@ -1,0 +1,56 @@
+/* CSS GUIDE mobile个人页业务结构样式
+================================================================
+ *
+ * PROJECT: 微视个人页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+
+/* 个人资料
+----------------------------------------------------------------*/
+
+.m_profile{ clear:both; padding:20px 10px 15px; background:#fff; position:relative; box-shadow:rgba(0,0,0,.1) 0 1px 3px inset; border-top:#d2d2d2 1px solid; border-bottom:#d2d2d2 1px solid}
+.m_profile .c1{ float:left; margin-right:10px}
+.m_profile .c1 img{ width:56px; height:56px; border:#e8e8e8 2px solid; border-radius:30px; overflow:hidden}
+.m_profile .c2{ overflow:hidden}
+.m_profile .username{ font-size:.875em; font-weight:300}
+.m_profile .username .name{ vertical-align:middle}
+.m_profile .info{ color:#888; font-size:.75em; margin-top:5px}
+.m_profile .summary{ font-size:.875em; margin-top:5px; word-wrap:break-word; word-break:break-all;}
+.m_profile .data{ font-size:.8125em; color:#888; margin-top:5px}
+.m_profile .data .spacer{ margin:0 12px; color:#a3a3a3}
+
+.m_profile .arr{ position: absolute; left:30px; bottom:10px;}
+.m_profile .arr em,
+.m_profile .arr i{ display:block; position:absolute; left:0; width:0; height:0; font-size:0; border-width:0 10px 10px 10px; border-style:dashed dashed solid dashed; border-color:transparent transparent #f9f9f9 transparent;}
+.m_profile .arr em{ border-bottom-color:#d2d2d2}
+.m_profile .arr i{ margin-top:2px}
+
+
+
+
+
+/* 2 结构
+================================================================*/
+
+
+
+
+
+/* 3 media queries
+================================================================*/

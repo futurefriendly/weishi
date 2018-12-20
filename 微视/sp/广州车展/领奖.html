@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico" />
+	
+	<title>微视</title>
+	<style tyle="text/css">
+	
+/* 1 CSS RESET
+================================================================*/
+
+html{ _height:100%; overflow-x:hidden;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+body{_height:100%; overflow-x:hidden; font:12px/1.5 Helvetica,Arial,sans-serif; _background-attachment:fixed; _background-image:url(about:blank);}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+strong{font-weight:bold}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+h3{ font-size:14px}
+sup{ vertical-align:text-top}
+sub{ vertical-align:text-bottom}
+input,textarea,select{font-family:Tahoma,Arial,sans-serif; font-size:inherit; *font-size:100%; font:12px/1.5 Helvetica,Arial,sans-serif; font-weight:inherit; outline:none}
+textarea{ resize:none; overflow-y:auto; outline:none}
+a{ text-decoration:none}
+a:hover{ text-decoration:underline}
+a:focus{ outline:none}
+
+
+
+
+
+/* 2 全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after{content:'';display:table;clear:both}
+.clear{zoom:1}
+
+.left{float:left}
+.right{float:right}
+
+/* DISPLAY */
+.dis_b{ display:block}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block; *display:inline; *zoom:1}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字体 */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Helvetica}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+
+/* 字号 */
+.tx_12{ font-size:12px}
+.tx_14{ font-size:14px}
+.tx_16{ font-size: 16px}
+
+/* 字重 */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_unbr,
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* 边距 */
+.mt5{ margin-top:5px}
+.mt10{ margin-top:10px}
+.mr5{ margin-right:5px}
+.mr10{ margin-right:10px}
+.mr15{ margin-right:15px}
+.mb5{ margin-bottom:5px}
+.mb10{ margin-bottom:10px}
+.ml5{ margin-left:5px}
+.ml10{ margin-left:10px}
+.ml15{ margin-left:15px}
+
+.pt5{ padding-top:5px}
+.pt10{ padding-top:10px}
+.pr5{ padding-right:5px}
+.pr10{ padding-right:10px}
+.pb5{ padding-bottom:5px}
+.pb10{ padding-bottom:10px}
+.pl5{ padding-left:5px}
+.pl10{ padding-left:10px}
+
+/* 其他
+----------------------------------------------------------------*/
+
+.cur_auto{ cursor: auto!important;}
+.cur_default{ cursor: default!important;}
+.cur_pointer{ cursor:pointer!important;}
+
+
+
+
+
+/* 3 全局颜色
+================================================================*/
+
+/* color
+----------------------------------------------------------------*/
+
+.c_tx0,body{ color:#000}/* 默认文字颜色 */
+.c_tx1,a{ color:#366}/* 默认链接色 */a:hover{ color:#366}a:active{ color:#366}
+.c_tx2{ color:#7baebf}/* 弱链接色 */.c_tx2:hover{ color:#7baebf}.c_tx2:active{ color:#7baebf}
+.c_tx3{ color:#fff}/* 强化文字色 */
+.c_tx4{ color:#fff}/* 弱化文字色 */
+.c_tx5{ color:#ba5d12}/* 强调色 标红 */
+.c_tx6{ color:#666}/* 弱化文字色2 */
+
+	</style>
+	
+	<style tyle="text/css">
+	body{ background:#E8E8E8}
+	.banner{ width:100%; margin:0 auto; background:#00B0C8 url(http://mat1.gtimg.com/www/mb/mv/act/duijiangbanner.jpg) no-repeat top center; height:244px}
+	.mainWraper{ width:580px; margin:40px auto;font-family:'Microsoft YaHei'}
+	.mainWraper h3{font-size:16px;font-family:'Microsoft YaHei','simhei'; padding-bottom:5px}
+	.mainInner{border:1px solid #CECECE;border-radius: 5px;overflow: hidden;}
+	.formarea{ background:#f9f9f9; padding:30px 30px 30px 80px}
+	.formarea dt,.formarea dd{ float: left; line-height:24px; vertical-align:top;}
+	.formarea dl{ padding:10px 0}
+	.formarea dt{ width:72px; text-align:right;font-size:14px}
+	.formarea img{ display:inline;}
+	.formarea select{ width:146px}
+	.formarea input{ height:24px}
+	
+	.formdata{ height:160px}
+	.cError{ color:#FF003A; padding-left: 5px;}
+	
+	.question{ padding: 30px; }
+	.question h4{font-size:14px;font-weight:bold;}
+	.question li{line-height:28px}
+	.changeimg{ height:30px; text-decoration:underline; line-height:30px;}
+	.btnSubmit{background:url(http://mat1.gtimg.com/www/mb/mv/act/btn_lingjiang.jpg); width:167px; height:47px; margin:30px 0 10px 110px; border:0; line-height:99em; overflow: hidden; display:block; cursor:pointer;}
+	
+	.mod_ft{ text-align:center;}
+	
+	</style>
+	
+	
+</head>
+<body>
+
+	<div class="banner"></div>
+
+	<div class="mainWraper">
+		<h3>请填写领奖信息</h3>
+		<div class="mainInner">
+			<div class="formarea">
+				<form action="">
+					<div class="formdata">
+				<dl class="clear">
+					<dt>QQ号：</dt>
+					<dd>
+						<input type="text"/><span class="cError">请输入QQ号</span>
+					</dd>
+				</dl>
+				
+				
+				<dl class="clear">
+					<dt>选择活动：</dt>
+					<dd>
+						<select name="" id="">
+							<option value="">活动内容1</option>
+							<option value="">活动内容2</option>
+							<option value="">活动内容3</option>
+						</select><span class="cError">请选择活动</span>
+					</dd>
+				</dl>
+				
+				
+				<dl class="clear">
+					<dt>验证码：</dt>
+					<dd><p class="clear">
+						<input type="text" class="left mr5"/><img src="http://mat1.gtimg.com/www/mb/mv/act/yanzhengma.jpg" alt=""class="left mr5" ><a href="" class="left ml5 changeimg">看不清，换一张</a></p>
+					<p class="clear"><span class="cError">验证码填写错误</span></p>
+					</dd>
+				</dl>
+				</div>
+				
+				<button type="submit" class="btnSubmit">立即领奖</button>
+				</form>
+			</div>
+			
+			
+			<div class="question">
+				
+				<h4>常见问题：</h4>
+				
+				<ul>
+					<li>1.奖品将在活动结束后15个工作日内发送。</li>
+					<li>2.奖品将在活动结束后15个工作日内发送。</li>
+					<li>3.奖品将在活动结束后15个工作日内发送。</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="mod_ft">
+		<div class="copyright">
+			增值电信业务经营许可证：
+			<a href="###">粤B2-20090059</a>
+			<a href="###">B2-20090028</a><br>
+			Copyright &copy; 1998 - 2013 Tencent. All Rights Reserved<br>
+			<a href="###">腾讯公司</a>
+			<a href="###">版权所有</a>
+		</div>
+	</div>
+
+</body>
+</html>

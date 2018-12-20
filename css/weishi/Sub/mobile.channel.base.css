@@ -1,0 +1,46 @@
+/* CSS GUIDE mobile频道列表页业务基础样式
+================================================================
+ *
+ * PROJECT: 微视频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS reset;
+ * 2. 基础样式;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS reset
+================================================================*/
+
+body{ background-color:#f0f0f0;}
+
+
+
+
+
+/* 2 基础样式
+================================================================*/
+
+/* 图片和图标
+----------------------------------------------------------------*/
+
+.ico_pm_hand,
+.ico_pm_auto,
+.ico_pm_wall{ display:inline-block; vertical-align:middle; width:30px; height:30px; background:url(http://mat1.gtimg.com/www/mb/mobile/mv/playmode.png) no-repeat;}
+
+.ico_pm_hand{ background-position:0 -30px}
+.ico_pm_auto{ background-position:-30px -30px}
+.ico_pm_wall{ background-position:-60px -30px}
+.select .ico_pm_hand,
+.lk:hover .ico_pm_hand{  background-position:0 0}
+.select .ico_pm_auto,
+.lk:hover .ico_pm_auto{  background-position:-30px 0}
+.select .ico_pm_wall,
+.lk:hover .ico_pm_wall{  background-position:-60px 0}

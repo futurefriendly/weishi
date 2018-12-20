@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/mb/weshow/favicon.ico" />
+<style>
+/* 1 CSS RESET
+================================================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,header,footer,nav,article,section{margin:0;padding:0}
+fieldset,img,form{border:0; vertical-align:top}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+header,footer,nav,article,section,aside{display:block}
+ol,ul,li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+strong{font-weight:800}
+
+html{ overflow-y:scroll;}
+body{ font:12px/1.75 Helvetica,Arial,sans-serif;}
+
+table{ border-collapse:collapse;border-spacing:0}
+
+input,textarea,select,button{ border:none; font:12px/1.75 Helvetica,Arial,sans-serif; font-weight:inherit; outline:none}
+button{ white-space:nowrap; vertical-align:middle; cursor:pointer}
+textarea{ resize:none; overflow-y:auto;}
+
+sup{ vertical-align:text-top}
+sub{ vertical-align:text-bottom}
+
+a{ text-decoration:none; outline:none; cursor:pointer;}
+a:hover{ text-decoration:underline}
+
+video,
+embed{ vertical-align:top; max-width:100%}
+video{ background:#f0f0f0;}
+
+
+
+
+
+/* 2 公用全局公用CSS
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+/* 浮动 */
+.clear:after{content:'';display:table;clear:both}
+.clear{zoom:1}
+
+.left{float:left}
+.right{float:right}
+
+/* DISPLAY */
+.dis_b{ display:block; *zoom:1;}
+.dis_in{ display:inline}
+.dis_inb{ display:inline-block; *display:inline; *zoom:1}
+.vis_on{ visibility: visible;}
+.vis_off{ visibility: hidden;}
+
+/* 边距 */
+.mt5{ margin-top:5px}
+.mr5{ margin-right:5px}
+.mb5{ margin-bottom:5px}
+.ml5{ margin-left:5px}
+.mt10{ margin-top:10px}
+.mr10{ margin-right:10px}
+.mb10{ margin-bottom:10px}
+.ml10{ margin-left:10px}
+.mt15{ margin-top:15px}
+.mr15{ margin-right:15px}
+.mb15{ margin-bottom:15px}
+.ml15{ margin-left:15px}
+.mt20{ margin-top:20px}
+.mr20{ margin-right:20px}
+.mb20{ margin-bottom:20px}
+.ml20{ margin-left:20px}
+
+.pt5{ padding-top:5px}
+.pr5{ padding-right:5px}
+.pb5{ padding-bottom:5px}
+.pl5{ padding-left:5px}
+.pt10{ padding-top:10px}
+.pr10{ padding-right:10px}
+.pb10{ padding-bottom:10px}
+.pl10{ padding-left:10px}
+.pt15{ padding-top:15px}
+.pr15{ padding-right:15px}
+.pb15{ padding-bottom:15px}
+.pl15{ padding-left:15px}
+.pt20{ padding-top:20px}
+.pr20{ padding-right:20px}
+.pb20{ padding-bottom:20px}
+.pl20{ padding-left:20px}
+
+body .mt0{ margin-top:0!important}
+body .mr0{ margin-right:0!important}
+body .mb0{ margin-bottom:0!important}
+body .ml0{ margin-left:0!important}
+body .pt0{ padding-top:0!important}
+body .pr0{ padding-right:0!important}
+body .pb0{ padding-bottom:0!important}
+body .pl0{ padding-left:0!important}
+
+/* 对齐 */
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+.vt_b{ vertical-align:bottom}
+
+/* 文字
+----------------------------------------------------------------*/
+
+/* 字体 */
+.tx_song{font-family:SimSun,Helvetica}
+.tx_yh{font-family:Microsoft YaHei,Mingliu,Helvetica,sans-serif}
+.tx_ar{ font-family:Arial}
+.tx_ss{ font-family:sans-serif}
+@font-face{
+font-family:'georgiai';
+src:url('http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/georgiai-webfont.eot');
+src:url('http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/georgiai-webfont.eot?#iefix') format('embedded-opentype'),
+	url('http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/georgiai-webfont.woff') format('woff'),
+	url('http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/georgiai-webfont.ttf') format('truetype'),
+	url('http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/georgiai-webfont.svg#atl') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+/* 字号 */
+.tx_-2{ font-size:.75em}
+.tx_-1{ font-size:.875em}
+.tx_0{ font-size:1em}
+.tx_1{ font-size:1.125em}
+.tx_2{ font-size:1.25em}
+
+.tx_12{ font-size:12px;}
+.tx_14{ font-size:14px;}
+.tx_16{ font-size:16px;}
+.tx_18{ font-size:18px;}
+.tx_20{ font-size:20px;}
+.tx_22{ font-size:22px;}
+.tx_24{ font-size:24px;}
+.tx_26{ font-size:26px;}
+.tx_30{ font-size:30px;}
+
+/* 字重 */
+.tx_b{ font-weight: 800}
+.tx_n{ font-weight:normal}
+
+/* 字体样式 */
+.tx_udl{ text-decoration:underline}
+.tx_del{ text-decoration:line-through}
+
+/* 对齐 */
+.tx_l{ text-align:left}
+.tx_c{ text-align:center}
+.tx_r{ text-align:right}
+
+.vt_t{ vertical-align:top}
+.vt_m{ vertical-align:middle}
+
+/* 折行 */
+.tx_br{ word-wrap:break-word; word-break:break-all}
+.tx_unbr,
+.tx_nbr{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* 基础边框
+----------------------------------------------------------------*/
+
+body .bor0{ border:none!important}
+.bor1{ border-width:1px; border-style:solid}
+
+/* 4 公用皮肤
+================================================================*/
+
+/* color
+----------------------------------------------------------------*/
+
+.c_tx0,body{ color:#333}/* 默认文字色 */
+.c_tx1,a{ color:#366}/* 默认链接色 */a:hover{ color:#366}/* 鼠标经过 */a:active{ color:#366}/* 鼠标点击 */
+.c_tx2{ color:#97999c;}/* 弱文字色1 */
+.c_tx3{ color:#97999c}/* 弱链接色1 */.c_tx3:hover{ color:#97999c}/* 鼠标经过 */.c_tx3:active{ color:#97999c}/* 鼠标点击 */
+.c_tx4,.c_keyword{ color:#fc5105}/* 强文字色1 */
+.c_tx5{ color:#cd1901}/* 强文字色2 */
+.c_tx6{ color:#666;}/* 弱文字色2 */
+.c_tx7{ color:#fff;}/* 白色 */
+.c_tx8{ color:#f1a330;}/* 强文字色3 */
+.c_yellow{ color:#fcff00}
+
+/* border
+----------------------------------------------------------------*/
+
+.c_bor1{ border-color:#ccc}/* 两栏结构左栏模块边框色 */
+.c_bor2{ border-color:#ddd}/* 两栏结构右栏模块边框色 */
+.c_bor3{ border-color:#d9d9d9}/* 通栏结构边框色，比如微视搜索顶部 */
+
+/* background
+----------------------------------------------------------------*/
+
+/* 背景色 */
+.c_bg0,body{ background-color:#fff}/* 默认页面背景色 */
+.c_bg1{ background-color:#fff;}/* 白色 */
+.c_bg2{ background-color:#ebebeb}/* 一些通栏模块的背景色，比如微视搜索顶部 */
+.c_bg3{ background-color:#fafafa}
+.c_bg4{ background-color:#f4f4f4}
+
+.voice_list{ width:293px; height:410px}
+.voice_list_tab,
+.voice_list_con .con_bd .item_1 .c1 b{ background:url(http://mat1.gtimg.com/www/mb/images/weishi/sp/cvoice/sprite_cvoice_iframe.png) no-repeat}
+.voice_list_tab{ height:45px;}
+.voice_list_tab a{ overflow:hidden; display:block; float:left; text-indent:-9999em; width:146px; height:45px}
+.voice_list_tab .tab1{ margin-right:1px}
+.e_tab_1 .voice_list_tab{ background-position:0 -46px}
+.e_tab_2 .voice_list_tab{ background-position:0 0}
+
+.voice_list_con .con_bd{ padding-left:15px; margin-top:5px; height:325px}
+.voice_list_con .con_bd .item{ height:56px; padding-top:6px; border-bottom:#e5e5e5 1px solid; overflow:hidden}
+.voice_list_con .con_bd .item .c1{ position:relative; min-width:35px; margin-right:5px; _width:35px; _overflow:visible; float:left; line-height:50px; font-style:italic; font-family:georgiai; font-size:40px; color:#b8b8b8;
+	background:-webkit-linear-gradient(#d3d3d3,#a0a0a0);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+.voice_list_con .con_bd .item .c1 b{ display:none}
+.voice_list_con .con_bd .item_1 .c1,
+.voice_list_con .con_bd .item_2 .c1,
+.voice_list_con .con_bd .item_3 .c1{ color:#f1b22b;
+	background:-webkit-linear-gradient(#fae3aa,#eb9a1b);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+.voice_list_con .con_bd .item_1 .c1 b{ display:block; position:absolute; top:5px; left:5px; width:20px; height:20px; background-position:-294px 0}
+.voice_list_con .con_bd .item .c2{ float:left; margin-right:10px}
+.voice_list_con .con_bd .item .c2 .avatar{ display:block; width:50px; height:50px}
+.voice_list_con .con_bd .item .c2 img{width:50px; height:50px; border-radius:25px}
+.voice_list_con .con_bd .item .c3{ overflow:hidden; color:#7b7b7b}
+.voice_list_con .con_bd .item .c3 .listname{ color:#b43636}
+.voice_list_page{ text-align:center;}
+.voice_list_page a,
+.voice_list_page .page_num{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle}
+.voice_list_page .page_num{ margin:0 15px; color:#000; font-size:14px;}
+.voice_list_page a{ color:#fff; line-height:24px; padding:0 7px; background:#adadad}
+.voice_list_page a:hover{ background:#b43636; text-decoration:none; color:#fff}
+
+</style>
+<title>微视海选活动</title>
+</head>
+<body>
+<div class="voice_list e_tab_1"><!-- e_tab_1/e_tab_2 -->
+	<div class="voice_list_tab clear">
+		<a href="###" class="tab1" title="本周人气">本周人气</a>
+		<a href="###" class="tab2" title="总人气">总人气</a>
+	</div>
+	<div class="voice_list_con">
+		<div class="con_bd">
+			<ol class="clear">
+			<li class="item item_1 clear">
+				<div class="c1">1<b></b></div>
+				<div class="c2">
+					<a href="###" class="avatar"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/100" alt="" /></a>
+				</div>
+				<div class="c3">
+					<p class="listname tx_yh tx_unbr tx_18">范冰冰</p>
+					<p class="list_value">人气值：123123</p>
+				</div>
+			</li>
+			<li class="item item_2 clear">
+				<div class="c1">2<b></b></div>
+				<div class="c2">
+					<a href="###" class="avatar"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/100" alt="" /></a>
+				</div>
+				<div class="c3">
+					<p class="listname tx_yh tx_unbr tx_18">范冰冰</p>
+					<p class="list_value">人气值：123123</p>
+				</div>
+			</li>
+			<li class="item item_3 clear">
+				<div class="c1">3<b></b></div>
+				<div class="c2">
+					<a href="###" class="avatar"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/100" alt="" /></a>
+				</div>
+				<div class="c3">
+					<p class="listname tx_yh tx_unbr tx_18">范冰冰</p>
+					<p class="list_value">人气值：123123</p>
+				</div>
+			</li>
+			<li class="item clear">
+				<div class="c1">4<b></b></div>
+				<div class="c2">
+					<a href="###" class="avatar"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/100" alt="" /></a>
+				</div>
+				<div class="c3">
+					<p class="listname tx_yh tx_unbr tx_18">范冰冰</p>
+					<p class="list_value">人气值：123123</p>
+				</div>
+			</li>
+			<li class="item clear">
+				<div class="c1">5<b></b></div>
+				<div class="c2">
+					<a href="###" class="avatar"><img src="http://t1.qlogo.cn/mbloghead/31006af2b068c70871f4/100" alt="" /></a>
+				</div>
+				<div class="c3">
+					<p class="listname tx_yh tx_unbr tx_18">范冰冰</p>
+					<p class="list_value">人气值：123123</p>
+				</div>
+			</li>
+			</ol>
+		</div>
+		<div class="voice_list_page clear">
+			<a href="###" class="prev" title="上一页">上一页</a>
+			<span class="page_num">1/23</span>
+			<a href="###" class="next" title="下一页">下一页</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

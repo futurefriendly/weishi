@@ -1,0 +1,20 @@
+/* CSS GUIDE Sub内全局主样式
+================================================================
+ *
+ * PROJECT: 微视PC侧;
+ * URL:   ;
+ * AUTHOR:  bennyzhai;
+ * 
+================================================================*/
+
+
+
+
+
+@import url("../Global/base.css");/* 全局公用_基础元素 */
+@import url("../Global/main.css");/* 全局公用_模块 */
+@import url("../Global/animate.css");/* 全局公用_动画库 */
+
+@import url("style.base.css"); /* Sub内全局基础样式 */
+@import url("style.main.css"); /* Sub内全局结构样式 */
+@import url("asyn.css"); /* Sub内异步样式 暂时放在这里 */

@@ -1,0 +1,92 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td{margin:0;padding:0}	
+table{border-collapse:collapse;border-spacing:0}
+img{border:0}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+body{height:100%;font:12px/1.75 Tahoma,Arial,sans-serif;}
+select{font-size:12px}
+button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
+input,textarea,select,button{outline:none;resize:none}
+a{text-decoration: none;}
+a:focus{outline:none}
+p{color:#DADADA}
+.fs14{font-size:14px}.fs13{font-size:13px}.fs12{font-size:12px}
+.fc3{color:#333;}
+body{ background: #333333; font: 12px/1.5 "宋体",simsun,Tahoma,Arial, sans-serif; color: #dadada}
+.clear:after{content:'.';clear:both;display:block;height:0;visibility:hidden;font-size:0;line-height:0}
+.clear{ *zoom:1;}
+
+
+
+.index{width: auto;min-width:1002px;margin: 0 auto;background: #333333;}
+.content_wrap{width: 1002px;margin: 0 auto; font-size: 14px}
+.top_wrap{ background: #cb054a; height: 346px;}
+.top_wrap_mobile{ display: none}
+.top_wrap .hd{ background: #b60442; height: 50px;}
+.top_wrap .hd .inner{ width: 1002px; height: 50px; line-height: 20em; background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/cjk_1a.jpg) no-repeat; margin: 0 auto; overflow: hidden;}
+.top_wrap .bd{ width: 1002px; height: 296px; margin: 0 auto; background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/mobile/cjk_2_131107.jpg) no-repeat;}
+.content_wrap{ width: 1002px; margin: 0 auto; background: url(http://mat1.gtimg.com/www/mb/wbzt/cjk/cjk_3b.jpg) no-repeat top right;}
+.title_panel{position:relative;zoom:1;}
+.title_panel h2{ display: none}
+.first_title,.second_title,.third_title,.brilliant_works,.icon_rule,.icon_list,.icon_list_style,.download_type .android,.download_type .iphone{display:inline-block;
+background:url(http://mat1.gtimg.com/www/mb/wbzt/cjk/index_png24_131108.png);_background:url(http://mat1.gtimg.com/www/mb/wbzt/cjk/index_png8c.png); background-repeat:no-repeat}
+.first_title{position:absolute;top:-59px;left:-171px;width:658px;height:50px;background-position:0 0;}
+.second_title{position:absolute;top:-62px;left:-171px;width:364px;height:53px;background-position:0 -54px;}
+.third_title{position:absolute;top:-63px;left:-171px;width:442px;height:47px;background-position:0 -115px;}
+.second_step_panel .brilliant_works{width:417px;height:44px;background-position:0 -294px;}
+.icon_rule{position:absolute;top:0;width:116px;height:32px;background-position:0 -214px; line-height: 20em; overflow: hidden;}
+.icon_list{position:absolute;top:0;width:120px;height:32px;background-position:0 -169px; line-height: 20em; overflow: hidden;}
+.icon_list_style{position:absolute;top:8px;left:10px;width:4px;height:4px;background-position:-4px -252px;}
+.bold_word{font-weight:bold;color:#4CCED8;}
+.blue_word{color:#4CCED8;}
+.first_step_panel{width:490px;height:341px;padding:84px 0 0 171px;line-height:26px;}
+.first_step_panel .first_line{line-height:26px;}
+.first_step_panel .forth_line{color:#AFA06C;line-height:18px;margin-top:10px;}
+.second_step_panel .left_col{width:407px;height:188px;padding:60px 0 0 171px;margin-right:4px;float:left;}
+.second_step_panel .right_col{width:417px;height:228px;float:left;margin-top:16px;}
+.second_step_panel p{color:#DADADA;}
+.second_step_panel p a,.second_step_panel p a:hover{color:#DADADA;text-decoration:underline;}
+.second_step_panel .second_line{margin-top:7px;line-height:26px;}
+.second_step_panel .third_line{margin-top:8px;}
+.second_step_panel .forth_line{margin-top:15px;color:#AFA06C;}
+.empty_content{position:relative;background:#2C292A;width:411px;height:160px;margin:-6px 0 0 2px;}
+.empty_icon{position:absolute;left:115px;top:54px;width:145px;height:39px;background:url(http://mat1.gtimg.com/www/mb/wbzt/cjk/welcom_play.png)}
+.third_step_panel{width:671px;height:155px;padding:63px 0 0 171px;}
+.third_step_panel .second_line{margin-top:7px;line-height:26px;}
+.third_step_panel .third_line{margin-top:6px;color:#4CCED8}
+.third_step_panel .forth_line{margin-top:10px;}
+.activrule_wrap{position:relative;zoom:1;width:932px;margin:0 auto 21px;padding:24px 35px 0 35px; height:277px;border-radius:10px;background:#B2003E;font-size:12px;}
+.activrule_wrap h3{position:relative;height:29px;border-bottom:3px solid #87002F;}
+.activrule_wrap .left_col{width:504px;float:left;margin-right:56px;}
+.activrule_wrap .right_col{width:372px;float:left;}
+.rule_list,.prize_list{margin-top:30px;}
+.rule_list li,.prize_list li{position:relative;padding-left:25px;margin-bottom:16px;color:#E1DCC9;}
+.rule_list li p{*margin-top:-16px;}
+.prize_list li{width:345px;margin-bottom:10px;}
+.prize_list li p{white-space:nowrap;overflow:hidden; text-overflow:ellipsis;}
+.prize_list strong{font-weight:bold;margin-right:5px;}
+.empty_prize_txt{width:174px;font-size:24px;text-align:center;color:#83002e;font-family:"microsoft yahei";font-weight:bold;margin:60px 0 0 90px;}
+.bottom_wrap{background:#242424;width:100%;}
+.bottom_wrap_inner{width:1002px;height:70px;margin:0 auto;background:url(http://mat1.gtimg.com/www/mb/wbzt/cjk/bottom_adver.png);}
+.vedio_pic_list{background:#2C292A;width:386px;height:138px;margin:-6px 0 0 2px;padding:22px 0 0 25px;}
+.vedio_pic_list li{float:left;width:60px;height:60px;margin-right:15px;text-align:center;}
+.vedio_pic_list .vedio_pic img{display:block;width:60px;height:60px;margin-bottom:8px;}
+.vedio_pic_list .vedio_name{font-size:12px;color:#E2DECB;}
+.weixin_cjk{position:absolute;bottom:10px;right:-105px;width:90px;height:126px;background:url(http://mat1.gtimg.com/www/mb/wbzt/cjk/weixin_cjk.png)}
+
+
+.download_type{ text-align: center; padding:25px 0 0}
+.download_type .bg{ margin-bottom: 5px}
+.download_type .android{width:217px;height:57px;background-position:-145px -474px;}
+.download_type .android:hover{background-position:-372px -474px;}
+.download_type .iphone{width:217px;height:57px;background-position:-145px -412px;}
+.download_type .iphone:hover{background-position:-372px -412px;}
+.download_type .QR{width: 150px;margin-right:11px;float:left;}
+.download_type .QR .bg{ width: 150px; height: 150px;margin-bottom:14px;float: left; overflow: hidden;}
+.download_type .QR .txt{ color: #DADADA;font-size:12px;}
+.download_type .direct{ float: left; width: 250px;}
+.download_type .direct .bg{ width: 235px; height: 162px; background-position: -162px -376px; float: left; overflow: hidden;}
+.download_type .direct .android{ margin-top:34px;}
+.download_type .direct .txt{ width: 250px;font-size:12px;}

@@ -1,0 +1,15 @@
+/* CSS GUIDE Sub内异步主样式
+================================================================
+ *
+ * PROJECT: 微视;
+ * URL:   http://www.weishi.com;
+ * AUTHOR:  bennyzhai;
+ * 
+================================================================*/
+
+
+
+
+
+@import url("asyn.base.css"); /* Sub内异步基础样式 */
+@import url("asyn.main.css"); /* Sub内异步结构样式 */

@@ -1,0 +1,95 @@
+<!--#include file="inc/Sub/w_hd.html"-->
+<link type="text/css" rel="stylesheet" media="screen" href="../css/weishi/Sub/style.login.css" />
+
+<title>微视扫一扫登录</title>
+</head>
+
+<body>
+
+<!-- 顶部导航 Global/m_topNav.html -->
+<!--#include file="inc/Global/m_topNav.html"-->
+<!-- /顶部导航 -->
+	
+<div class="mask" style="height:100%;width:100%;position:absolute;z-index:9;opacity:0; filter:alpha(opacity=0); display:none;background-color:#000; top:0;left:0;"></div>
+
+<article class="clear">
+<div class="a_bd">
+
+<!-- 扫一扫登录 single扩展 -->
+<div class="saoLogin e_saoLogin_single">
+
+<!-- 手机图 -->
+<div class="saoLoginPhone" id="saoLoginPhone"><i></i></div>
+<!-- /手机图 -->
+
+<!-- 二维码 Sub/m_saoLoginCode_single.html -->
+<div class="saoLoginCode">
+<!--#include file="inc/Sub/m_saoLoginCode_single.html"-->
+</div>
+<!-- /二维码 -->
+
+</div>
+<!-- /扫一扫登录 -->
+
+</div>
+</article>
+
+<!-- 版权 Global/m_copyright.html -->
+<!--#include file="inc/Global/m_copyright.html"-->
+<!-- /版权 -->
+
+<script src="http://mat1.gtimg.com/www/mb/mv/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	
+if ($(".saoLoginPhone").length > 0) {
+    var _nTimer = 0,
+        _oGuidePhone$ = $(".saoLoginPhone"),
+        _oGuideCode$ = $("#saoLoginCode"),
+        _oMask$ = $(".mask");
+
+    function _back() {
+        _nTimer = setTimeout(function() {
+            _oMask$.stop().animate({
+                opacity: 0
+            }, function() {
+                $(".mask").hide()
+            });
+            _oGuidePhone$.stop().animate({
+                marginLeft: "-150px",
+                opacity: 0
+            }, "400", "swing", function() {
+                _oGuidePhone$.hide();
+            });
+        }, 100);
+    }
+
+    /*guide*/
+    _oGuidePhone$.css({
+        "left": "50%",
+        "opacity": 0
+    });
+    _oGuideCode$.mouseover(function() {
+        
+        clearTimeout(_nTimer);
+        _oMask$.show().stop().animate({
+            "opacity": 0.2
+        });
+        _oGuidePhone$.css("display", "block").stop().animate({
+            marginLeft: "+175px",
+            opacity: 1
+        }, 800, "swing", function() {
+            _oGuidePhone$.animate({
+                marginLeft: "+160px"
+            }, 300);
+        });
+        
+    }).mouseout(_back);
+
+    _oGuidePhone$.mouseover(function() {
+        clearTimeout(_nTimer);
+    }).mouseout(_back);
+}
+</script>
+
+</body>
+</html>

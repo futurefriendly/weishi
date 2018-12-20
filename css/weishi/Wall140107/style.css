@@ -1,0 +1,551 @@
+/* CSS GUIDE 全局基础样式
+================================================================
+ *
+ * PROJECT: 微视分享页、个人页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang, letitiawang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. CSS reset;
+ * 2. 基础样式;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 CSS reset
+================================================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,header,footer,nav,article,section{margin:0;padding:0}
+header,footer,nav,article{display:block}
+table{border-collapse:collapse;border-spacing:0}
+img{border:0; vertical-align:top}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+body{ font:16px/1.5 Helvetica,Arial,sans-serif; overflow-x: hidden; min-width:320px;background-color:#f9f9f9;}
+input,textarea,select,button{outline:none;resize:none;font:16px/1.5 Helvetica,Arial,sans-serif}
+button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
+strong{font-weight:800}
+a{text-decoration:none;outline:none;cursor:pointer; color:#006a92; -webkit-tap-highlight-color:transparent; -webkit-user-select: none; -webkit-focus-ring-color:transparent;}
+a:hover{text-decoration:underline}
+video,embed{ vertical-align:top; max-width:100%}
+video{ background:#000;}
+
+
+
+
+
+/* 2 基础样式
+================================================================*/
+
+/* 布局
+----------------------------------------------------------------*/
+
+.clear:after,
+.m_info_bd:after,
+.m_boxEssay .ft .talklistBox li:after,
+.mv_logo:after,
+.mv_msgList li:after,
+.mv_appPc:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0}
+.clear,
+.m_info_bd,
+.m_boxEssay .ft .talklistBox li,
+.mv_logo,
+.mv_msgList li,
+.mv_appPc{zoom:1}
+
+.left{float: left;}
+.right{float: right;}
+.cGray{color: #97999c;}
+
+/* 文字
+----------------------------------------------------------------*/
+
+.tx_yh{ font-family:Microsoft Yahei;}
+.tx_ar{ font-family:Arial}
+
+/* 图片和图标
+----------------------------------------------------------------*/
+.ic,
+.mv_logo .logo,
+.vip,
+.ico_cvip,
+.ico_master_star{ background-image: url("http://mat1.gtimg.com/www/mb/mobile/mv/sprite_retina2_131109.png"); background-repeat:no-repeat; background-size:67px 276px}
+.ic,.vip,
+.ico_cvip,
+.ico_master_star{ width:16px; height:16px; font-size:0; display:inline-block; *display:inline; *zoom:1; margin-left:2px; vertical-align:middle;}
+.shareList .ic{width:25px; height:24px; margin-right:5px}
+.mv_logo .logo{ background-position:0 0}
+
+.vip{ background-position:-51px 0}
+.ico_cvip{ background-position:-51px -17px}
+.ico_master_star{ background-position:-51px -34px}
+.ico_qq{background-position:-27px -52px; }
+.ico_wb{background-position:-25px -76px}
+.ico_qz{background-position:-27px -102px}
+.ico_sina{background-position:-25px -130px}
+.ico_rr{background-position:-23px -158px; margin-left:-8px;width:28px;}
+.ico_db{background-position:-25px -186px;margin-left:-5px;}
+.ico_lction{background-position:-52px -69px; }
+.ico_tag{background-position:-51px -52px;}
+
+/* 
+************************************************************************************
+
+  小箭头
+  jelly
+
+************************************************************************************
+*/
+.a,.a u{display:inline-block;width:0px;height:0px;line-height:0;font-size:0;cursor:pointer}
+.a_t,.a_t u{border-top-style:solid;border-bottom:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_r,.a_r u{border-right-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-left:dashed transparent}
+.a_b,.a_b u{border-bottom-style:solid;border-top:dashed transparent;border-right:dashed transparent;border-left:dashed transparent}
+.a_l,.a_l u{border-left-style:solid;border-top:dashed transparent;border-bottom:dashed transparent;border-right:dashed transparent}
+.a3{border-width:3px 4px 3px 3px;border-width:3px 3px 3px 2px\9}
+.a3_b{border-width:3px 3px 4px 3px\9;}
+.a4{border-width:4px 5px 4px 4px;border-width:4px 4px 4px 3px\9}
+.a4_b{border-width:4px 5px 4px 4px;border-width:5px 5px 5px 4px\9}
+.a5{border-width:5px 6px 5px 5px;border-width:5px 5px 5px 4px\9}
+.a5_b{border-width:5px 6px 5px 5px;border-width:6px 6px 6px 5px\9}
+.a u{_position:absolute;color:#fff}
+.a_t u{border-width:3px 3px 3px 2px\9;margin:-5px 0 0 -3px;margin:-5px 0 0 -2px\9}
+.a_r u{border-width:4px;margin:-4px 0 0 -2px;*margin:-4px 0 0 -2px}
+.a_b u{border-width:3px 3px 4px 3px\9;margin:-1px 0 0 -3px}
+.a_l u{border-width:3px;margin:-3px 0 0 -5px;margin:-3px 0 0 -4px\9}
+
+
+.topic{ display:none;}
+/* 3 media queries
+================================================================*/
+
+
+
+
+/* 图片和图标
+----------------------------------------------------------------*/
+.ic,
+.mv_logo .logo,
+.vip,
+.ico_cvip,
+.ico_master_star{ background-image:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_pc_131112b.png); background-size:234px 552px; background-repeat:no-repeat;}
+
+.shareList .ic{width:25px; height:20px; margin-right:0}
+
+.mv_logo .logo{ background-position:0 0; }
+.vip{ background-position:-61px -1px; width: 16px;height:16px;}
+.ico_cvip{ background-position:-61px -19px; width: 16px;height: 16px;}
+.ico_master_star{ background-position: -61px -36px; width: 16px;height: 16px;}
+
+.ico_wb{background-position:0px -90px}
+.ico_qq{background-position:-25px -90px}
+.ico_qz{background-position:-50px -90px}
+.ico_sina{background-position:-75px -90px}
+.ico_rr{background-position:-100px -90px;margin-left:0px;width:25px;}
+.ico_db{background-position:-125px -90px;margin-left:0px;}
+
+.ico_wb:hover{background-position:0px -110px}
+.ico_qq:hover{background-position:-25px -110px}
+.ico_qz:hover{background-position:-50px -110px}
+.ico_sina:hover{background-position:-75px -110px}
+.ico_rr:hover{background-position:-100px -110px;margin-left:0px;width:25px;}
+.ico_db:hover{background-position:-125px -110px;margin-left:0px;}
+
+
+.ico_lction{background-position:-61px -71px; width:14px; height:14px;}
+.ico_tag{background-position:-61px -52px;}
+
+
+
+
+
+
+
+/*//main*/
+
+/* CSS GUIDE 全局结构样式
+================================================================
+ *
+ * PROJECT: 微视分享页、个人页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai, jellyzhang, letitiawang;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* 右上操作
+----------------------------------------------------------------*/
+
+.mFun{ position: absolute;right: 0; margin-right:10px;}
+.mFun .time{ font-size:.75em; vertical-align:top}
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.mv_app2{ height:42px; padding:10px 0 0 0; float: right; min-width:105px}
+.mv_app2 .mv_appBg{width:100%; text-align:center;}
+
+.mv_app2 a{ display:block; margin:0; width:auto;height:37px; line-height:37px; color:#444; font-family:Microsoft Yahei; border:#bbb 1px solid; border-radius:5px; font-size:.875em;
+	background-color:#d7d7d7;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#ccc));
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px;
+}
+.mv_app2 a:active{
+	border-color:#bfbfbf;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#9BD359), to(#64B239));
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px,#dfdfdf 0 1px 0 inset;
+}
+.mv_app2 a:hover{ text-decoration:none}
+.mv_app2 .mv_download{color:#fff; text-shadow:#41781D 0 2px 1px;
+	border-color:#4A8924;
+	background-color:#69A83C;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#80BB49), to(#559830));
+	box-shadow:rgba(0,0,0,.25) 0 1px 5px,#8DC751 0 1px 0 inset;
+}
+.mv_app2 .mv_download:active{
+	border-color:#58A02C;
+	background-color:#64B239;box-shadow:#9BD359 0 1px 0 inset;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#84c747), to(#58a82b));
+}
+
+/* title区
+----------------------------------------------------------------*/
+
+.mv_tit{ padding:7px 0 0 0; margin-bottom:10px; position:relative; overflow:hidden; float: left;}
+.mv_tit .lk{ display:block; position: absolute; width:100%; height:400px; top:0; background:url(about:blank)}
+
+.mv_logo{ width:40px; height:40px; padding-top:3px; float:left; margin-right:6px}
+.mv_logo .logo{ width:40px; height:40px;}
+.mv_logoTit{ display: none;}
+
+.mv_summary{overflow: hidden; float: left;}
+.mv_summary h1{ color:#000; font-size:1.0625em; font-family:Microsoft Yahei}
+.mv_summary p{ font-size:.625em; color:#3b3b3b;}
+
+/*slogan*/
+.slogan{ color:#999; padding:10px 0 0; display:none;}
+
+/*BannerArea*/
+.mv_aside .BannerArea{ display:none;}
+.BannerArea{ width:300px; height:53px; margin:5px auto 15px; overflow: hidden; background:#333;clear: both;}
+.BannerArea img{width:301px; height:53px;}
+/* 视频
+----------------------------------------------------------------*/
+
+.mv_video {text-align:center; background:#000; overflow: hidden;*float: left;}
+.mv_video video{max-width:460px;}
+.vBox{ display:block;}
+
+/* 消息
+----------------------------------------------------------------*/
+
+.userPic{ margin-right:10px; float: left;}
+.userPic img{ width:35px; height:35px; border-radius: 5px;}
+.msgBox{ font-size:.875em}
+.userName{overflow: hidden; height:20px}
+.userName .name{max-width:80px;height:26px; white-space: nowrap; text-overflow:ellipsis; overflow: hidden; display:inline; float: left; margin-right:5px}
+.msgCnt{ padding-top:2px; word-wrap:break-word; word-break:break-all;}
+
+/* 原消息
+----------------------------------------------------------------*/
+
+.mv_msg{ position:relative; padding:8px 10px 10px; color:#333}
+.mv_msg .mFun{ padding-top:8px}
+.mv_msg .userName{ padding-top:8px; font-size:1em;}
+.mv_msg .msgCnt{ clear:both; padding-top: 7px;}
+.mv_msg .pubInfo{ margin-top: 5px; font-size:.75em}
+.mv_msg .num_com,
+.mv_msg .num_like{ margin-left:10px}
+
+/* 转评列表
+----------------------------------------------------------------*/
+
+.mv_msgList{ border-top:#d8d8d8 1px solid; box-shadow:#f4f4f4 0 1px 0 inset; color:#333}
+.mv_msgList li{ position:relative; padding:4px 0; margin:0 10px; border-bottom: 1px solid #E2E2E1;}
+.mv_msgList li.last,
+.mv_msgList li:last-child{border-bottom:0}
+.mv_msgList .msgBox{ overflow:hidden}
+.mv_msgList .msgBox .name{}
+.mv_msgList .userPic{ padding-top:4px}
+.mv_msgList .mFun{ margin-right:0}
+
+/* TL列表项
+----------------------------------------------------------------*/
+
+.mvitem{ position: relative; vertical-align:top; margin-bottom:15px; background:#fff; border:#e1e1e1 1px solid; border-top:0; box-shadow:rgba(0,0,0,.2) 0 3px 5px;}
+
+/* TL loading
+----------------------------------------------------------------*/
+
+.mv_load{ margin-bottom:15px; text-align:center; color:#a3a3a3; font-size:.875em}
+.mv_load a,
+.mv_load span{ display:block; color:#a3a3a3}
+.mv_load a:hover{ text-decoration:none; background:#eee; color:#a3a3a3}
+
+/* 视频占位提示
+----------------------------------------------------------------*/
+
+.delete,
+.mvnoitem{ position:relative; height:130px; background-color:#f9f9f9; background-position:center 110px; background-repeat:no-repeat; text-align:center; padding-top:190px; color:#888; font-size:.875em}
+.delete{ background-image:url(http://mat1.gtimg.com/www/mb/mobile/mv/face.jpg);}
+.mvnoitem{ background-image:url(http://mat1.gtimg.com/www/mb/mobile/mv/mvnoitem.png);}
+
+/* 微信按钮出来的动画效果，实际不要考虑-moz- -o-了
+因为微信webview里面不会有别的浏览器
+----------------------------------------------------------------*/
+.wechat {
+	opacity: 0;
+	-webkit-transition:.4s;
+	transition:.4s;
+}
+/* 定位
+----------------------------------------------------------------*/
+
+.hasLction .userName{padding-top: 0;height:25px;line-height:24px; max-width:250px}
+.location{ font-size:.875em; color:#888}
+
+/* 标签
+----------------------------------------------------------------*/
+.tagBox{ padding-top:5px}
+.tagBox .tagName{ padding:0 5px}
+.tagBox a:link,.tagBox a:visited{ color:#888;}
+
+/* 分享
+----------------------------------------------------------------*/
+
+.funBox{ float: right; position:relative;}
+.shareBtn{ width:49px; height:24px; line-height:26px; text-align:center; background:#F7F7F8; border:1px solid #BCBCBC; border-radius:5px; color:#888; cursor:pointer;}
+.shareList{ position:absolute;top:-270px;right:0;background:#F1F1F1; border:1px solid #D2D2D2; border-radius:8px; width:120px; text-align:center;box-shadow:0 -1px 3px rgba(0,0,0,.5); display:none}
+
+.shareList li{ height:40px; line-height:40px; border-bottom:1px solid #D2D2D2; border-top:1px solid #FFFFFF}
+.shareList li:last-child,.shareList li:first-child{ border:0}
+.shareList li a{color:#515151; display:block; height:40px; width:100%; font-size:.875em}
+.shareList .a_t{position:absolute; bottom:-29px; right:15px;border-width:14px;border-top-color:#D2D2D2}
+.shareList .a_t u{border-width:12px; margin:-15px 0 0 -12px; border-top-color:#f1f1f1}
+
+
+/* 2 结构
+================================================================*/
+
+header,
+article,
+.mv_conBox{ margin:0 auto; }
+header{ max-width:100%; border-top:4px solid #01B0BC; background-color:#F0F0F0; zoom:1;}
+.mv_aside,
+.mv_abottom,
+article{ padding:0 10px;}
+article{ padding-top:10px}
+
+/* PC端
+----------------------------------------------------------------*/
+
+.mv_appPc{display: none;}
+
+
+
+
+
+/* 3 media queries
+================================================================*/
+
+
+
+/* 右上操作
+----------------------------------------------------------------*/
+
+.mFun{ margin-right:10px; padding-top:10px}
+.mFun .time{ font-size:12px}
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.mv_download{display:none;}
+.mv_app2{ display:none}
+
+/* title区
+----------------------------------------------------------------*/
+
+.mv_tit{ padding-top:51px; margin-bottom:0; padding-left:0; float: none;}
+
+.mv_logo{ width:65px; height:auto}
+.mv_logo .logo{ float:left; width: 60px; height: 60px; margin:0 22px 0 0;}
+.mv_logoTit{ overflow:hidden; line-height:28px;font-size:28px;color: #000;}
+
+.mv_summary{ margin-top:0}
+.mv_summary h1{ color:#000; font-size:28px;line-height:28px; padding-top:0; font-weight:300}
+.mv_summary p{ font-size: 16px; color:#444; padding-top:8px;}
+
+/* 视频
+----------------------------------------------------------------*/
+
+.mv_video video,
+.mv_video embed{ width:460px;}
+.mv_video video{ height:460px}
+.mv_video embed{ height:492px}
+
+
+/* 定位
+----------------------------------------------------------------*/
+
+.mv_msg .hasLction .userName{padding-top: 0;height:25px;line-height:24px; max-width:265px}
+.location{ font-size:.875em; color:#888}
+
+
+/* 分享
+----------------------------------------------------------------*/
+
+.funBox{ float: right; position:static; width:185px;height:24px;}
+.shareBtn{ width:35px; height:24px; line-height:20px; text-align:center; background:none; border:0; border-radius:none; color:#888; float: left;cursor:text;}
+.shareList{ float:right;position:static;background:none; border:0; text-align:center;box-shadow:none; width:150px; display:block;}
+.shareList li{ height:20px; width:25px; line-height:20px; border-top:0;border-bottom:0;float: left; font-size:0}
+.shareList li a{color:#515151; display:block; height:20px; width:20px; font-size:0}
+.shareList .a_t{ display:none;}
+
+
+/* 消息
+----------------------------------------------------------------*/
+
+.userPic img{width: 40px;height: 40px; margin-top:3px}
+.msgBox{ line-height:1.75em; font-size:14px}
+.userName .name{ max-width:265px}
+
+/* 原消息
+----------------------------------------------------------------*/
+
+.mv_msg{ padding:15px 15px 10px;}
+.mv_msg .userName{padding-top: 0;height: 50px;line-height: 48px; max-width:250px}
+.mv_msg .userName .name{font-size:18px;height:auto;}
+.mv_msg .msgCnt{font-size: 16px;}
+.mv_msg .pubInfo{ font-size:12px}
+
+/* 转评列表
+----------------------------------------------------------------*/
+
+.mv_msgList{ padding:0 15px; background: #fff;}
+.mv_msgList li{padding:8px 0 15px; margin:0}
+
+
+/* TL loading
+----------------------------------------------------------------*/
+
+.mv_load{ font-size:14px}
+
+/* 视频占位提示
+----------------------------------------------------------------*/
+
+.mvnoitem{ background-color:#eee;}
+.mvnoitem{ padding-top:260px; height:200px; font-size:18px; background-position:center 180px}
+.delete{ background-position:center 190px;padding-top:260px; height:200px; font-size:18px}
+
+/* 结构
+----------------------------------------------------------------*/
+
+body,input,textarea,select,button{ font:12px/1.75 Tahoma,Arial,sans-serif;}
+body{ background-color:#f9f9f9; font-size: 14px; font-family:Microsoft Yahei;}
+header,
+article,
+section{ max-width:100%;}
+header{ position:fixed; width:100%; z-index:3; top:0;  -webkit-backface-visibility: hidden;}
+article{ position:relative; height:100%; background:none; padding:0;}
+section{ width:460px; margin:0; float:left; padding:20px;background:#fff; border-radius:5px;}
+.a_bd{ width: 960px; margin:0 auto; padding-top:51px;}
+.mv_aside{ padding:0; width: 960px; margin:0 auto; position: relative;}
+.mv_conBox{ position:absolute; left:545px; width:415px; background:none;}
+
+.mv_conBoxPc{ display:none;}
+
+
+
+.vPlay .vWrap,.vBox{ display:none;}
+.vPlay .vBox{ display:block;}
+
+
+
+
+
+/* 3 media queries
+================================================================*/
+
+
+
+/* 个人资料
+----------------------------------------------------------------*/
+
+body{ background:#0ECBD9 url(http://mat1.gtimg.com/www/mb/mv/wall/mv_wallBg.png) top center;}
+
+.a_bd{ background:none; width:998px; position:relative; padding-top:30px}
+section{margin-left:380px;*display:inline;}
+.topic{ float:left;width:380px; display:block;position:fixed;*left:20px}
+.topic .c1 {
+float: left;
+margin-right:10px;
+padding-top: 5px;
+}
+
+.topic .c1 .logo {width:85px;height:85px;}
+.topic .c1 .logo {
+background: url(http://mat1.gtimg.com/www/mb/mv/wall/logo.jpg);
+_background: none;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_official_131028c.png');
+}
+
+.topic .c2 {overflow: hidden;}
+.topic .c2 .tit {padding-top: 5px;font-size:32px;}
+.topic .c2 .desc{font-size:18px; line-height:18px}
+.topic .c2 .tit, .topic .c2 .desc {
+font-family: Microsoft Yahei,Helvetica,Arial,sans-serif;
+text-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px;
+padding-left:4px; color:#fff
+}
+.c_tx3{color:#fff}
+.action{ margin-top:30px; text-align:center; width:224px;}
+.qrcode_down{ padding-bottom:10px}
+
+/* PC端
+----------------------------------------------------------------*/
+/* -----视频----*/
+.mv_video .vWrap{  background:#fff;position:relative;}
+.vWrap a.btnPlay{ width:70px; height:58px; display:block; position:absolute; left:12px; bottom:15px; border-radius:8px;
+background-image:-webkit-gradient(linear, left top, left bottom, from(#565552), to(#484448));  box-shadow:0 1px 2px rgba(0,0,0,.2); 
+background: -moz-linear-gradient(top,#565552,#484448);cursor:pointer;
+background: none\9;
+filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#ff565552',endColorstr='#ff484448');
+}
+.vWrap a.btnPlay:hover{background-image:-webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
+background: -moz-linear-gradient(top,#444,#222);filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#ff444444',endColorstr='#ff222222');}
+.btnPlay em{display:block; position:absolute; left:25px; top:17px; width:0; height:0; font-size:0; border-width:12px 12px 12px 22px; border-style:dashed dashed  dashed solid; border-color:transparent transparent transparent #f9f9f9;
+}
+.vPlay .vWrap,.vBox{ display:none;}
+.vPlay .vBox{ display:block;}
+
+/*slogan*/
+.slogan{ color:#999; padding:10px 0 0; display:none;}
+.mv_2Code{}
+.mv_2Code img{width: 106px; height:106px;overflow: hidden; border:#dcdcdc 1px solid;}
+
+/*side banner*/
+.BannerArea{ display:none;}
+
+/* 结构
+----------------------------------------------------------------*/
+
+.mv_conBox{ top:265px}
+

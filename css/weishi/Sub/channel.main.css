@@ -1,0 +1,68 @@
+/* CSS GUIDE 频道列表页业务结构样式
+================================================================
+ *
+ * PROJECT: 微视频道列表页;
+ * URL:   ;
+ * AUTHOR:  bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 模块;
+ * 2. 结构;
+ * 3. media queries;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 模块
+================================================================*/
+
+/* 标签导航
+----------------------------------------------------------------*/
+
+.tagnav{
+	background-color:#e8e8e8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dedddd)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f7f7f7, #dedddd); /* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #f7f7f7, #dedddd); /* FF3.6+ */
+	background-image: -ms-linear-gradient(top, #f7f7f7, #dedddd); /* IE10 */
+	background-image: -o-linear-gradient(top, #f7f7f7, #dedddd); /* Opera 11.10+ */
+	background-image: linear-gradient(top, #f7f7f7, #dedddd); /* W3C */
+}
+.e_tagnav_fix{ position:fixed; _position:absolute; z-index:990; top:0; left:0; margin-top:0}
+
+/* 播放模式选择列表
+----------------------------------------------------------------*/
+
+.playmode{}
+.playmode .item{ width:153px; margin-bottom:10px}
+.playmode .lk{ display:block; height:33px; padding-left:10px; padding-top:3px; color:#858585; background:#d3d3d3; border-radius:5px}
+.playmode .select .lk,
+.playmode .lk:hover{ background:#01adba; color:#fff; text-decoration:none}
+.playmode .lk .txt{ margin-left:10px; vertical-align:middle; font-size:14px}
+
+/* slogan
+----------------------------------------------------------------*/
+
+.slogan{ display:block}
+
+
+
+
+/* 2 结构
+================================================================*/
+
+header{ border-top:0}
+
+.mv_conBox{ top:193px;}
+.a_bd{ width:902px; min-width:0}
+
+
+
+
+
+/* 3 media queries
+================================================================*/

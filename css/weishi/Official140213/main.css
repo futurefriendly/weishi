@@ -1,0 +1,231 @@
+/* CSS GUIDE - 官网模块
+================================================================
+ *
+ * PROJECT:	微视官网;
+ * URL:		http://www.weishi.com;
+ * AUTHOR:	bennyzhai;
+ *
+----------------------------------------------------------------
+ *
+ * 1. 基础模块;
+ * 2. 区域模块;
+ * 
+================================================================*/
+
+
+
+
+
+/* 1 基础模块
+================================================================*/
+
+/* sprite图片
+----------------------------------------------------------------*/
+
+.mod_flft .logo_in{
+	background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_official_131202.8a.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_official_131202.32.png')
+}
+
+.av_ls .pic .mask,
+.av_ls .ar em,
+.vip,
+.av_ls .page .dot,
+.ws_ls .videoBox .playbtn{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_mod_131031.png)}
+.vip{ display:inline-block; *display:inline; *zoom:1; width:20px; height:20px; margin-left:2px; background-position:-129px 0; vertical-align:middle;}
+.av_ls .arl em{ background-position:-129px -22px}
+.av_ls .arl a:hover em{ background-position:-129px -92px}
+.av_ls .arr em{ background-position:-169px -22px}
+.av_ls .arr a:hover em{ background-position:-169px -92px}
+
+.av_ls .page .dot{ background-position:-167px 0}
+.av_ls .page .cur{ background-position:-184px 0}
+
+.ws_ls .videoBox .playbtn{ display:block; width:40px; height:30px; background-position:0 -129px;}
+.ws_ls .videoBox a:hover .playbtn{ background-position:-41px -129px}
+
+.av_info .hd,
+.av_info .bd,
+.av_info .ft{ background:url(http://mat1.gtimg.com/www/mb/images/mv/mVideo_pop.png); _background:#fff}
+
+.D_title .close,
+.ico_lay_wechat,
+.ico_lay_weibo{ background:url(http://mat1.gtimg.com/www/mb/images/mv/sprite_mVideo_lay_130906b.png);}
+.D_title .close{ float:right; display:block; width:31px; height:31px; background-position: -57px 0}
+.D_title .close:hover{ background-color:#ebebeb; border-radius:3px}
+.ico_lay_wechat,
+.ico_lay_weibo{ width:56px; height:56px}
+.ico_lay_weibo{ background-position:0 -57px}
+
+/* 按钮
+----------------------------------------------------------------*/
+
+.download_note{ padding:0 4px; margin-top:5px; color:#666;}
+.download_note a{ color:#666}
+.download_note a:hover{ color:#666}
+
+
+
+
+
+/* 2 区域模块
+================================================================*/
+
+.mod_hd{ position:relative; background:#f1f1f1 url(http://mat1.gtimg.com/www/mb/images/weishi/bgpattern2.jpg); border-bottom:#e0e0e0 1px solid}
+.mod_hd_con{ position:relative; width:924px; height:396px; margin:0 auto; padding:42px 11px 0 9px}
+
+/* 标题和下载区
+----------------------------------------------------------------*/
+
+.mod_hd .topic{ position:relative; z-index:1; float:left; width:450px;}
+.mod_hd .c1{ display:none}
+.mod_hd .c1 .logo{ width:90px; height:90px}
+.mod_hd .c2{}
+.mod_hd .c2 .desc{ font-family:Microsoft Yahei,Helvetica,Arial,sans-serif; text-shadow:rgba(0,0,0,.4) 0 1px 5px; padding-left:4px}
+.mod_hd .c2 .tit{ width:139px; height:21px; padding:45px 4px 4px 307px; margin-top:55px; overflow:hidden; text-align:center;
+	background:url(http://mat1.gtimg.com/www/mb/images/weishi/wslogo_140121.png) 0 0 no-repeat;
+	_background: none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mat1.gtimg.com/www/mb/images/weishi/wslogo_140121.png');
+}
+.mod_hd .c2 .tit .t{ position:absolute; font-size:0; width:0; height:0; overflow:hidden}
+.mod_hd .c2 .tit .ver{ color:#999; white-space:nowrap;}
+.mod_hd .c2 .desc{ padding-top:4px; font-size:16px}
+.mod_hd .c2 .action{ width:416px; margin-top:26px; padding-left:4px}
+.mod_hd .c2 .action_c1{ float:left;}
+.mod_hd .c2 .action_c2{ float:right; padding-top:10px}
+.mod_hd .c2 .action .acWrap{ float:left; width:220px;}
+.mod_hd .c2 .action .ac1{ margin-bottom:28px}
+.mod_hd .c2 .action .ac2 .txt{ width:146px; margin-top:5px;}
+.mod_hd .c2 .action .qrcode_down{ width:146px; min-height:146px; text-align:center;}
+.mod_hd .c2 .action .qrcode_down img{ vertical-align:top; border:#ccc 1px solid;}
+
+/* slider视频轮播
+----------------------------------------------------------------*/
+
+.slider{ padding-top:28px; width:380px; float:right}
+.slider .mv_item{ float:left; margin-right:4px;}
+.slider .item{ float:left; margin-bottom:4px; background-color:#000;}
+.slider .item .lk{ display:block; width:60px; height:60px; overflow:hidden}
+.slider .item img{ width:60px; height:60px; vertical-align:top; opacity:.85;
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	-ms-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+.slider .item .lk:hover,
+.slider .select .lk{ width:56px; height:56px; border:#08bcca 2px solid;}
+.slider .item .lk:hover img,
+.slider .select .lk img{ margin:-2px 0 0 -2px; opacity:1}
+.slider .desc{ margin-top:5px; text-align:center}
+
+/* slider视频轮播 视频
+----------------------------------------------------------------*/
+
+.mv_video{ width:316px; background-color:#000}
+.mv_video video,
+.mv_video embed{ width:316px;}
+.mv_video video{ height:316px}
+.mv_video embed{ height:316px}
+
+.vPlay .vBox{ height:316px;}
+
+.vWrap img{ width:316px; height:316px}
+
+/* 头像轮播列表
+----------------------------------------------------------------*/
+
+.av_ls{ position:relative; padding-top:25px}
+
+.av_ls .ar{ position:absolute;}
+.av_ls .ar a{ display:block; width:90px; height:255px; padding-top:145px; cursor:pointer;}
+.av_ls .ar em{ display:block; width:40px; height:70px;}
+.av_ls .arl{ left:0; margin-left:-30px}
+.av_ls .arr{ right:0; margin-right:-30px}
+.av_ls .arr em{ float:right}
+
+.av_ls .av_con{ *position:relative; width:900px; height:400px; margin:0 auto; overflow:hidden}
+.av_ls .av_pg{ width:900px; float:left; -webkit-transform:rotate(0deg);/*修正safari渲染问题*/}
+
+.av_ls .item{ float:left; width:150px; height:200px}
+.av_ls .pic{ position:relative; width:128px; height:124px; padding-top:4px; margin:0 auto; text-align:center;}
+.av_ls .pic a{ cursor:pointer;}
+.av_ls .pic img{ width:120px; height:120px; border-radius:60px}
+.av_ls .pic .mask{ width:128px; height:128px; position:absolute; left:0; top:0}
+.av_ls .txt{ text-align:center;}
+.av_ls .txt a{ font-family:Microsoft Yahei; color:#a1a3a6; font-size:16px; vertical-align:middle}
+.av_ls .txt a:hover{ text-decoration:none}
+
+.av_ls .page{ text-align:center;}
+.av_ls .page .dot{ width:16px; height:16px; display:inline-block; *display:inline; *zoom:1; vertical-align:middle}
+.av_ls .page .cur{}
+
+/* 头像轮播列表 介绍浮层 */
+.av_info{ position:absolute; z-index:900; width:278px; _border:#e5e5e5 4px solid;
+	-webkit-animation:enter_0 .2s ease-in-out;
+	-moz-animation:enter_0 .2s ease-in-out;
+	-o-animation:enter_0 .2s ease-in-out;
+	-ms-animation:enter_0 .2s ease-in-out;
+	animation:enter_0 .2s ease-in-out;
+}
+.av_info .arr{ display:none; _display:block; position: absolute; top:-12px; left:30px}
+.av_info .arr .ar1,
+.av_info .arr .ar2{ position: absolute; font-family:Simsun; font-size:20px;}
+.av_info .arr .ar1{ color:#e5e5e5; margin-top:-5px}
+.av_info .arr .ar2{ color:#fff;}
+.av_info .hd{ height:15px; background-position:0 0}
+.av_info .bd{ background-position:-279px 0; background-repeat:repeat-y; padding:0 15px; line-height:2em; word-wrap:break-word; word-break:break-all; color:#333}
+.av_info .ft{ height:9px; background-position:0 bottom}
+
+/* 标签导航
+----------------------------------------------------------------*/
+
+.tagnav{ margin-top:25px; text-align:center;}
+.tagnav .item,
+.tagnav .item a,
+.tagnav .item .txt,
+.tagnav .item .ar{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle}
+.tagnav .item{ position:relative; text-align:center;}
+.tagnav .item a{ cursor:pointer;}
+.tagnav .item a:hover{ text-decoration:none}
+.tagnav .item .txt{ height:32px; padding:0 12px; line-height:30px; color:#333; font-size:22px; font-family:Microsoft Yahei,Mingliu}
+.tagnav .item .ar{ position:absolute; width:30px; left:50%; margin-left:-15px; bottom:-9px; display:none; color:#01adba}
+.tagnav .select a,
+.tagnav .item a:hover{ background:#01adba; border-radius:3px}
+.tagnav .select a .txt,
+.tagnav .item a:hover .txt{ color:#fff}
+.tagnav .select .ar,
+.tagnav .item a:hover .ar{ text-align:center; display:inline-block; *display:inline; *zoom:1;}
+.tagnav .dot{ margin:0;}
+
+/* 瀑布流
+----------------------------------------------------------------*/
+
+.ws_ls{ max-width:1004px; min-width:960px; *width:960px; margin:25px auto 0;}
+.ws_ls .col{ width:25%; float:left;}
+.ws_ls .last{ margin-right:0}
+.ws_ls .item{ width:235px; vertical-align:top; background:#fff; margin:0 auto 30px; border-bottom:#e4e4e4 1px solid; color:#333; font-family:Microsoft Yahei}
+.ws_ls .videoBox{ position:relative;}
+.ws_ls .videoBox img{ width:235px; height:235px; vertical-align:top}
+.ws_ls .videoBox .playbtn{ position: absolute; top:190px; left:15px;;}
+.ws_ls .videoBox .mask{ position:absolute; width:235px; height:235px; left:0; top:0;
+}
+.ws_ls .videoBox a{ cursor:pointer;}
+.ws_ls .videoBox a .mask{ background:#000; opacity:.2; filter:alpha(opacity=20);
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	-ms-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+.ws_ls .videoBox a:hover .mask{ opacity:0; filter:alpha(opacity=0);}
+.ws_ls .comtBox{ position:relative; padding:15px 10px 10px; *zoom:1; _font-family:Tahoma,sans-serif}
+.ws_ls .comtBox .time{ position:absolute; right:10px; padding-top:8px;}
+.ws_ls .comtBox .userPic{ margin-right:5px; float:left}
+.ws_ls .comtBox .userPic img{ width:35px; height:35px; border-radius:5px; vertical-align:top;}
+.ws_ls .comtBox .userName{ padding-top:5px; overflow:hidden; font-size:14px;}
+.ws_ls .comtBox .msgBox{ clear:both; padding-top:10px; *zoom:1;}
+.ws_ls .comtBox .msgCnt{ height:48px; overflow:hidden; word-wrap:break-word; word-break:break-all; line-height:24px}
+.ws_ls .comtBox .msgCnt img{ vertical-align:middle}
+.ws_ls .comtBox .pubInfo{ color:#888; padding-top:10px; border-top:#d8d8d8 1px dotted; margin-top:10px}
